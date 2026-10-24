@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Activities · Kids Learning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/style.css"><link rel="stylesheet" href="assets/css/activity-layout.css"><link rel="stylesheet" href="assets/css/effects.css">
+</head>
+<body class="activities-page">
+  <header class="topbar"><a href="index.html" class="site-name">☀️ Kids Learning</a><span><span id="class-label" class="class-badge"></span> <a class="logout-link" href="summary.html">Log out</a></span></header>
+  <main class="learning-layout"><aside class="sidebar"><h2>Activities</h2><nav id="activity-menu" aria-label="Activities"></nav></aside><section class="activity-stage"><div class="tablet" aria-label="Activity tablet"><div class="camera"></div><iframe id="activity-frame" title="Kids learning activity"></iframe></div></section></main>
+  <script>
+    (async function () {
+      const params = new URLSearchParams(location.search), level = params.get('class') === 'sr' ? 'sr' : 'jr', selectedWeek = params.get('week');
+      document.getElementById('class-label').textContent = level === 'sr' ? 'SR-KG · 5–7 years' : 'JR-KG · 3–5 years';
+      if (!selectedWeek) { location.replace(`class-landing.html?class=${level}`); return; }
+      const menu = document.getElementById('activity-menu'), frame = document.getElementById('activity-frame');
+      try {
+        const catalog = await fetch(`data/${level}/${selectedWeek}/activities.json`).then(response => { if (!response.ok) throw Error(); return response.json(); });
+        const weekNumber = Number(selectedWeek.replace('week-', ''));
+        const sections = catalog.sections.map(section => ({ ...section, activities: section.activities.filter(activity => !(level === 'jr' && weekNumber >= 3 && activity.type === 'count') && !(level === 'jr' && weekNumber >= 4 && activity.type === 'math' && activity.file === 'subtraction-drag') && !(level === 'jr' && weekNumber >= 9 && activity.type === 'math')) }));
+        if (level === 'jr' && weekNumber !== 3) sections.splice(1, 0, { title: 'Alphabet Word Match', icon: '🧩', activities: [{ type: 'pairs', file: 'letters-words-1', mode: 'learn', label: 'Letter Words 1', icon: '🔤' }, { type: 'pairs', file: 'letters-words-2', mode: 'learn', label: 'Letter Words 2', icon: '📚' }, { type: 'pairs', file: 'letters-words-3', mode: 'learn', label: 'Letter Words 3', icon: '🌟' }] });
+        const maths = sections.find(section => section.title === 'Picture Maths');
+        if (maths) maths.activities.unshift(
+          { type: 'numberpick', file: 'find-same-number', mode: 'challenge', label: 'Challenge: Find Same Number', icon: '🏆' },
+          { type: 'numberpick', file: 'find-same-number', mode: 'learn', label: 'Learn: Find Same Number', icon: '🔎' }
+        );
+        const reveal = sections.find(section => section.title === 'Click & Reveal');
+        if (reveal) reveal.activities.push(
+          { type: 'numberpick', file: 'find-same-letter', mode: 'learn', label: 'Learn: Find Same Letter', icon: '🔤' },
+          { type: 'numberpick', file: 'find-same-letter', mode: 'challenge', label: 'Challenge: Find Same Letter', icon: '🏆' }
+        );
+        menu.innerHTML = sections.map(section => `<section><h3>${section.icon || '✨'} ${section.title}</h3>${section.activities.map(activity => `<button data-type="${activity.type}" data-file="${activity.file}" data-mode="${activity.mode || 'learn'}">${activity.icon || '⭐'} ${activity.label}</button>`).join('')}</section>`).join('');
+        const buttons = [...menu.querySelectorAll('button')];
+        function load(button) { buttons.forEach(item => item.classList.toggle('active', item === button)); frame.src = `activity-frame.html?type=${button.dataset.type}&file=${button.dataset.file}&week=${selectedWeek}&mode=${button.dataset.mode}&class=${level}&label=${encodeURIComponent(button.textContent.trim())}`; }
+        buttons.forEach(button => button.addEventListener('click', () => load(button)));
+        if (buttons.length) load(buttons[0]); else menu.innerHTML = '<p>No activities are available in this section yet.</p>';
+      } catch { menu.innerHTML = '<p>Activities could not be loaded.</p>'; }
+    }());
+  </script>
+</body></html>

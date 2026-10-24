@@ -1,0 +1,1 @@
+{"title":"Picture Subtraction","instruction":"Count the pictures left, then drag the answer into the dotted box.","choices":[3,4],"problems":[{"left":{"count":5,"emoji":"🎈"},"operator":"−","right":{"count":2,"emoji":"🎈"},"answer":3,"resultEmoji":"🎈"},{"left":{"count":6,"emoji":"🐱"},"operator":"−","right":{"count":2,"emoji":"🐱"},"answer":4,"resultEmoji":"🐱"}]}

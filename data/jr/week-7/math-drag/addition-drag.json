@@ -1,0 +1,1 @@
+{"title":"Picture Addition Review","instruction":"Count both picture groups, then drag the answer into the dotted box.","choices":[8,10],"problems":[{"left":{"count":4,"emoji":"🍎"},"operator":"+","right":{"count":4,"emoji":"🍎"},"answer":8,"resultEmoji":"🍎"},{"left":{"count":6,"emoji":"⭐"},"operator":"+","right":{"count":4,"emoji":"⭐"},"answer":10,"resultEmoji":"⭐"}]}

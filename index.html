@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kids Learning</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="home-page">
+  <main class="welcome-card">
+    <div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
+    <div class="brand-mark" aria-hidden="true">☀️</div>
+    <h1>Kids <span>Learning</span></h1>
+    <p class="intro">Play, explore, and learn! Choose your class for colourful activities made just for growing minds.</p>
+    <div class="class-picker" id="class-picker" aria-label="Choose a class"></div>
+  </main>
+<script>(async()=>{const d=await fetch('data/classes.json').then(r=>r.json());document.getElementById('class-picker').innerHTML=d.classes.map(c=>`<a class="class-button ${c.theme||'junior'}" href="profile.html?class=${encodeURIComponent(c.id)}"><span class="button-icon">${c.icon}</span><strong>${c.label}</strong><small>${c.ageLabel}</small></a>`).join('')})()</script></body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "class": "JR-KG",
+  "ageRange": "3–5 years",
+  "courseTitle": "My First Learning Adventure",
+  "courseOutcomes": [
+    "Recognise and say uppercase A–Z",
+    "Count, recognise and order numbers 1–50",
+    "Name common colours and shapes",
+    "Solve picture addition and subtraction problems",
+    "Follow a short sequence and complete an independent challenge"
+  ],
+  "delivery": {
+    "recommendedSessionsPerWeek": 3,
+    "recommendedMinutesPerSession": 15,
+    "weeklyPattern": ["Learn", "Practise", "Challenge and review"],
+    "reviewRuleFromWeek": 5,
+    "reviewMixFromWeek": "70% current learning, 30% earlier learning"
+  },
+  "weeks": [
+    {"id":"week-1","letters":["A","B","C","D"],"numbers":[1,2,3,4,5],"colours":["Red","Blue","Yellow","Green"],"concept":"Count objects and match identical items","maths":"Count to 5","challenge":"Match four letters and order 1–5"},
+    {"id":"week-2","letters":["E","F","G","H"],"numbers":[6,7,8,9,10],"colours":["Orange","Purple","Pink","Brown"],"concept":"Count and order a new number range","maths":"More and fewer to 10","challenge":"Order 6–10 and match E–H"},
+    {"id":"week-3","letters":["I","J","K","L"],"numbers":[11,12,13,14,15],"shapes":["Circle","Square","Triangle","Rectangle"],"concept":"Recognise quantity and shape","maths":"Picture addition within 5","challenge":"Choose the missing item in a short sequence"},
+    {"id":"week-4","letters":["M","N","O","P"],"numbers":[16,17,18,19,20],"shapes":["Oval","Star","Heart","Diamond"],"concept":"Compare and sequence","maths":"Picture subtraction within 5","challenge":"Mixed letters, numbers and shapes"},
+    {"id":"week-5","letters":["Q","R","S","T"],"numbers":[21,22,23,24,25],"review":"A–P and 1–20","concept":"Find a missing letter or number","maths":"Picture addition within 10","challenge":"Shuffled answers with one distractor"},
+    {"id":"week-6","letters":["U","V","W","X"],"numbers":[26,27,28,29,30],"review":"Q–T and 21–25","concept":"Use before and after","maths":"Picture subtraction within 10","challenge":"Five- and six-item sequences"},
+    {"id":"week-7","letters":["Y","Z"],"numbers":[31,32,33,34,35],"review":"A–X and 1–30","concept":"Complete A–Z and compare quantities","maths":"Greater, smaller and equal groups","challenge":"Mixed A–Z and number ordering"},
+    {"id":"week-8","letters":"Beginning sounds: A–Z","numbers":[36,37,38,39,40],"review":"1–35","concept":"Match object to first letter","maths":"Before, after and between","challenge":"Six-item number sequences"},
+    {"id":"week-9","letters":"Alphabet order review","numbers":[41,42,43,44,45],"review":"A–Z and 1–40","concept":"Use letter and number sequences independently","maths":"Picture addition and subtraction within 15","challenge":"Two-part picture problems"},
+    {"id":"week-10","letters":"Uppercase matching and A–Z review","numbers":[46,47,48,49,50],"review":"1–45","concept":"Complete the number range 1–50","maths":"Number bonds that make 10","challenge":"Mixed answers and distractors"},
+    {"id":"week-11","letters":"A–Z revision","numbers":"1–50 revision","review":"All prior content","concept":"Recognise learning without ordered prompts","maths":"Mixed addition and subtraction within 15","challenge":"Optional timed review game"},
+    {"id":"week-12","letters":"A–Z celebration","numbers":"1–50 celebration","review":"All prior content","concept":"Show independent learning","maths":"Mixed picture maths","challenge":"Final learning adventure"}
+  ],
+  "complexity": [
+    {"weeks":"1–2","rule":"2–4 choices, ordered layout, immediate spoken prompt"},
+    {"weeks":"3–4","rule":"4–5 choices, shuffled choices, one review item"},
+    {"weeks":"5–6","rule":"Missing items, one distractor and a 70/30 current-to-review mix"},
+    {"weeks":"7–10","rule":"Mixed sets, before/after/between, optional timed game"},
+    {"weeks":"11–12","rule":"Independent mixed challenge; show a hint only after an incorrect try"}
+  ]
+}
