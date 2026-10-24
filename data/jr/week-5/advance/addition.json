@@ -1,4 +1,7 @@
 {
+  "activityCodes": [
+    "JR-W05-016"
+  ],
   "title": "Addition · Single Digit",
   "instruction": "Drag the answer to complete each calculation.",
   "presentation": "equation",

@@ -1,1 +1,34 @@
-{"title":"Find 16–20","instruction":"Look at the number. Tap the same number.","questions":[{"answer":16,"choices":[15,16,20]},{"answer":18,"choices":[16,18,19]},{"answer":20,"choices":[17,19,20]}]}
+{
+  "activityCodes": [
+    "JR-W04-009",
+    "JR-W04-010"
+  ],
+  "title": "Find 16–20",
+  "instruction": "Look at the number. Tap the same number.",
+  "questions": [
+    {
+      "answer": 16,
+      "choices": [
+        15,
+        16,
+        20
+      ]
+    },
+    {
+      "answer": 18,
+      "choices": [
+        16,
+        18,
+        19
+      ]
+    },
+    {
+      "answer": 20,
+      "choices": [
+        17,
+        19,
+        20
+      ]
+    }
+  ]
+}

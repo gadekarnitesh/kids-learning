@@ -1,1 +1,34 @@
-{"title":"Alphabet Review","instruction":"Look at the letter. Tap the same letter.","questions":[{"answer":"E","choices":["E","F","P"]},{"answer":"K","choices":["X","K","R"]},{"answer":"Z","choices":["S","Y","Z"]}]}
+{
+  "activityCodes": [
+    "JR-W09-002",
+    "JR-W09-003"
+  ],
+  "title": "Alphabet Review",
+  "instruction": "Look at the letter. Tap the same letter.",
+  "questions": [
+    {
+      "answer": "E",
+      "choices": [
+        "E",
+        "F",
+        "P"
+      ]
+    },
+    {
+      "answer": "K",
+      "choices": [
+        "X",
+        "K",
+        "R"
+      ]
+    },
+    {
+      "answer": "Z",
+      "choices": [
+        "S",
+        "Y",
+        "Z"
+      ]
+    }
+  ]
+}

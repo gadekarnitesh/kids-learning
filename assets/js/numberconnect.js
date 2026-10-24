@@ -13,7 +13,7 @@
       return `left:${index < left.length ? 18 : 82}%;top:${(row + 1) / (left.length + 1) * 100}%;`;
     });
     const itemName = isAlphabet ? 'letters' : 'numbers';
-    root.innerHTML = `<h1>${data.title || `Connect the Same ${isAlphabet ? 'Letters' : 'Numbers'}`}</h1><span class="mode-label ${learning ? 'learn' : 'challenge'}">${learning ? '🌱 Learning time — feedback appears right away!' : '🏆 Challenge time — check your lines at the end!'}</span><p class="instruction">${data.instruction || `Tap two matching ${itemName} to connect them.`}</p><div class="number-connect-board ${isAlphabet ? 'alphabet-connect-board' : ''}">${values.map((value, index) => `<button id="connect-${index}" class="connect-number" style="${positions[index]}" data-value="${value}">${value}</button>`).join('')}</div><p class="feedback"></p><button class="try-again">Start over</button>`;
+    root.innerHTML = `<h1>${data.title || `Connect the Same ${isAlphabet ? 'Letters' : 'Numbers'}`}</h1><p class="instruction">${data.instruction || `Tap two matching ${itemName} to connect them.`}</p><div class="number-connect-board ${isAlphabet ? 'alphabet-connect-board' : ''}">${values.map((value, index) => `<button id="connect-${index}" class="connect-number" style="${positions[index]}" data-value="${value}">${value}</button>`).join('')}</div><p class="feedback"></p><button class="try-again">Start over</button>`;
     const board = root.querySelector('.number-connect-board');
     const feedback = root.querySelector('.feedback');
     const plumber = window.jsPlumb ? window.jsPlumb.getInstance({ Container: board }) : null;

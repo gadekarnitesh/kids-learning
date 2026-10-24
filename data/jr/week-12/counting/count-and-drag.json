@@ -1,1 +1,29 @@
-{"title":"Final Counting Challenge","instruction":"Count each picture group, then drag its number into the dotted box.","tasks":[{"emoji":"🍎","label":"apples","count":10},{"emoji":"⭐","label":"stars","count":20},{"emoji":"🌼","label":"flowers","count":30}],"numbers":[10,20,30]}
+{
+  "activityCodes": [
+    "JR-W12-007"
+  ],
+  "title": "Final Counting Challenge",
+  "instruction": "Count each picture group, then drag its number into the dotted box.",
+  "tasks": [
+    {
+      "emoji": "🍎",
+      "label": "apples",
+      "count": 10
+    },
+    {
+      "emoji": "⭐",
+      "label": "stars",
+      "count": 20
+    },
+    {
+      "emoji": "🌼",
+      "label": "flowers",
+      "count": 30
+    }
+  ],
+  "numbers": [
+    10,
+    20,
+    30
+  ]
+}

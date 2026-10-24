@@ -1,4 +1,7 @@
 {
+  "activityCodes": [
+    "JR-W12-015"
+  ],
   "title": "Big & Small",
   "instruction": "Look closely, then tap the picture that answers the question.",
   "questionsPerPage": 2,

@@ -1,1 +1,25 @@
-{"title":"Alphabet Peekaboo","instruction":"Tap each card and say the letter with your teacher!","items":[{"icon":"🐘","answer":"E is for Elephant"},{"icon":"🐟","answer":"F is for Fish"},{"icon":"🐐","answer":"G is for Goat"},{"icon":"🐴","answer":"H is for Horse"}]}
+{
+  "activityCodes": [
+    "JR-W02-001"
+  ],
+  "title": "Alphabet Peekaboo",
+  "instruction": "Tap each card and say the letter with your teacher!",
+  "items": [
+    {
+      "icon": "🐘",
+      "answer": "E is for Elephant"
+    },
+    {
+      "icon": "🐟",
+      "answer": "F is for Fish"
+    },
+    {
+      "icon": "🐐",
+      "answer": "G is for Goat"
+    },
+    {
+      "icon": "🐴",
+      "answer": "H is for Horse"
+    }
+  ]
+}

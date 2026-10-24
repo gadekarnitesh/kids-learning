@@ -1,1 +1,25 @@
-{"title":"Alphabet Peekaboo · U–X","instruction":"Tap each card and say the letter and picture!","items":[{"icon":"☂️","answer":"U is for Umbrella"},{"icon":"🎻","answer":"V is for Violin"},{"icon":"⌚","answer":"W is for Watch"},{"icon":"🎸","answer":"X is for Xylophone"}]}
+{
+  "activityCodes": [
+    "JR-W06-001"
+  ],
+  "title": "Alphabet Peekaboo · U–X",
+  "instruction": "Tap each card and say the letter and picture!",
+  "items": [
+    {
+      "icon": "☂️",
+      "answer": "U is for Umbrella"
+    },
+    {
+      "icon": "🎻",
+      "answer": "V is for Violin"
+    },
+    {
+      "icon": "⌚",
+      "answer": "W is for Watch"
+    },
+    {
+      "icon": "🎸",
+      "answer": "X is for Xylophone"
+    }
+  ]
+}

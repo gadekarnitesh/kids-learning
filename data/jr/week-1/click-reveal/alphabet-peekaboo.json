@@ -1,1 +1,25 @@
-{"title":"Alphabet Peekaboo","instruction":"Tap each card and say the letter with your teacher!","items":[{"icon":"🍎","answer":"A is for Apple"},{"icon":"⚽","answer":"B is for Ball"},{"icon":"🐱","answer":"C is for Cat"},{"icon":"🐶","answer":"D is for Dog"}]}
+{
+  "activityCodes": [
+    "JR-W01-001"
+  ],
+  "title": "Alphabet Peekaboo",
+  "instruction": "Tap each card and say the letter with your teacher!",
+  "items": [
+    {
+      "icon": "🍎",
+      "answer": "A is for Apple"
+    },
+    {
+      "icon": "⚽",
+      "answer": "B is for Ball"
+    },
+    {
+      "icon": "🐱",
+      "answer": "C is for Cat"
+    },
+    {
+      "icon": "🐶",
+      "answer": "D is for Dog"
+    }
+  ]
+}

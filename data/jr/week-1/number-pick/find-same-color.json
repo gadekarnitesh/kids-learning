@@ -1,1 +1,34 @@
-{"title":"Find the Same Colour","presentation":"colour","instruction":"Look at the colour box. Tap the same colour box.","questions":[{"answer":"#ef4f67","choices":["#ef4f67","#4c9df3","#ffd540"]},{"answer":"#4c9df3","choices":["#54c977","#4c9df3","#ef4f67"]},{"answer":"#ffd540","choices":["#4c9df3","#ffd540","#54c977"]}]}
+{
+  "activityCodes": [
+    "JR-W01-003"
+  ],
+  "title": "Find the Same Colour",
+  "presentation": "colour",
+  "instruction": "Look at the colour box. Tap the same colour box.",
+  "questions": [
+    {
+      "answer": "#ef4f67",
+      "choices": [
+        "#ef4f67",
+        "#4c9df3",
+        "#ffd540"
+      ]
+    },
+    {
+      "answer": "#4c9df3",
+      "choices": [
+        "#54c977",
+        "#4c9df3",
+        "#ef4f67"
+      ]
+    },
+    {
+      "answer": "#ffd540",
+      "choices": [
+        "#4c9df3",
+        "#ffd540",
+        "#54c977"
+      ]
+    }
+  ]
+}

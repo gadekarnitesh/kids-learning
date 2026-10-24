@@ -1,1 +1,39 @@
-{"title":"Picture Subtraction within 5","instruction":"Count the pictures left, then drag the answer into the dotted box.","choices":[2,3],"problems":[{"left":{"count":5,"emoji":"🍎"},"operator":"−","right":{"count":2,"emoji":"🍎"},"answer":3,"resultEmoji":"🍎"},{"left":{"count":4,"emoji":"⭐"},"operator":"−","right":{"count":2,"emoji":"⭐"},"answer":2,"resultEmoji":"⭐"}]}
+{
+  "activityCodes": [
+    "JR-W04-011"
+  ],
+  "title": "Picture Subtraction within 5",
+  "instruction": "Count the pictures left, then drag the answer into the dotted box.",
+  "choices": [
+    2,
+    3
+  ],
+  "problems": [
+    {
+      "left": {
+        "count": 5,
+        "emoji": "🍎"
+      },
+      "operator": "−",
+      "right": {
+        "count": 2,
+        "emoji": "🍎"
+      },
+      "answer": 3,
+      "resultEmoji": "🍎"
+    },
+    {
+      "left": {
+        "count": 4,
+        "emoji": "⭐"
+      },
+      "operator": "−",
+      "right": {
+        "count": 2,
+        "emoji": "⭐"
+      },
+      "answer": 2,
+      "resultEmoji": "⭐"
+    }
+  ]
+}

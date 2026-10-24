@@ -1,1 +1,34 @@
-{"title":"Find M–P","instruction":"Look at the letter. Tap the same letter.","questions":[{"answer":"M","choices":["M","N","P"]},{"answer":"O","choices":["P","O","N"]},{"answer":"P","choices":["M","O","P"]}]}
+{
+  "activityCodes": [
+    "JR-W04-002",
+    "JR-W04-003"
+  ],
+  "title": "Find M–P",
+  "instruction": "Look at the letter. Tap the same letter.",
+  "questions": [
+    {
+      "answer": "M",
+      "choices": [
+        "M",
+        "N",
+        "P"
+      ]
+    },
+    {
+      "answer": "O",
+      "choices": [
+        "P",
+        "O",
+        "N"
+      ]
+    },
+    {
+      "answer": "P",
+      "choices": [
+        "M",
+        "O",
+        "P"
+      ]
+    }
+  ]
+}

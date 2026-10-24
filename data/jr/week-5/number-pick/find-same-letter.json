@@ -1,1 +1,34 @@
-{"title":"Find Q–T","instruction":"Look at the letter. Tap the same letter.","questions":[{"answer":"Q","choices":["O","Q","T"]},{"answer":"S","choices":["S","R","C"]},{"answer":"T","choices":["P","S","T"]}]}
+{
+  "activityCodes": [
+    "JR-W05-002",
+    "JR-W05-003"
+  ],
+  "title": "Find Q–T",
+  "instruction": "Look at the letter. Tap the same letter.",
+  "questions": [
+    {
+      "answer": "Q",
+      "choices": [
+        "O",
+        "Q",
+        "T"
+      ]
+    },
+    {
+      "answer": "S",
+      "choices": [
+        "S",
+        "R",
+        "C"
+      ]
+    },
+    {
+      "answer": "T",
+      "choices": [
+        "P",
+        "S",
+        "T"
+      ]
+    }
+  ]
+}

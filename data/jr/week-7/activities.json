@@ -8,7 +8,54 @@
           "type": "reveal",
           "file": "alphabet-peekaboo",
           "label": "Alphabet Peekaboo",
-          "icon": "🔤"
+          "icon": "🔤",
+          "code": "JR-W07-001"
+        },
+        {
+          "type": "numberpick",
+          "file": "find-same-letter",
+          "mode": "learn",
+          "label": "Learn: Find Same Letter",
+          "icon": "🔤",
+          "code": "JR-W07-002"
+        },
+        {
+          "type": "numberpick",
+          "file": "find-same-letter",
+          "mode": "challenge",
+          "label": "Challenge: Find Same Letter",
+          "icon": "🏆",
+          "code": "JR-W07-003"
+        }
+      ]
+    },
+    {
+      "title": "Alphabet Word Match",
+      "icon": "🧩",
+      "activities": [
+        {
+          "type": "pairs",
+          "file": "letters-words-1",
+          "mode": "learn",
+          "label": "Letter Words 1",
+          "icon": "🔤",
+          "code": "JR-W07-004"
+        },
+        {
+          "type": "pairs",
+          "file": "letters-words-2",
+          "mode": "learn",
+          "label": "Letter Words 2",
+          "icon": "📚",
+          "code": "JR-W07-005"
+        },
+        {
+          "type": "pairs",
+          "file": "letters-words-3",
+          "mode": "learn",
+          "label": "Letter Words 3",
+          "icon": "🌟",
+          "code": "JR-W07-006"
         }
       ]
     },
@@ -21,14 +68,17 @@
           "file": "count-and-drag",
           "mode": "learn",
           "label": "Count & Drag",
-          "icon": "🔢"
+          "icon": "🔢",
+          "enabled": false,
+          "code": "JR-W07-007"
         },
         {
           "type": "numberorder",
           "file": "drag-number-order",
           "mode": "learn",
           "label": "Put Numbers in Order · 31–35",
-          "icon": "🔢"
+          "icon": "🔢",
+          "code": "JR-W07-008"
         }
       ]
     },
@@ -37,11 +87,28 @@
       "icon": "🧠",
       "activities": [
         {
+          "type": "numberpick",
+          "file": "find-same-number",
+          "mode": "challenge",
+          "label": "Challenge: Find Same Number",
+          "icon": "🏆",
+          "code": "JR-W07-009"
+        },
+        {
+          "type": "numberpick",
+          "file": "find-same-number",
+          "mode": "learn",
+          "label": "Learn: Find Same Number",
+          "icon": "🔎",
+          "code": "JR-W07-010"
+        },
+        {
           "type": "math",
           "file": "addition-drag",
           "mode": "learn",
           "label": "Picture Addition",
-          "icon": "➕"
+          "icon": "➕",
+          "code": "JR-W07-011"
         }
       ]
     },
@@ -54,56 +121,64 @@
           "file": "before-number",
           "mode": "learn",
           "label": "Before Number · 31–35",
-          "icon": "🔢"
+          "icon": "🔢",
+          "code": "JR-W07-012"
         },
         {
           "type": "advance",
           "file": "after-number",
           "mode": "learn",
           "label": "After Number · 31–35",
-          "icon": "🔢"
+          "icon": "🔢",
+          "code": "JR-W07-013"
         },
         {
           "type": "advance",
           "file": "before-letter",
           "mode": "learn",
           "label": "Before Alphabet · Y–Z",
-          "icon": "🔤"
+          "icon": "🔤",
+          "code": "JR-W07-014"
         },
         {
           "type": "advance",
           "file": "after-letter",
           "mode": "learn",
           "label": "After Alphabet · Y–Z",
-          "icon": "🔤"
+          "icon": "🔤",
+          "code": "JR-W07-015"
         },
         {
           "type": "advance",
           "file": "addition",
           "mode": "learn",
           "label": "Addition · Two Digits",
-          "icon": "➕"
+          "icon": "➕",
+          "code": "JR-W07-016"
         },
         {
           "type": "advance",
           "file": "subtraction",
           "mode": "learn",
           "label": "Subtraction · Two Digits",
-          "icon": "➖"
+          "icon": "➖",
+          "code": "JR-W07-017"
         },
         {
           "type": "advance",
           "file": "between-number",
           "mode": "learn",
           "label": "In-between Numbers · 31–35",
-          "icon": "🔢"
+          "icon": "🔢",
+          "code": "JR-W07-018"
         },
         {
           "type": "advance",
           "file": "between-letter",
           "mode": "learn",
           "label": "In-between Alphabets · W–Z Review",
-          "icon": "🔤"
+          "icon": "🔤",
+          "code": "JR-W07-019"
         }
       ]
     }

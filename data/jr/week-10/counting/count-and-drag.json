@@ -1,1 +1,29 @@
-{"title":"Count 46–50","instruction":"Count each picture group, then drag its number into the dotted box.","tasks":[{"emoji":"🍎","label":"apples","count":46},{"emoji":"⭐","label":"stars","count":48},{"emoji":"🌼","label":"flowers","count":50}],"numbers":[46,48,50]}
+{
+  "activityCodes": [
+    "JR-W10-007"
+  ],
+  "title": "Count 46–50",
+  "instruction": "Count each picture group, then drag its number into the dotted box.",
+  "tasks": [
+    {
+      "emoji": "🍎",
+      "label": "apples",
+      "count": 46
+    },
+    {
+      "emoji": "⭐",
+      "label": "stars",
+      "count": 48
+    },
+    {
+      "emoji": "🌼",
+      "label": "flowers",
+      "count": 50
+    }
+  ],
+  "numbers": [
+    46,
+    48,
+    50
+  ]
+}

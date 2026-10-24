@@ -1,1 +1,34 @@
-{"title":"Find the Same Letter","instruction":"Look at the letter on the left. Tap the same letter on the right.","questions":[{"answer":"F","choices":["E","F","H"]},{"answer":"G","choices":["E","G","H"]},{"answer":"H","choices":["F","G","H"]}]}
+{
+  "activityCodes": [
+    "JR-W02-004",
+    "JR-W02-005"
+  ],
+  "title": "Find the Same Letter",
+  "instruction": "Look at the letter on the left. Tap the same letter on the right.",
+  "questions": [
+    {
+      "answer": "F",
+      "choices": [
+        "E",
+        "F",
+        "H"
+      ]
+    },
+    {
+      "answer": "G",
+      "choices": [
+        "E",
+        "G",
+        "H"
+      ]
+    },
+    {
+      "answer": "H",
+      "choices": [
+        "F",
+        "G",
+        "H"
+      ]
+    }
+  ]
+}

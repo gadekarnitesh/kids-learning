@@ -1,1 +1,25 @@
-{"title":"Alphabet Peekaboo · I–L","instruction":"Tap each card and say the letter and picture!","items":[{"icon":"🍦","answer":"I is for Ice cream"},{"icon":"🧃","answer":"J is for Juice"},{"icon":"🪁","answer":"K is for Kite"},{"icon":"🦁","answer":"L is for Lion"}]}
+{
+  "activityCodes": [
+    "JR-W03-001"
+  ],
+  "title": "Alphabet Peekaboo · I–L",
+  "instruction": "Tap each card and say the letter and picture!",
+  "items": [
+    {
+      "icon": "🍦",
+      "answer": "I is for Ice cream"
+    },
+    {
+      "icon": "🧃",
+      "answer": "J is for Juice"
+    },
+    {
+      "icon": "🪁",
+      "answer": "K is for Kite"
+    },
+    {
+      "icon": "🦁",
+      "answer": "L is for Lion"
+    }
+  ]
+}

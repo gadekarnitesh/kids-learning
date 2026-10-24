@@ -18,3 +18,11 @@
 .picture-pagination .try-again{margin:0;min-height:44px}
 .picture-pagination button:disabled{opacity:.45;cursor:default}
 @media(max-width:520px){.picture-question{padding:12px 8px}.picture-options{gap:8px}.picture-option{padding:4px}.picture-option img{height:120px}.picture-question h2{font-size:20px}.match-picture{height:70px}.match-item:has(.match-picture){min-height:85px}}
+
+/* Reserve a visible path between the two matching columns on phones. */
+@media(max-width:700px){
+  .match-board{grid-template-columns:minmax(0,1fr) clamp(48px,16vw,76px) minmax(0,1fr);column-gap:4px;align-items:stretch}
+  .match-lines{display:block;min-height:0}
+  .match-column{min-width:0;grid-auto-rows:1fr}
+  .match-item{min-width:0;padding:8px 5px;min-height:56px;overflow-wrap:anywhere}
+}

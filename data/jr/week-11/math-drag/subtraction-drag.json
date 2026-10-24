@@ -1,1 +1,39 @@
-{"title":"Mixed Picture Subtraction","instruction":"Count the pictures left, then drag the answer into the dotted box.","choices":[8,10],"problems":[{"left":{"count":15,"emoji":"🍎"},"operator":"−","right":{"count":5,"emoji":"🍎"},"answer":10,"resultEmoji":"🍎"},{"left":{"count":12,"emoji":"⭐"},"operator":"−","right":{"count":4,"emoji":"⭐"},"answer":8,"resultEmoji":"⭐"}]}
+{
+  "activityCodes": [
+    "JR-W11-011"
+  ],
+  "title": "Mixed Picture Subtraction",
+  "instruction": "Count the pictures left, then drag the answer into the dotted box.",
+  "choices": [
+    8,
+    10
+  ],
+  "problems": [
+    {
+      "left": {
+        "count": 15,
+        "emoji": "🍎"
+      },
+      "operator": "−",
+      "right": {
+        "count": 5,
+        "emoji": "🍎"
+      },
+      "answer": 10,
+      "resultEmoji": "🍎"
+    },
+    {
+      "left": {
+        "count": 12,
+        "emoji": "⭐"
+      },
+      "operator": "−",
+      "right": {
+        "count": 4,
+        "emoji": "⭐"
+      },
+      "answer": 8,
+      "resultEmoji": "⭐"
+    }
+  ]
+}

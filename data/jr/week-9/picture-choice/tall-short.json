@@ -1,4 +1,7 @@
 {
+  "activityCodes": [
+    "JR-W09-016"
+  ],
   "title": "Tall & Short",
   "instruction": "Look closely, then tap the picture that answers the question.",
   "questionsPerPage": 2,

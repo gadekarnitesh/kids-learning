@@ -1,1 +1,29 @@
-{"title":"Count & Drag","instruction":"Count each picture group, then drag its number into the dotted box.","tasks":[{"emoji":"⚽","label":"balls","count":2},{"emoji":"🔺","label":"triangles","count":3},{"emoji":"🟦","label":"squares","count":4}],"numbers":[2,3,4]}
+{
+  "activityCodes": [
+    "JR-W01-014"
+  ],
+  "title": "Count & Drag",
+  "instruction": "Count each picture group, then drag its number into the dotted box.",
+  "tasks": [
+    {
+      "emoji": "⚽",
+      "label": "balls",
+      "count": 2
+    },
+    {
+      "emoji": "🔺",
+      "label": "triangles",
+      "count": 3
+    },
+    {
+      "emoji": "🟦",
+      "label": "squares",
+      "count": 4
+    }
+  ],
+  "numbers": [
+    2,
+    3,
+    4
+  ]
+}

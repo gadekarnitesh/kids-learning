@@ -1,4 +1,7 @@
 {
+  "activityCodes": [
+    "JR-W12-014"
+  ],
   "title": "Match Pictures & Shadows",
   "instruction": "Tap a picture, then find its matching shadow.",
   "group1": [

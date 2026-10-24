@@ -1,4 +1,7 @@
 {
+  "activityCodes": [
+    "JR-W12-019"
+  ],
   "title": "Full & Empty",
   "instruction": "Look closely, then tap the picture that answers the question.",
   "questionsPerPage": 2,

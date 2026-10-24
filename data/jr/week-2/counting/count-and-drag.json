@@ -1,1 +1,30 @@
-{"title":"Count & Drag","instruction":"Count each picture group, then drag its number into the dotted box.","tasks":[{"emoji":"🍎","label":"apples","count":6},{"emoji":"⭐","label":"stars","count":8},{"emoji":"🌼","label":"flowers","count":10}],"numbers":[6,8,10]}
+{
+  "activityCodes": [
+    "JR-W02-014"
+  ],
+  "title": "Count & Drag",
+  "instruction": "Count each picture group, then drag its number into the dotted box.",
+  "tasks": [
+    {
+      "emoji": "🍎",
+      "label": "apples",
+      "count": 6
+    },
+    {
+      "emoji": "⭐",
+      "label": "stars",
+      "count": 8
+    },
+    {
+      "emoji": "🌼",
+      "label": "flowers",
+      "count": 10
+    }
+  ],
+  "numbers": [
+    6,
+    8,
+    10
+  ],
+  "questionsPerPage": 2
+}

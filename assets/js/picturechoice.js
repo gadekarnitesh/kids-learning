@@ -3,7 +3,7 @@
   const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   try {
     const data=await fetch(window.activityDataUrl,{cache:'no-store'}).then(r=>{if(!r.ok)throw Error();return r.json();});
-    data.questions.forEach(q=>{q.choices=shuffleChoices(q.choices);});
+    data.questions.forEach((q,index)=>{q.choices=shuffleChoices(q.choices,`question-${index}`);});
     const solved=new Map();let page=0;
     function render(){
       const questions=data.questions.slice(page*2,page*2+2);
@@ -23,7 +23,7 @@
         }));
       });
       if(data.questions.length>2){root.querySelector('#picture-prev').onclick=()=>{page--;render();};root.querySelector('#picture-next').onclick=()=>{page++;render();};}
-      root.querySelector('#picture-reset').onclick=()=>{solved.clear();data.questions.forEach(q=>{q.choices=shuffleChoices(q.choices);});page=0;render();};
+      root.querySelector('#picture-reset').onclick=()=>{solved.clear();data.questions.forEach((q,index)=>{q.choices=shuffleChoices(q.choices,`question-${index}`);});page=0;render();};
     }
     render();
   }catch{root.innerHTML='<h1>Oops!</h1><p class="instruction">This picture activity could not be loaded.</p>';}

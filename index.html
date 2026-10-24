@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261025-1">
 </head>
 <body class="home-page">
   <main class="welcome-card">
@@ -17,5 +17,8 @@
     <p class="intro">Play, explore, and learn! Choose your class for colourful activities made just for growing minds.</p>
     <div class="class-picker" id="class-picker" aria-label="Choose a class"></div>
   </main>
-<script>(async()=>{const d=await fetch('data/classes.json').then(r=>r.json());document.getElementById('class-picker').innerHTML=d.classes.map(c=>`<a class="class-button ${c.theme||'junior'}" href="profile.html?class=${encodeURIComponent(c.id)}"><span class="button-icon">${c.icon}</span><strong>${c.label}</strong><small>${c.ageLabel}</small></a>`).join('')})()</script></body>
+<script>(async()=>{const d=await fetch('data/classes.json').then(r=>r.json());document.getElementById('class-picker').innerHTML=d.classes
+  // SR-KG is temporarily commented out while its page content is being updated.
+  .filter(c=>c.id!=='sr')
+  .map(c=>`<a class="class-button ${c.theme||'junior'}" href="profile.html?class=${encodeURIComponent(c.id)}"><span class="button-icon">${c.icon}</span><strong>${c.label}</strong><small>${c.ageLabel}</small></a>`).join('')})()</script></body>
 </html>

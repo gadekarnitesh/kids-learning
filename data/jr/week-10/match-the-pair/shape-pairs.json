@@ -1,4 +1,7 @@
 {
+  "activityCodes": [
+    "JR-W10-012"
+  ],
   "title": "Match Shapes & Pictures",
   "instruction": "Tap a shape name, then tap its matching picture.",
   "group1": [

@@ -1,1 +1,34 @@
-{"title":"Find 46–50","instruction":"Look at the number. Tap the same number.","questions":[{"answer":46,"choices":[45,46,50]},{"answer":48,"choices":[46,48,49]},{"answer":50,"choices":[47,49,50]}]}
+{
+  "activityCodes": [
+    "JR-W10-009",
+    "JR-W10-010"
+  ],
+  "title": "Find 46–50",
+  "instruction": "Look at the number. Tap the same number.",
+  "questions": [
+    {
+      "answer": 46,
+      "choices": [
+        45,
+        46,
+        50
+      ]
+    },
+    {
+      "answer": 48,
+      "choices": [
+        46,
+        48,
+        49
+      ]
+    },
+    {
+      "answer": 50,
+      "choices": [
+        47,
+        49,
+        50
+      ]
+    }
+  ]
+}

@@ -10,7 +10,7 @@
       const angle = (data.numbers.indexOf(Number(value)) / data.numbers.length) * Math.PI * 2 - Math.PI / 2;
       return `left:${50 + Math.cos(angle) * 34}%;top:${50 + Math.sin(angle) * 34}%;`;
     });
-    root.innerHTML = `<h1>${data.title || 'Connect Number Order'}</h1><span class="mode-label ${learning ? 'learn' : 'challenge'}">${learning ? '🌱 Learning time — wrong lines erase right away!' : '🏆 Challenge time — check your lines at the end!'}</span><p class="instruction">${data.instruction}</p><div class="number-connect-board">${values.map((value, index) => `<button id="sequence-${index}" class="connect-number" style="${positions[index]}" data-value="${value}">${value}</button>`).join('')}</div><p class="feedback"></p><button class="try-again">Start over</button>`;
+    root.innerHTML = `<h1>${data.title || 'Connect Number Order'}</h1><p class="instruction">${data.instruction}</p><div class="number-connect-board">${values.map((value, index) => `<button id="sequence-${index}" class="connect-number" style="${positions[index]}" data-value="${value}">${value}</button>`).join('')}</div><p class="feedback"></p><button class="try-again">Start over</button>`;
     const board = root.querySelector('.number-connect-board'), feedback = root.querySelector('.feedback');
     const plumber = window.jsPlumb ? window.jsPlumb.getInstance({ Container: board }) : null;
     const buttons = [...root.querySelectorAll('.connect-number')], pairs = [];

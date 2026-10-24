@@ -4,7 +4,7 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Activities · Kids Learning</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/style.css"><link rel="stylesheet" href="assets/css/activity-layout.css?v=20261024-6"><link rel="stylesheet" href="assets/css/effects.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/style.css?v=20261025-1"><link rel="stylesheet" href="assets/css/activity-layout.css?v=20261025-codes"><link rel="stylesheet" href="assets/css/effects.css">
 </head>
 <body class="activities-page">
   <header class="topbar"><a href="index.html" class="site-name">☀️ Kids Learning</a><span><span id="class-label" class="class-badge"></span> <a class="logout-link" href="summary.html">Log out</a></span></header>
@@ -17,7 +17,7 @@
     <section class="activity-stage">
       <div class="tablet" aria-label="Activity tablet">
         <div class="camera"></div>
-        <div class="tablet-heading"><button id="sidebar-toggle" type="button" aria-controls="activity-sidebar" aria-expanded="false">☰ Activities</button><div class="tablet-context"><span id="current-week" class="week-badge"></span><span id="current-activity"></span></div></div>
+        <div class="tablet-heading"><button id="sidebar-toggle" type="button" aria-label="Toggle activities menu" aria-controls="activity-sidebar" aria-expanded="false"><span class="menu-icon" aria-hidden="true">☰</span><span class="menu-label">Activities</span></button><div class="tablet-context"><span id="current-week" class="week-badge"></span><h1 id="current-activity" aria-live="polite"></h1><span id="current-activity-code" class="activity-code" hidden></span></div></div>
         <iframe id="activity-frame" title="Kids learning activity"></iframe>
         <nav class="tablet-navigation" aria-label="Activities in this week">
           <button id="previous-activity" type="button" aria-label="Previous activity" disabled>← Previous</button>
@@ -33,6 +33,14 @@
       document.getElementById('class-label').textContent = level === 'sr' ? 'SR-KG · 5–7 years' : 'JR-KG · 3–5 years';
       if (!selectedWeek) { location.replace(`class-landing.html?class=${level}`); return; }
       const menu = document.getElementById('activity-menu'), frame = document.getElementById('activity-frame');
+      const activityTitle = document.getElementById('current-activity');
+      const activityCode = document.getElementById('current-activity-code');
+      window.setActivityTitle = (title, source) => {
+        if (source !== frame.src) return;
+        activityTitle.textContent = title;
+        activityTitle.title = `${title} ${activityCode.textContent}`.trim();
+        frame.title = activityTitle.title;
+      };
       const sidebar = document.getElementById('activity-sidebar'), sidebarToggle = document.getElementById('sidebar-toggle');
       const backdrop = document.getElementById('sidebar-backdrop'), layout = document.querySelector('.learning-layout');
       const mobile = window.matchMedia('(max-width: 700px)');
@@ -62,24 +70,22 @@
         function changeWeek(week, last = false) {
           location.assign(`activities.html?class=${level}&week=${encodeURIComponent(week.id)}${last ? '&activity=last' : ''}`);
         }
-        const weekNumber = Number(selectedWeek.replace('week-', ''));
-        const sections = catalog.sections.map(section => ({ ...section, activities: section.activities.filter(activity => !(level === 'jr' && weekNumber >= 3 && activity.type === 'count') && !(level === 'jr' && weekNumber >= 4 && activity.type === 'math' && activity.file === 'subtraction-drag') && !(level === 'jr' && weekNumber >= 9 && activity.type === 'math')) }));
-        if (level === 'jr' && weekNumber !== 3) sections.splice(1, 0, { title: 'Alphabet Word Match', icon: '🧩', activities: [{ type: 'pairs', file: 'letters-words-1', mode: 'learn', label: 'Letter Words 1', icon: '🔤' }, { type: 'pairs', file: 'letters-words-2', mode: 'learn', label: 'Letter Words 2', icon: '📚' }, { type: 'pairs', file: 'letters-words-3', mode: 'learn', label: 'Letter Words 3', icon: '🌟' }] });
+        const sections = catalog.sections.map(section => ({ ...section, activities: section.activities.filter(activity => activity.enabled !== false) }));
         const maths = sections.find(section => section.title === 'Picture Maths');
-        if (maths) maths.activities.unshift(
+        if (level === 'sr' && maths) maths.activities.unshift(
           { type: 'numberpick', file: 'find-same-number', mode: 'challenge', label: 'Challenge: Find Same Number', icon: '🏆' },
           { type: 'numberpick', file: 'find-same-number', mode: 'learn', label: 'Learn: Find Same Number', icon: '🔎' }
         );
         const reveal = sections.find(section => section.title === 'Click & Reveal');
-        if (reveal) reveal.activities.push(
+        if (level === 'sr' && reveal) reveal.activities.push(
           { type: 'numberpick', file: 'find-same-letter', mode: 'learn', label: 'Learn: Find Same Letter', icon: '🔤' },
           { type: 'numberpick', file: 'find-same-letter', mode: 'challenge', label: 'Challenge: Find Same Letter', icon: '🏆' }
         );
-        menu.innerHTML = sections.map(section => `<section><h3>${section.icon || '✨'} ${section.title}</h3>${section.activities.map(activity => `<button data-section="${section.title}" data-type="${activity.type}" data-file="${activity.file}" data-mode="${activity.mode || 'learn'}">${activity.icon || '⭐'} ${activity.label}</button>`).join('')}</section>`).join('');
+        menu.innerHTML = sections.map(section => `<section><h3>${section.icon || '✨'} ${section.title}</h3>${section.activities.map(activity => `<button data-code="${activity.code || ''}" data-label="${activity.label}" data-section="${section.title}" data-type="${activity.type}" data-file="${activity.file}" data-mode="${activity.mode || 'learn'}">${activity.icon || '⭐'} ${activity.label}${activity.code ? `<small class="activity-code">[${activity.code}]</small>` : ''}</button>`).join('')}</section>`).join('');
         const buttons = [...menu.querySelectorAll('button')];
         let currentIndex = 0;
         const prevButton = document.getElementById('previous-activity'), nextButton = document.getElementById('next-activity');
-        function load(button) { currentIndex = buttons.indexOf(button); document.getElementById('current-activity').textContent = button.textContent.trim(); frame.title = button.textContent.trim(); buttons.forEach(item => item.classList.toggle('active', item === button)); frame.src = `activity-frame.html?v=20261024-7&type=${button.dataset.type}&file=${button.dataset.file}&week=${selectedWeek}&mode=${button.dataset.mode}&class=${level}&section=${encodeURIComponent(button.dataset.section)}&label=${encodeURIComponent(button.textContent.trim())}`; document.getElementById('activity-position').textContent = `${currentIndex + 1} / ${buttons.length}`; const first = currentIndex === 0, last = currentIndex === buttons.length - 1;
+        function load(button) { currentIndex = buttons.indexOf(button); activityCode.textContent = button.dataset.code ? `[${button.dataset.code}]` : ''; activityCode.hidden = !button.dataset.code; activityTitle.textContent = button.dataset.label; activityTitle.title = `${button.dataset.label} ${activityCode.textContent}`.trim(); frame.title = activityTitle.title; buttons.forEach(item => item.classList.toggle('active', item === button)); frame.src = `activity-frame.html?v=20261025-compact-title&type=${button.dataset.type}&file=${button.dataset.file}&week=${selectedWeek}&mode=${button.dataset.mode}&class=${level}&section=${encodeURIComponent(button.dataset.section)}&code=${encodeURIComponent(button.dataset.code)}&label=${encodeURIComponent(button.dataset.label)}`; document.getElementById('activity-position').textContent = `${currentIndex + 1} / ${buttons.length}`; const first = currentIndex === 0, last = currentIndex === buttons.length - 1;
           prevButton.textContent = first && previousWeek ? '← Previous week' : '← Previous';
           nextButton.textContent = last && nextWeek ? 'Next week →' : 'Next →';
           prevButton.setAttribute('aria-label', first && previousWeek ? `Go to ${previousWeek.label}` : 'Previous activity');
@@ -88,7 +94,7 @@
         buttons.forEach(button => button.addEventListener('click', () => load(button)));
         prevButton.addEventListener('click', () => { if (currentIndex > 0) load(buttons[currentIndex - 1]); else if (previousWeek) changeWeek(previousWeek, true); });
         nextButton.addEventListener('click', () => { if (currentIndex < buttons.length - 1) load(buttons[currentIndex + 1]); else if (nextWeek) changeWeek(nextWeek); });
-        if (buttons.length) load(params.get('activity') === 'last' ? buttons[buttons.length - 1] : buttons[0]); else menu.innerHTML = '<p>No activities are available in this section yet.</p>';
+        if (buttons.length) load(params.get('activity') === 'last' ? buttons[buttons.length - 1] : buttons.find(button => button.dataset.code === params.get('activity')) || buttons[0]); else menu.innerHTML = '<p>No activities are available in this section yet.</p>';
       } catch { menu.innerHTML = '<p>Activities could not be loaded.</p>'; }
     }());
   </script>

@@ -1,1 +1,29 @@
-{"title":"Count 16–20","instruction":"Count each picture group, then drag its number into the dotted box.","tasks":[{"emoji":"🍎","label":"apples","count":16},{"emoji":"⭐","label":"stars","count":18},{"emoji":"🌼","label":"flowers","count":20}],"numbers":[16,18,20]}
+{
+  "activityCodes": [
+    "JR-W04-007"
+  ],
+  "title": "Count 16–20",
+  "instruction": "Count each picture group, then drag its number into the dotted box.",
+  "tasks": [
+    {
+      "emoji": "🍎",
+      "label": "apples",
+      "count": 16
+    },
+    {
+      "emoji": "⭐",
+      "label": "stars",
+      "count": 18
+    },
+    {
+      "emoji": "🌼",
+      "label": "flowers",
+      "count": 20
+    }
+  ],
+  "numbers": [
+    16,
+    18,
+    20
+  ]
+}

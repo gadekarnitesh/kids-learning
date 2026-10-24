@@ -1,1 +1,25 @@
-{"title":"Alphabet Peekaboo · Q–T","instruction":"Tap each card and say the letter and picture!","items":[{"icon":"👑","answer":"Q is for Queen"},{"icon":"🤖","answer":"R is for Robot"},{"icon":"☀️","answer":"S is for Sun"},{"icon":"🐯","answer":"T is for Tiger"}]}
+{
+  "activityCodes": [
+    "JR-W05-001"
+  ],
+  "title": "Alphabet Peekaboo · Q–T",
+  "instruction": "Tap each card and say the letter and picture!",
+  "items": [
+    {
+      "icon": "👑",
+      "answer": "Q is for Queen"
+    },
+    {
+      "icon": "🤖",
+      "answer": "R is for Robot"
+    },
+    {
+      "icon": "☀️",
+      "answer": "S is for Sun"
+    },
+    {
+      "icon": "🐯",
+      "answer": "T is for Tiger"
+    }
+  ]
+}

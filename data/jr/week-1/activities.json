@@ -8,20 +8,69 @@
           "type": "reveal",
           "file": "alphabet-peekaboo",
           "label": "Alphabet Peekaboo",
-          "icon": "🔤"
+          "icon": "🔤",
+          "code": "JR-W01-001"
         },
         {
           "type": "reveal",
           "file": "color-splash",
           "label": "Color Splash",
-          "icon": "🎨"
+          "icon": "🎨",
+          "code": "JR-W01-002"
         },
         {
           "type": "numberpick",
           "file": "find-same-color",
           "mode": "learn",
           "label": "Find the Same Colour",
-          "icon": "🎨"
+          "icon": "🎨",
+          "code": "JR-W01-003"
+        },
+        {
+          "type": "numberpick",
+          "file": "find-same-letter",
+          "mode": "learn",
+          "label": "Learn: Find Same Letter",
+          "icon": "🔤",
+          "code": "JR-W01-004"
+        },
+        {
+          "type": "numberpick",
+          "file": "find-same-letter",
+          "mode": "challenge",
+          "label": "Challenge: Find Same Letter",
+          "icon": "🏆",
+          "code": "JR-W01-005"
+        }
+      ]
+    },
+    {
+      "title": "Alphabet Word Match",
+      "icon": "🧩",
+      "activities": [
+        {
+          "type": "pairs",
+          "file": "letters-words-1",
+          "mode": "learn",
+          "label": "Letter Words 1",
+          "icon": "🔤",
+          "code": "JR-W01-006"
+        },
+        {
+          "type": "pairs",
+          "file": "letters-words-2",
+          "mode": "learn",
+          "label": "Letter Words 2",
+          "icon": "📚",
+          "code": "JR-W01-007"
+        },
+        {
+          "type": "pairs",
+          "file": "letters-words-3",
+          "mode": "learn",
+          "label": "Letter Words 3",
+          "icon": "🌟",
+          "code": "JR-W01-008"
         }
       ]
     },
@@ -34,35 +83,40 @@
           "file": "animals-alphabets",
           "mode": "learn",
           "label": "Match Letters & Animals",
-          "icon": "🐾"
+          "icon": "🐾",
+          "code": "JR-W01-009"
         },
         {
           "type": "pairs",
           "file": "colors-alphabets",
           "mode": "learn",
           "label": "Match Colours",
-          "icon": "🎨"
+          "icon": "🎨",
+          "code": "JR-W01-010"
         },
         {
           "type": "connect",
           "file": "connect-alphabets",
           "mode": "learn",
           "label": "Connect Same Letters",
-          "icon": "🔤"
+          "icon": "🔤",
+          "code": "JR-W01-011"
         },
         {
           "type": "connect",
           "file": "connect-numbers",
           "mode": "learn",
           "label": "Connect Numbers 1–4",
-          "icon": "🔗"
+          "icon": "🔗",
+          "code": "JR-W01-012"
         },
         {
           "type": "connect",
           "file": "connect-numbers-2",
           "mode": "learn",
           "label": "Connect Numbers 2–5",
-          "icon": "🔗"
+          "icon": "🔗",
+          "code": "JR-W01-013"
         }
       ]
     },
@@ -75,14 +129,16 @@
           "file": "count-and-drag",
           "mode": "learn",
           "label": "Count & Drag",
-          "icon": "🔢"
+          "icon": "🔢",
+          "code": "JR-W01-014"
         },
         {
           "type": "numberorder",
           "file": "drag-number-order",
           "mode": "learn",
           "label": "Put Numbers in Order · 1–5",
-          "icon": "🔢"
+          "icon": "🔢",
+          "code": "JR-W01-015"
         }
       ]
     },
@@ -91,18 +147,36 @@
       "icon": "🧠",
       "activities": [
         {
+          "type": "numberpick",
+          "file": "find-same-number",
+          "mode": "challenge",
+          "label": "Challenge: Find Same Number",
+          "icon": "🏆",
+          "code": "JR-W01-016"
+        },
+        {
+          "type": "numberpick",
+          "file": "find-same-number",
+          "mode": "learn",
+          "label": "Learn: Find Same Number",
+          "icon": "🔎",
+          "code": "JR-W01-017"
+        },
+        {
           "type": "math",
           "file": "addition-drag",
           "mode": "learn",
           "label": "Picture Addition",
-          "icon": "➕"
+          "icon": "➕",
+          "code": "JR-W01-018"
         },
         {
           "type": "math",
           "file": "subtraction-drag",
           "mode": "learn",
           "label": "Picture Subtraction",
-          "icon": "➖"
+          "icon": "➖",
+          "code": "JR-W01-019"
         }
       ]
     },
@@ -115,28 +189,32 @@
           "file": "before-number",
           "mode": "learn",
           "label": "Before Number · 1–5",
-          "icon": "🔢"
+          "icon": "🔢",
+          "code": "JR-W01-020"
         },
         {
           "type": "advance",
           "file": "after-number",
           "mode": "learn",
           "label": "After Number · 1–5",
-          "icon": "🔢"
+          "icon": "🔢",
+          "code": "JR-W01-021"
         },
         {
           "type": "advance",
           "file": "before-letter",
           "mode": "learn",
           "label": "Before Alphabet · A–D",
-          "icon": "🔤"
+          "icon": "🔤",
+          "code": "JR-W01-022"
         },
         {
           "type": "advance",
           "file": "after-letter",
           "mode": "learn",
           "label": "After Alphabet · A–D",
-          "icon": "🔤"
+          "icon": "🔤",
+          "code": "JR-W01-023"
         }
       ]
     }

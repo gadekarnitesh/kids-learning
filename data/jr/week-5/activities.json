@@ -8,7 +8,54 @@
           "type": "reveal",
           "file": "alphabet-peekaboo",
           "label": "Alphabet Peekaboo",
-          "icon": "🔤"
+          "icon": "🔤",
+          "code": "JR-W05-001"
+        },
+        {
+          "type": "numberpick",
+          "file": "find-same-letter",
+          "mode": "learn",
+          "label": "Learn: Find Same Letter",
+          "icon": "🔤",
+          "code": "JR-W05-002"
+        },
+        {
+          "type": "numberpick",
+          "file": "find-same-letter",
+          "mode": "challenge",
+          "label": "Challenge: Find Same Letter",
+          "icon": "🏆",
+          "code": "JR-W05-003"
+        }
+      ]
+    },
+    {
+      "title": "Alphabet Word Match",
+      "icon": "🧩",
+      "activities": [
+        {
+          "type": "pairs",
+          "file": "letters-words-1",
+          "mode": "learn",
+          "label": "Letter Words 1",
+          "icon": "🔤",
+          "code": "JR-W05-004"
+        },
+        {
+          "type": "pairs",
+          "file": "letters-words-2",
+          "mode": "learn",
+          "label": "Letter Words 2",
+          "icon": "📚",
+          "code": "JR-W05-005"
+        },
+        {
+          "type": "pairs",
+          "file": "letters-words-3",
+          "mode": "learn",
+          "label": "Letter Words 3",
+          "icon": "🌟",
+          "code": "JR-W05-006"
         }
       ]
     },
@@ -21,14 +68,17 @@
           "file": "count-and-drag",
           "mode": "learn",
           "label": "Count & Drag",
-          "icon": "🔢"
+          "icon": "🔢",
+          "enabled": false,
+          "code": "JR-W05-007"
         },
         {
           "type": "numberorder",
           "file": "drag-number-order",
           "mode": "learn",
           "label": "Put Numbers in Order · 21–25",
-          "icon": "🔢"
+          "icon": "🔢",
+          "code": "JR-W05-008"
         }
       ]
     },
@@ -37,11 +87,28 @@
       "icon": "🧠",
       "activities": [
         {
+          "type": "numberpick",
+          "file": "find-same-number",
+          "mode": "challenge",
+          "label": "Challenge: Find Same Number",
+          "icon": "🏆",
+          "code": "JR-W05-009"
+        },
+        {
+          "type": "numberpick",
+          "file": "find-same-number",
+          "mode": "learn",
+          "label": "Learn: Find Same Number",
+          "icon": "🔎",
+          "code": "JR-W05-010"
+        },
+        {
           "type": "math",
           "file": "addition-drag",
           "mode": "learn",
           "label": "Picture Addition",
-          "icon": "➕"
+          "icon": "➕",
+          "code": "JR-W05-011"
         }
       ]
     },
@@ -54,42 +121,48 @@
           "file": "before-number",
           "mode": "learn",
           "label": "Before Number · 21–25",
-          "icon": "🔢"
+          "icon": "🔢",
+          "code": "JR-W05-012"
         },
         {
           "type": "advance",
           "file": "after-number",
           "mode": "learn",
           "label": "After Number · 21–25",
-          "icon": "🔢"
+          "icon": "🔢",
+          "code": "JR-W05-013"
         },
         {
           "type": "advance",
           "file": "before-letter",
           "mode": "learn",
           "label": "Before Alphabet · Q–T",
-          "icon": "🔤"
+          "icon": "🔤",
+          "code": "JR-W05-014"
         },
         {
           "type": "advance",
           "file": "after-letter",
           "mode": "learn",
           "label": "After Alphabet · Q–T",
-          "icon": "🔤"
+          "icon": "🔤",
+          "code": "JR-W05-015"
         },
         {
           "type": "advance",
           "file": "addition",
           "mode": "learn",
           "label": "Addition · Single Digit",
-          "icon": "➕"
+          "icon": "➕",
+          "code": "JR-W05-016"
         },
         {
           "type": "advance",
           "file": "subtraction",
           "mode": "learn",
           "label": "Subtraction · Single Digit",
-          "icon": "➖"
+          "icon": "➖",
+          "code": "JR-W05-017"
         }
       ]
     }

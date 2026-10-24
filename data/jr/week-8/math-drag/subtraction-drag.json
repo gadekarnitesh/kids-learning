@@ -1,1 +1,39 @@
-{"title":"Picture Subtraction Review","instruction":"Count the pictures left, then drag the answer into the dotted box.","choices":[6,7],"problems":[{"left":{"count":10,"emoji":"🍎"},"operator":"−","right":{"count":3,"emoji":"🍎"},"answer":7,"resultEmoji":"🍎"},{"left":{"count":9,"emoji":"⭐"},"operator":"−","right":{"count":3,"emoji":"⭐"},"answer":6,"resultEmoji":"⭐"}]}
+{
+  "activityCodes": [
+    "JR-W08-011"
+  ],
+  "title": "Picture Subtraction Review",
+  "instruction": "Count the pictures left, then drag the answer into the dotted box.",
+  "choices": [
+    6,
+    7
+  ],
+  "problems": [
+    {
+      "left": {
+        "count": 10,
+        "emoji": "🍎"
+      },
+      "operator": "−",
+      "right": {
+        "count": 3,
+        "emoji": "🍎"
+      },
+      "answer": 7,
+      "resultEmoji": "🍎"
+    },
+    {
+      "left": {
+        "count": 9,
+        "emoji": "⭐"
+      },
+      "operator": "−",
+      "right": {
+        "count": 3,
+        "emoji": "⭐"
+      },
+      "answer": 6,
+      "resultEmoji": "⭐"
+    }
+  ]
+}

@@ -1,4 +1,7 @@
 {
+  "activityCodes": [
+    "JR-W12-024"
+  ],
   "title": "Addition · Two Digits",
   "instruction": "Drag the answer to complete each calculation.",
   "presentation": "equation",

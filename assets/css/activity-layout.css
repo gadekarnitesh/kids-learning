@@ -33,6 +33,9 @@
   .tablet-heading{gap:8px;padding:6px 8px 9px;border-radius:12px}.tablet-heading button,.tablet-navigation button{padding:8px 12px}
   .tablet-navigation{padding:6px 8px calc(10px + env(safe-area-inset-bottom,0px));border-radius:12px}
   #current-activity{font-size:14px}
+  .tablet-heading .menu-label{display:none}
+  .tablet-heading button{padding:8px 11px}
+  .week-badge{font-size:11px;padding:2px 7px}
   .sidebar{position:absolute;z-index:20;inset:0 auto 0 0;width:min(320px,88%);padding:16px;border-right:3px solid #dceafa;box-shadow:8px 0 24px #24325233}
   .sidebar nav{display:block}.sidebar section{margin-bottom:18px}.sidebar button{min-height:44px}
   .sidebar-backdrop:not([hidden]){display:block;position:absolute;inset:0;z-index:19;border:0;background:#1b213166}
@@ -42,3 +45,27 @@
 .tablet-context{display:flex;flex-direction:column;align-items:flex-start;gap:3px;min-width:0;flex:1}
 .tablet-context #current-activity{display:block;max-width:100%}
 .week-badge{display:inline-block;background:#e9ddff;color:#6046ba;font-size:14px;font-weight:600;padding:3px 10px;border-radius:999px;white-space:nowrap}
+@media(max-width:700px){
+  .tablet-heading{gap:6px;padding:2px 4px;border-radius:10px}
+  .tablet-heading #sidebar-toggle{width:44px;min-height:44px;padding:0}
+  .tablet-context{flex-direction:row;align-items:center;gap:6px}
+  .tablet-context .week-badge{flex-shrink:0;font-size:12px;padding:2px 7px}
+  .tablet-context #current-activity{flex:1;min-width:0;font-size:13px}
+}
+/* The activity title lives here instead of taking a second row inside the frame. */
+.tablet-context{flex-direction:row;align-items:center;gap:8px}
+.tablet-context #current-activity{margin:0;flex:1;min-width:0;font-size:16px;line-height:1.25;white-space:normal;overflow-wrap:anywhere;font-weight:600}
+.tablet-context .week-badge{flex-shrink:0}
+@media(max-width:700px){
+  .tablet-context{gap:6px}
+  .tablet-context #current-activity{font-size:13px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+}
+@media(max-width:400px){
+  .tablet-navigation{gap:6px}
+  .tablet-navigation button{font-size:14px;padding:8px}
+  #activity-position{font-size:12px;padding:6px 7px}
+}
+.activity-code{color:#6046ba;font-size:11px;font-weight:500;font-family:Arial,sans-serif;white-space:nowrap}
+.sidebar .activity-code{display:block;margin-top:3px}
+#current-activity-code{flex-shrink:0;font-size:10px}
+#current-activity-code[hidden]{display:none}

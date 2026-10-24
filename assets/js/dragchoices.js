@@ -20,7 +20,7 @@ window.bindDragChoices = function ({ choices, slots, place, blocked = () => fals
       if (!drag.ghost && Math.hypot(event.clientX-drag.x,event.clientY-drag.y)>5) {
         const rect=choice.getBoundingClientRect();
         drag.ghost=choice.cloneNode(true);
-        drag.ghost.className='connect-number advance-ghost';
+        drag.ghost.classList.add('drag-choice-ghost');
         drag.ghost.style.width=`${rect.width}px`;
         drag.ghost.style.height=`${rect.height}px`;
         drag.ghost.setAttribute('aria-hidden','true');
@@ -62,4 +62,8 @@ window.bindDragChoices = function ({ choices, slots, place, blocked = () => fals
     const choice=selected;selected=null;
     choice.classList.remove('selected');place(slot,choice);
   }));
+  return () => {
+    selected=null;
+    choices.forEach(choice=>choice.classList.remove('selected'));
+  };
 };

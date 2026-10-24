@@ -77,3 +77,53 @@ items may be plain strings or objects with `image`, `alt`, and optional `text`.
 The existing `answers` mapping still connects left numeric keys to right letter
 keys. All illustrations are local SVG files, so these activities do not depend
 on an external image service.
+
+### Gradual picture learning and reports
+
+The comparison progression is now incremental (superseding the earlier all-at-once
+comparison setup): Week 8 big/small; Week 9 adds tall/short; Week 10 adds wide/narrow;
+Week 11 adds heavy/light; Week 12 adds full/empty. Each concept has six questions
+(three pages), with a new set of objects each week. See `jr/picture-progression.json`
+for the plan; weekly `activities.json` catalogs and `picture-choice/*.json` are
+what the UI loads. Images are local SVGs in `assets/images/learning-pictures/`.
+
+Weeks 9–12 also register `shadow-shapes.json` and `shadow-pictures.json` under
+Match & Connect, covering animals/birds, vehicles, nature, and mixed review.
+Right-hand match items and answer banks are shuffled by `activity-utils.js`.
+Choices remain stable within the current attempt; reopening or restarting gives
+a new arrangement, while answer keys continue to refer to item IDs/values.
+
+Tracking now records class, week and section separately for each activity.
+The summary groups these records by section and shows each activity's week,
+time and retries. Older session records without this metadata are retained under
+“Earlier activities (section not recorded)” because their week cannot be recovered.
+
+## Stable activity codes (Jr)
+
+Every Jr weekly catalog entry has a permanent `code`, for example `JR-W09-001`:
+JR = class, W09 = week, 001 = allocated identifier (not the current menu position).
+Codes are shown in the activity menu, tablet heading, and new summary records.
+Renaming or reordering activities must **not** change their codes.
+
+Find the exact file to edit:
+
+```sh
+python3 scripts/activity_codes.py JR-W09-001
+```
+
+Or look up the code in `data/jr/activity-index.json`. Each entry includes its
+section, label, mode, catalog file, content file, visibility, and direct URL:
+`activities.html?class=jr&week=week-9&activity=JR-W09-001`.
+
+- Change questions/options/images in the indexed `content` JSON.
+- Change menu labels, section placement, or `enabled` in the indexed `catalog`.
+- Content JSON has `activityCodes`, listing all entries using that file. Learn
+  and Challenge have distinct codes but may share the same question file;
+  editing that file affects both.
+- To add an activity, create its content and add a catalog entry without a code,
+  then run `python3 scripts/activity_codes.py --sync`. It allocates a new unused
+  code and refreshes the lookup. Run `--sync` after edits so index titles stay current.
+- Do not reuse deleted codes. The index retains counters and retired codes.
+- Hidden activities retain their codes; `enabled: false` keeps them out of the UI.
+- Jr menus now load their entries directly from weekly catalogs, including
+  Alphabet Word Match and Find Same activities previously inserted by JavaScript.

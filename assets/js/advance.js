@@ -6,7 +6,7 @@
       if (!response.ok) throw new Error('Activity unavailable');
       return response.json();
     });
-    const questions = data.questions.map(q => ({ ...q, choices: shuffleChoices(q.choices) }));
+    const questions = data.questions.map((q,index) => ({ ...q, choices: shuffleChoices(q.choices, `question-${index}`) }));
     if (!questions || !questions.length) throw new Error('No questions');
     const separator = data.presentation === 'equation' ? '' : '<span class="advance-comma">,</span>';
     const pageSize = 2, solved = new Map();

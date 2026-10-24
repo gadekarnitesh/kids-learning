@@ -3,11 +3,11 @@
   try {
     const data = await fetch(window.activityDataUrl).then(response => response.json());
     const learning = window.activityMode === 'learn';
-    const questions = data.questions.slice(0, 3).map(q => ({ ...q, choices: shuffleChoices(q.choices) }));
+    const questions = data.questions.slice(0, 3).map((q,index) => ({ ...q, choices: shuffleChoices(q.choices, `question-${index}`) }));
     let answered = 0;
     const isColour = ['colour', 'color'].includes(data.presentation) || questions.every(question => /^#[0-9a-f]{6}$/i.test(question.answer));
     const item = value => isColour ? '' : value;
-    root.innerHTML = `<h1>${data.title || 'Find the Same Number'}</h1><span class="mode-label ${learning ? 'learn' : 'challenge'}">${learning ? '🌱 Learning time — find each matching answer!' : '🏆 Challenge time — check your answers at the end!'}</span><p class="instruction">${data.instruction || 'Look at the item on the left. Tap the same item on the right.'}</p><div class="number-pick-board ${isColour ? 'colour-pick-board' : ''}">${questions.map(question => `<article class="number-pick-card" data-answer="${question.answer}"><div class="number-to-find"${isColour ? ` style="background-color:${question.answer}"` : ''}>${item(question.answer)}</div><div class="number-choices">${question.choices.map(value => `<button class="number-choice" data-value="${value}"${isColour ? ` style="background-color:${value}"` : ''}>${item(value)}</button>`).join('')}</div></article>`).join('')}</div><p class="feedback"></p><button class="try-again">Start over</button>`;
+    root.innerHTML = `<h1>${data.title || 'Find the Same Number'}</h1><p class="instruction">${data.instruction || 'Look at the item on the left. Tap the same item on the right.'}</p><div class="number-pick-board ${isColour ? 'colour-pick-board' : ''}">${questions.map(question => `<article class="number-pick-card" data-answer="${question.answer}"><div class="number-to-find"${isColour ? ` style="background-color:${question.answer}"` : ''}>${item(question.answer)}</div><div class="number-choices">${question.choices.map(value => `<button class="number-choice" data-value="${value}"${isColour ? ` style="background-color:${value}"` : ''}>${item(value)}</button>`).join('')}</div></article>`).join('')}</div><p class="feedback"></p><button class="try-again">Start over</button>`;
     const feedback = root.querySelector('.feedback');
     root.querySelectorAll('.number-pick-card').forEach(card => {
       card.querySelectorAll('.number-choice').forEach(choice => choice.addEventListener('click', () => choose(card, choice)));

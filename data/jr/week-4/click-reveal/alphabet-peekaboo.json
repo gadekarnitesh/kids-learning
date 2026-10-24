@@ -1,1 +1,25 @@
-{"title":"Alphabet Peekaboo · M–P","instruction":"Tap each card and say the letter and picture!","items":[{"icon":"🌙","answer":"M is for Moon"},{"icon":"🪺","answer":"N is for Nest"},{"icon":"🐙","answer":"O is for Octopus"},{"icon":"🦜","answer":"P is for Parrot"}]}
+{
+  "activityCodes": [
+    "JR-W04-001"
+  ],
+  "title": "Alphabet Peekaboo · M–P",
+  "instruction": "Tap each card and say the letter and picture!",
+  "items": [
+    {
+      "icon": "🌙",
+      "answer": "M is for Moon"
+    },
+    {
+      "icon": "🪺",
+      "answer": "N is for Nest"
+    },
+    {
+      "icon": "🐙",
+      "answer": "O is for Octopus"
+    },
+    {
+      "icon": "🦜",
+      "answer": "P is for Parrot"
+    }
+  ]
+}

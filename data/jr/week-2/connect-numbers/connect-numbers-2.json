@@ -1,1 +1,13 @@
-{"title":"Connect the Same Numbers · 7–10","instruction":"Find the same numbers and join each pair.","numbers":[7,8,9,10]}
+{
+  "activityCodes": [
+    "JR-W02-013"
+  ],
+  "title": "Connect the Same Numbers · 7–10",
+  "instruction": "Find the same numbers and join each pair.",
+  "numbers": [
+    7,
+    8,
+    9,
+    10
+  ]
+}

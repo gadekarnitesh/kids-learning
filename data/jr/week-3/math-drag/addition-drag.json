@@ -1,1 +1,39 @@
-{"title":"Picture Addition within 5","instruction":"Count both picture groups, then drag the answer into the dotted box.","choices":[4,5],"problems":[{"left":{"count":2,"emoji":"🍎"},"operator":"+","right":{"count":2,"emoji":"🍎"},"answer":4,"resultEmoji":"🍎"},{"left":{"count":3,"emoji":"⭐"},"operator":"+","right":{"count":2,"emoji":"⭐"},"answer":5,"resultEmoji":"⭐"}]}
+{
+  "activityCodes": [
+    "JR-W03-012"
+  ],
+  "title": "Picture Addition within 5",
+  "instruction": "Count both picture groups, then drag the answer into the dotted box.",
+  "choices": [
+    4,
+    5
+  ],
+  "problems": [
+    {
+      "left": {
+        "count": 2,
+        "emoji": "🍎"
+      },
+      "operator": "+",
+      "right": {
+        "count": 2,
+        "emoji": "🍎"
+      },
+      "answer": 4,
+      "resultEmoji": "🍎"
+    },
+    {
+      "left": {
+        "count": 3,
+        "emoji": "⭐"
+      },
+      "operator": "+",
+      "right": {
+        "count": 2,
+        "emoji": "⭐"
+      },
+      "answer": 5,
+      "resultEmoji": "⭐"
+    }
+  ]
+}

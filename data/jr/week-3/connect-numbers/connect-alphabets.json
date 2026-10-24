@@ -1,1 +1,13 @@
-{"title":"Connect the Same Letters · I–L","instruction":"Find the same letters and join each pair.","numbers":["I","J","K","L"]}
+{
+  "activityCodes": [
+    "JR-W03-009"
+  ],
+  "title": "Connect the Same Letters · I–L",
+  "instruction": "Find the same letters and join each pair.",
+  "numbers": [
+    "I",
+    "J",
+    "K",
+    "L"
+  ]
+}

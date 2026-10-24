@@ -1,1 +1,34 @@
-{"title":"Find the Same Number","instruction":"Look at the number on the left. Tap the same number on the right.","questions":[{"answer":7,"choices":[2,7,9]},{"answer":5,"choices":[1,5,8]},{"answer":9,"choices":[4,8,9]}]}
+{
+  "activityCodes": [
+    "JR-W02-016",
+    "JR-W02-017"
+  ],
+  "title": "Find the Same Number",
+  "instruction": "Look at the number on the left. Tap the same number on the right.",
+  "questions": [
+    {
+      "answer": 7,
+      "choices": [
+        2,
+        7,
+        9
+      ]
+    },
+    {
+      "answer": 5,
+      "choices": [
+        1,
+        5,
+        8
+      ]
+    },
+    {
+      "answer": 9,
+      "choices": [
+        4,
+        8,
+        9
+      ]
+    }
+  ]
+}

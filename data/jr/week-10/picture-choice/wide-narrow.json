@@ -1,4 +1,7 @@
 {
+  "activityCodes": [
+    "JR-W10-017"
+  ],
   "title": "Wide & Narrow",
   "instruction": "Look closely, then tap the picture that answers the question.",
   "questionsPerPage": 2,

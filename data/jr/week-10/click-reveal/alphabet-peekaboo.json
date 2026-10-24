@@ -1,1 +1,25 @@
-{"title":"Alphabet A–Z Review","instruction":"Tap the picture and say its first letter!","items":[{"icon":"🦁","answer":"Lion starts with L"},{"icon":"🌙","answer":"Moon starts with M"},{"icon":"🐙","answer":"Octopus starts with O"},{"icon":"🦓","answer":"Zebra starts with Z"}]}
+{
+  "activityCodes": [
+    "JR-W10-001"
+  ],
+  "title": "Alphabet A–Z Review",
+  "instruction": "Tap the picture and say its first letter!",
+  "items": [
+    {
+      "icon": "🦁",
+      "answer": "Lion starts with L"
+    },
+    {
+      "icon": "🌙",
+      "answer": "Moon starts with M"
+    },
+    {
+      "icon": "🐙",
+      "answer": "Octopus starts with O"
+    },
+    {
+      "icon": "🦓",
+      "answer": "Zebra starts with Z"
+    }
+  ]
+}

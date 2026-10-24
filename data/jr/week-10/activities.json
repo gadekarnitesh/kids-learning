@@ -8,7 +8,54 @@
           "type": "reveal",
           "file": "alphabet-peekaboo",
           "label": "Alphabet Review",
-          "icon": "🔤"
+          "icon": "🔤",
+          "code": "JR-W10-001"
+        },
+        {
+          "type": "numberpick",
+          "file": "find-same-letter",
+          "mode": "learn",
+          "label": "Learn: Find Same Letter",
+          "icon": "🔤",
+          "code": "JR-W10-002"
+        },
+        {
+          "type": "numberpick",
+          "file": "find-same-letter",
+          "mode": "challenge",
+          "label": "Challenge: Find Same Letter",
+          "icon": "🏆",
+          "code": "JR-W10-003"
+        }
+      ]
+    },
+    {
+      "title": "Alphabet Word Match",
+      "icon": "🧩",
+      "activities": [
+        {
+          "type": "pairs",
+          "file": "letters-words-1",
+          "mode": "learn",
+          "label": "Letter Words 1",
+          "icon": "🔤",
+          "code": "JR-W10-004"
+        },
+        {
+          "type": "pairs",
+          "file": "letters-words-2",
+          "mode": "learn",
+          "label": "Letter Words 2",
+          "icon": "📚",
+          "code": "JR-W10-005"
+        },
+        {
+          "type": "pairs",
+          "file": "letters-words-3",
+          "mode": "learn",
+          "label": "Letter Words 3",
+          "icon": "🌟",
+          "code": "JR-W10-006"
         }
       ]
     },
@@ -21,14 +68,17 @@
           "file": "count-and-drag",
           "mode": "learn",
           "label": "Count & Drag",
-          "icon": "🔢"
+          "icon": "🔢",
+          "enabled": false,
+          "code": "JR-W10-007"
         },
         {
           "type": "numberorder",
           "file": "drag-number-order",
           "mode": "learn",
           "label": "Put Numbers in Order · 46–50",
-          "icon": "🔢"
+          "icon": "🔢",
+          "code": "JR-W10-008"
         }
       ]
     },
@@ -37,11 +87,29 @@
       "icon": "🧠",
       "activities": [
         {
+          "type": "numberpick",
+          "file": "find-same-number",
+          "mode": "challenge",
+          "label": "Challenge: Find Same Number",
+          "icon": "🏆",
+          "code": "JR-W10-009"
+        },
+        {
+          "type": "numberpick",
+          "file": "find-same-number",
+          "mode": "learn",
+          "label": "Learn: Find Same Number",
+          "icon": "🔎",
+          "code": "JR-W10-010"
+        },
+        {
           "type": "math",
           "file": "addition-drag",
           "mode": "learn",
           "label": "Make 10",
-          "icon": "➕"
+          "icon": "➕",
+          "enabled": false,
+          "code": "JR-W10-011"
         }
       ]
     },
@@ -54,21 +122,24 @@
           "file": "shape-pairs",
           "mode": "learn",
           "label": "Match Shapes & Pictures",
-          "icon": "🔷"
+          "icon": "🔷",
+          "code": "JR-W10-012"
         },
         {
           "type": "pairs",
           "file": "shadow-shapes",
           "mode": "learn",
           "label": "Match Shapes & Shadows",
-          "icon": "🧩"
+          "icon": "🧩",
+          "code": "JR-W10-013"
         },
         {
           "type": "pairs",
           "file": "shadow-pictures",
           "mode": "learn",
           "label": "Match Pictures & Shadows",
-          "icon": "🧩"
+          "icon": "🧩",
+          "code": "JR-W10-014"
         }
       ]
     },
@@ -81,21 +152,24 @@
           "file": "big-small",
           "mode": "learn",
           "label": "Big & Small",
-          "icon": "🖼️"
+          "icon": "🖼️",
+          "code": "JR-W10-015"
         },
         {
           "type": "picturechoice",
           "file": "tall-short",
           "mode": "learn",
           "label": "Tall & Short",
-          "icon": "🖼️"
+          "icon": "🖼️",
+          "code": "JR-W10-016"
         },
         {
           "type": "picturechoice",
           "file": "wide-narrow",
           "mode": "learn",
           "label": "Wide & Narrow",
-          "icon": "🖼️"
+          "icon": "🖼️",
+          "code": "JR-W10-017"
         }
       ]
     },
@@ -108,70 +182,80 @@
           "file": "before-number",
           "mode": "learn",
           "label": "Before Number · 46–50",
-          "icon": "🔢"
+          "icon": "🔢",
+          "code": "JR-W10-018"
         },
         {
           "type": "advance",
           "file": "after-number",
           "mode": "learn",
           "label": "After Number · 46–50",
-          "icon": "🔢"
+          "icon": "🔢",
+          "code": "JR-W10-019"
         },
         {
           "type": "advance",
           "file": "before-letter",
           "mode": "learn",
           "label": "Before Alphabet · A–Z",
-          "icon": "🔤"
+          "icon": "🔤",
+          "code": "JR-W10-020"
         },
         {
           "type": "advance",
           "file": "after-letter",
           "mode": "learn",
           "label": "After Alphabet · A–Z",
-          "icon": "🔤"
+          "icon": "🔤",
+          "code": "JR-W10-021"
         },
         {
           "type": "advance",
           "file": "addition",
           "mode": "learn",
           "label": "Addition · Two Digits",
-          "icon": "➕"
+          "icon": "➕",
+          "code": "JR-W10-022"
         },
         {
           "type": "advance",
           "file": "subtraction",
           "mode": "learn",
           "label": "Subtraction · Two Digits",
-          "icon": "➖"
+          "icon": "➖",
+          "code": "JR-W10-023"
         },
         {
           "type": "advance",
           "file": "missing-addition",
           "mode": "learn",
           "label": "Addition · Missing Number",
-          "icon": "🧩"
+          "icon": "🧩",
+          "code": "JR-W10-024"
         },
         {
           "type": "advance",
           "file": "missing-subtraction",
           "mode": "learn",
           "label": "Subtraction · Missing Number",
-          "icon": "🧩"
+          "icon": "🧩",
+          "code": "JR-W10-025"
         },
         {
           "type": "advance",
           "file": "between-number",
           "mode": "learn",
           "label": "In-between Numbers · 46–50",
-          "icon": "🔢"
+          "icon": "🔢",
+          "code": "JR-W10-026"
         },
         {
           "type": "advance",
           "file": "between-letter",
           "mode": "learn",
           "label": "In-between Alphabets · A–Z",
-          "icon": "🔤"
+          "icon": "🔤",
+          "code": "JR-W10-027"
         }
       ]
     }

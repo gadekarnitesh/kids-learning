@@ -1,1 +1,25 @@
-{"title":"Alphabet Review","instruction":"Tap the picture and say its first letter!","items":[{"icon":"🐘","answer":"Elephant starts with E"},{"icon":"🐸","answer":"Frog starts with F"},{"icon":"🦒","answer":"Giraffe starts with G"},{"icon":"🏠","answer":"House starts with H"}]}
+{
+  "activityCodes": [
+    "JR-W09-001"
+  ],
+  "title": "Alphabet Review",
+  "instruction": "Tap the picture and say its first letter!",
+  "items": [
+    {
+      "icon": "🐘",
+      "answer": "Elephant starts with E"
+    },
+    {
+      "icon": "🐸",
+      "answer": "Frog starts with F"
+    },
+    {
+      "icon": "🦒",
+      "answer": "Giraffe starts with G"
+    },
+    {
+      "icon": "🏠",
+      "answer": "House starts with H"
+    }
+  ]
+}
