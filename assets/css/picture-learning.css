@@ -1,0 +1,20 @@
+.word-initial{color:#c23c60;font-weight:700;font-size:1.28em;background:#ffedf1;border-radius:5px;padding:0 2px}
+.match-picture{display:block;width:100%;max-width:110px;height:85px;object-fit:contain;margin:auto}
+.match-item:has(.match-picture){padding:8px;min-height:100px}
+.picture-questions{display:grid;gap:20px;max-width:800px;margin:20px auto}
+.picture-question{background:#fff;padding:16px;border-radius:22px;box-shadow:0 5px 0 #d9eaf3}
+.picture-question h2{font-size:22px;margin:0 0 14px;color:var(--purple)}
+.picture-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.picture-option{position:relative;min-width:0;min-height:120px;border:3px solid #d9e5ef;border-radius:16px;padding:8px;background:#fffaf0;box-shadow:0 4px 0 #cbdde9;color:var(--ink);cursor:pointer;touch-action:manipulation}
+.picture-option img{display:block;width:100%;height:145px;object-fit:contain}
+.picture-option.correct{border-color:var(--green);background:#e2faeb}
+.picture-option.wrong{border-color:var(--pink);background:#ffedf1}
+.picture-option .choice-tick{position:absolute;right:6px;top:6px;display:grid;place-items:center;width:28px;height:28px;border:2px solid #d9e5ef;border-radius:50%;background:white;font-size:20px;font-weight:700}
+.picture-option.correct .choice-tick{background:#248752;border-color:#248752;color:white}
+.picture-option:focus-visible{outline:3px solid var(--purple);outline-offset:3px}
+.picture-option:disabled{cursor:default}
+.picture-question .feedback{margin:12px 0 0;min-height:26px;font-size:17px}
+.picture-pagination{display:flex;align-items:center;justify-content:center;gap:14px;margin:22px auto}
+.picture-pagination .try-again{margin:0;min-height:44px}
+.picture-pagination button:disabled{opacity:.45;cursor:default}
+@media(max-width:520px){.picture-question{padding:12px 8px}.picture-options{gap:8px}.picture-option{padding:4px}.picture-option img{height:120px}.picture-question h2{font-size:20px}.match-picture{height:70px}.match-item:has(.match-picture){min-height:85px}}

@@ -1,0 +1,109 @@
+{
+  "title": "Big & Small",
+  "instruction": "Look closely, then tap the picture that answers the question.",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "prompt": "Pick the big car.",
+      "choices": [
+        {
+          "id": "big",
+          "image": "assets/images/learning-pictures/w10-big-small-0-big.svg",
+          "alt": "Big car"
+        },
+        {
+          "id": "small",
+          "image": "assets/images/learning-pictures/w10-big-small-0-small.svg",
+          "alt": "Small car"
+        }
+      ],
+      "answer": "big",
+      "success": "Yes! This one is big."
+    },
+    {
+      "prompt": "Pick the small car.",
+      "choices": [
+        {
+          "id": "big",
+          "image": "assets/images/learning-pictures/w10-big-small-0-big.svg",
+          "alt": "Big car"
+        },
+        {
+          "id": "small",
+          "image": "assets/images/learning-pictures/w10-big-small-0-small.svg",
+          "alt": "Small car"
+        }
+      ],
+      "answer": "small",
+      "success": "Yes! This one is small."
+    },
+    {
+      "prompt": "Pick the big house.",
+      "choices": [
+        {
+          "id": "big",
+          "image": "assets/images/learning-pictures/w10-big-small-1-big.svg",
+          "alt": "Big house"
+        },
+        {
+          "id": "small",
+          "image": "assets/images/learning-pictures/w10-big-small-1-small.svg",
+          "alt": "Small house"
+        }
+      ],
+      "answer": "big",
+      "success": "Yes! This one is big."
+    },
+    {
+      "prompt": "Pick the small house.",
+      "choices": [
+        {
+          "id": "big",
+          "image": "assets/images/learning-pictures/w10-big-small-1-big.svg",
+          "alt": "Big house"
+        },
+        {
+          "id": "small",
+          "image": "assets/images/learning-pictures/w10-big-small-1-small.svg",
+          "alt": "Small house"
+        }
+      ],
+      "answer": "small",
+      "success": "Yes! This one is small."
+    },
+    {
+      "prompt": "Pick the big kite.",
+      "choices": [
+        {
+          "id": "big",
+          "image": "assets/images/learning-pictures/w10-big-small-2-big.svg",
+          "alt": "Big kite"
+        },
+        {
+          "id": "small",
+          "image": "assets/images/learning-pictures/w10-big-small-2-small.svg",
+          "alt": "Small kite"
+        }
+      ],
+      "answer": "big",
+      "success": "Yes! This one is big."
+    },
+    {
+      "prompt": "Pick the small kite.",
+      "choices": [
+        {
+          "id": "big",
+          "image": "assets/images/learning-pictures/w10-big-small-2-big.svg",
+          "alt": "Big kite"
+        },
+        {
+          "id": "small",
+          "image": "assets/images/learning-pictures/w10-big-small-2-small.svg",
+          "alt": "Small kite"
+        }
+      ],
+      "answer": "small",
+      "success": "Yes! This one is small."
+    }
+  ]
+}

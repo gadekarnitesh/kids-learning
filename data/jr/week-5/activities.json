@@ -1,1 +1,97 @@
-{"sections":[{"title":"Click & Reveal","icon":"✨","activities":[{"type":"reveal","file":"alphabet-peekaboo","label":"Alphabet Peekaboo","icon":"🔤"}]},{"title":"Number Learning","icon":"🔢","activities":[{"type":"count","file":"count-and-drag","mode":"learn","label":"Count & Drag","icon":"🔢"}]},{"title":"Picture Maths","icon":"🧠","activities":[{"type":"math","file":"addition-drag","mode":"learn","label":"Picture Addition","icon":"➕"}]}]}
+{
+  "sections": [
+    {
+      "title": "Click & Reveal",
+      "icon": "✨",
+      "activities": [
+        {
+          "type": "reveal",
+          "file": "alphabet-peekaboo",
+          "label": "Alphabet Peekaboo",
+          "icon": "🔤"
+        }
+      ]
+    },
+    {
+      "title": "Number Learning",
+      "icon": "🔢",
+      "activities": [
+        {
+          "type": "count",
+          "file": "count-and-drag",
+          "mode": "learn",
+          "label": "Count & Drag",
+          "icon": "🔢"
+        },
+        {
+          "type": "numberorder",
+          "file": "drag-number-order",
+          "mode": "learn",
+          "label": "Put Numbers in Order · 21–25",
+          "icon": "🔢"
+        }
+      ]
+    },
+    {
+      "title": "Picture Maths",
+      "icon": "🧠",
+      "activities": [
+        {
+          "type": "math",
+          "file": "addition-drag",
+          "mode": "learn",
+          "label": "Picture Addition",
+          "icon": "➕"
+        }
+      ]
+    },
+    {
+      "title": "Advance",
+      "icon": "🚀",
+      "activities": [
+        {
+          "type": "advance",
+          "file": "before-number",
+          "mode": "learn",
+          "label": "Before Number · 21–25",
+          "icon": "🔢"
+        },
+        {
+          "type": "advance",
+          "file": "after-number",
+          "mode": "learn",
+          "label": "After Number · 21–25",
+          "icon": "🔢"
+        },
+        {
+          "type": "advance",
+          "file": "before-letter",
+          "mode": "learn",
+          "label": "Before Alphabet · Q–T",
+          "icon": "🔤"
+        },
+        {
+          "type": "advance",
+          "file": "after-letter",
+          "mode": "learn",
+          "label": "After Alphabet · Q–T",
+          "icon": "🔤"
+        },
+        {
+          "type": "advance",
+          "file": "addition",
+          "mode": "learn",
+          "label": "Addition · Single Digit",
+          "icon": "➕"
+        },
+        {
+          "type": "advance",
+          "file": "subtraction",
+          "mode": "learn",
+          "label": "Subtraction · Single Digit",
+          "icon": "➖"
+        }
+      ]
+    }
+  ]
+}

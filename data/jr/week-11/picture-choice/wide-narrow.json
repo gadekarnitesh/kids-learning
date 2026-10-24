@@ -1,0 +1,109 @@
+{
+  "title": "Wide & Narrow",
+  "instruction": "Look closely, then tap the picture that answers the question.",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "prompt": "Pick the wide scarf.",
+      "choices": [
+        {
+          "id": "wide",
+          "image": "assets/images/learning-pictures/w11-wide-narrow-0-wide.svg",
+          "alt": "Wide scarf"
+        },
+        {
+          "id": "narrow",
+          "image": "assets/images/learning-pictures/w11-wide-narrow-0-narrow.svg",
+          "alt": "Narrow scarf"
+        }
+      ],
+      "answer": "wide",
+      "success": "Yes! This one is wide."
+    },
+    {
+      "prompt": "Pick the narrow scarf.",
+      "choices": [
+        {
+          "id": "wide",
+          "image": "assets/images/learning-pictures/w11-wide-narrow-0-wide.svg",
+          "alt": "Wide scarf"
+        },
+        {
+          "id": "narrow",
+          "image": "assets/images/learning-pictures/w11-wide-narrow-0-narrow.svg",
+          "alt": "Narrow scarf"
+        }
+      ],
+      "answer": "narrow",
+      "success": "Yes! This one is narrow."
+    },
+    {
+      "prompt": "Pick the wide window.",
+      "choices": [
+        {
+          "id": "wide",
+          "image": "assets/images/learning-pictures/w11-wide-narrow-1-wide.svg",
+          "alt": "Wide window"
+        },
+        {
+          "id": "narrow",
+          "image": "assets/images/learning-pictures/w11-wide-narrow-1-narrow.svg",
+          "alt": "Narrow window"
+        }
+      ],
+      "answer": "wide",
+      "success": "Yes! This one is wide."
+    },
+    {
+      "prompt": "Pick the narrow window.",
+      "choices": [
+        {
+          "id": "wide",
+          "image": "assets/images/learning-pictures/w11-wide-narrow-1-wide.svg",
+          "alt": "Wide window"
+        },
+        {
+          "id": "narrow",
+          "image": "assets/images/learning-pictures/w11-wide-narrow-1-narrow.svg",
+          "alt": "Narrow window"
+        }
+      ],
+      "answer": "narrow",
+      "success": "Yes! This one is narrow."
+    },
+    {
+      "prompt": "Pick the wide loaf.",
+      "choices": [
+        {
+          "id": "wide",
+          "image": "assets/images/learning-pictures/w11-wide-narrow-2-wide.svg",
+          "alt": "Wide loaf"
+        },
+        {
+          "id": "narrow",
+          "image": "assets/images/learning-pictures/w11-wide-narrow-2-narrow.svg",
+          "alt": "Narrow loaf"
+        }
+      ],
+      "answer": "wide",
+      "success": "Yes! This one is wide."
+    },
+    {
+      "prompt": "Pick the narrow loaf.",
+      "choices": [
+        {
+          "id": "wide",
+          "image": "assets/images/learning-pictures/w11-wide-narrow-2-wide.svg",
+          "alt": "Wide loaf"
+        },
+        {
+          "id": "narrow",
+          "image": "assets/images/learning-pictures/w11-wide-narrow-2-narrow.svg",
+          "alt": "Narrow loaf"
+        }
+      ],
+      "answer": "narrow",
+      "success": "Yes! This one is narrow."
+    }
+  ]
+}

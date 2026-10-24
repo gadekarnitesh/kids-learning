@@ -1,0 +1,55 @@
+{
+  "title": "After Number · 41–45",
+  "instruction": "Drag the number that comes after.",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "sequence": [
+        "41",
+        "?"
+      ],
+      "answer": "42",
+      "choices": [
+        "41",
+        "42",
+        "43"
+      ]
+    },
+    {
+      "sequence": [
+        "42",
+        "?"
+      ],
+      "answer": "43",
+      "choices": [
+        "42",
+        "43",
+        "44"
+      ]
+    },
+    {
+      "sequence": [
+        "43",
+        "?"
+      ],
+      "answer": "44",
+      "choices": [
+        "43",
+        "44",
+        "45"
+      ]
+    },
+    {
+      "sequence": [
+        "44",
+        "?"
+      ],
+      "answer": "45",
+      "choices": [
+        "43",
+        "44",
+        "45"
+      ]
+    }
+  ]
+}

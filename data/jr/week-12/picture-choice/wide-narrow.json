@@ -1,0 +1,109 @@
+{
+  "title": "Wide & Narrow",
+  "instruction": "Look closely, then tap the picture that answers the question.",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "prompt": "Pick the wide basket.",
+      "choices": [
+        {
+          "id": "wide",
+          "image": "assets/images/learning-pictures/w12-wide-narrow-0-wide.svg",
+          "alt": "Wide basket"
+        },
+        {
+          "id": "narrow",
+          "image": "assets/images/learning-pictures/w12-wide-narrow-0-narrow.svg",
+          "alt": "Narrow basket"
+        }
+      ],
+      "answer": "wide",
+      "success": "Yes! This one is wide."
+    },
+    {
+      "prompt": "Pick the narrow basket.",
+      "choices": [
+        {
+          "id": "wide",
+          "image": "assets/images/learning-pictures/w12-wide-narrow-0-wide.svg",
+          "alt": "Wide basket"
+        },
+        {
+          "id": "narrow",
+          "image": "assets/images/learning-pictures/w12-wide-narrow-0-narrow.svg",
+          "alt": "Narrow basket"
+        }
+      ],
+      "answer": "narrow",
+      "success": "Yes! This one is narrow."
+    },
+    {
+      "prompt": "Pick the wide rug.",
+      "choices": [
+        {
+          "id": "wide",
+          "image": "assets/images/learning-pictures/w12-wide-narrow-1-wide.svg",
+          "alt": "Wide rug"
+        },
+        {
+          "id": "narrow",
+          "image": "assets/images/learning-pictures/w12-wide-narrow-1-narrow.svg",
+          "alt": "Narrow rug"
+        }
+      ],
+      "answer": "wide",
+      "success": "Yes! This one is wide."
+    },
+    {
+      "prompt": "Pick the narrow rug.",
+      "choices": [
+        {
+          "id": "wide",
+          "image": "assets/images/learning-pictures/w12-wide-narrow-1-wide.svg",
+          "alt": "Wide rug"
+        },
+        {
+          "id": "narrow",
+          "image": "assets/images/learning-pictures/w12-wide-narrow-1-narrow.svg",
+          "alt": "Narrow rug"
+        }
+      ],
+      "answer": "narrow",
+      "success": "Yes! This one is narrow."
+    },
+    {
+      "prompt": "Pick the wide book.",
+      "choices": [
+        {
+          "id": "wide",
+          "image": "assets/images/learning-pictures/w12-wide-narrow-2-wide.svg",
+          "alt": "Wide book"
+        },
+        {
+          "id": "narrow",
+          "image": "assets/images/learning-pictures/w12-wide-narrow-2-narrow.svg",
+          "alt": "Narrow book"
+        }
+      ],
+      "answer": "wide",
+      "success": "Yes! This one is wide."
+    },
+    {
+      "prompt": "Pick the narrow book.",
+      "choices": [
+        {
+          "id": "wide",
+          "image": "assets/images/learning-pictures/w12-wide-narrow-2-wide.svg",
+          "alt": "Wide book"
+        },
+        {
+          "id": "narrow",
+          "image": "assets/images/learning-pictures/w12-wide-narrow-2-narrow.svg",
+          "alt": "Narrow book"
+        }
+      ],
+      "answer": "narrow",
+      "success": "Yes! This one is narrow."
+    }
+  ]
+}

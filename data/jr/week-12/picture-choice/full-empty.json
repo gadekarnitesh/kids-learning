@@ -1,0 +1,109 @@
+{
+  "title": "Full & Empty",
+  "instruction": "Look closely, then tap the picture that answers the question.",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "prompt": "Pick the full glass.",
+      "choices": [
+        {
+          "id": "full",
+          "image": "assets/images/learning-pictures/w12-full-empty-0-full.svg",
+          "alt": "Full glass"
+        },
+        {
+          "id": "empty",
+          "image": "assets/images/learning-pictures/w12-full-empty-0-empty.svg",
+          "alt": "Empty glass"
+        }
+      ],
+      "answer": "full",
+      "success": "Yes! This one is full."
+    },
+    {
+      "prompt": "Pick the empty glass.",
+      "choices": [
+        {
+          "id": "full",
+          "image": "assets/images/learning-pictures/w12-full-empty-0-full.svg",
+          "alt": "Full glass"
+        },
+        {
+          "id": "empty",
+          "image": "assets/images/learning-pictures/w12-full-empty-0-empty.svg",
+          "alt": "Empty glass"
+        }
+      ],
+      "answer": "empty",
+      "success": "Yes! This one is empty."
+    },
+    {
+      "prompt": "Pick the full bucket.",
+      "choices": [
+        {
+          "id": "full",
+          "image": "assets/images/learning-pictures/w12-full-empty-1-full.svg",
+          "alt": "Full bucket"
+        },
+        {
+          "id": "empty",
+          "image": "assets/images/learning-pictures/w12-full-empty-1-empty.svg",
+          "alt": "Empty bucket"
+        }
+      ],
+      "answer": "full",
+      "success": "Yes! This one is full."
+    },
+    {
+      "prompt": "Pick the empty bucket.",
+      "choices": [
+        {
+          "id": "full",
+          "image": "assets/images/learning-pictures/w12-full-empty-1-full.svg",
+          "alt": "Full bucket"
+        },
+        {
+          "id": "empty",
+          "image": "assets/images/learning-pictures/w12-full-empty-1-empty.svg",
+          "alt": "Empty bucket"
+        }
+      ],
+      "answer": "empty",
+      "success": "Yes! This one is empty."
+    },
+    {
+      "prompt": "Pick the full basket.",
+      "choices": [
+        {
+          "id": "full",
+          "image": "assets/images/learning-pictures/w12-full-empty-2-full.svg",
+          "alt": "Full basket"
+        },
+        {
+          "id": "empty",
+          "image": "assets/images/learning-pictures/w12-full-empty-2-empty.svg",
+          "alt": "Empty basket"
+        }
+      ],
+      "answer": "full",
+      "success": "Yes! This one is full."
+    },
+    {
+      "prompt": "Pick the empty basket.",
+      "choices": [
+        {
+          "id": "full",
+          "image": "assets/images/learning-pictures/w12-full-empty-2-full.svg",
+          "alt": "Full basket"
+        },
+        {
+          "id": "empty",
+          "image": "assets/images/learning-pictures/w12-full-empty-2-empty.svg",
+          "alt": "Empty basket"
+        }
+      ],
+      "answer": "empty",
+      "success": "Yes! This one is empty."
+    }
+  ]
+}

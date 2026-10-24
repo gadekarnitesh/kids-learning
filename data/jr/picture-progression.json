@@ -1,0 +1,49 @@
+{
+  "weeks": [
+    {
+      "week": "week-8",
+      "concepts": [
+        "big-small"
+      ],
+      "pagesPerConcept": 3
+    },
+    {
+      "week": "week-9",
+      "concepts": [
+        "big-small",
+        "tall-short"
+      ],
+      "pagesPerConcept": 3
+    },
+    {
+      "week": "week-10",
+      "concepts": [
+        "big-small",
+        "tall-short",
+        "wide-narrow"
+      ],
+      "pagesPerConcept": 3
+    },
+    {
+      "week": "week-11",
+      "concepts": [
+        "big-small",
+        "tall-short",
+        "wide-narrow",
+        "heavy-light"
+      ],
+      "pagesPerConcept": 3
+    },
+    {
+      "week": "week-12",
+      "concepts": [
+        "big-small",
+        "tall-short",
+        "wide-narrow",
+        "heavy-light",
+        "full-empty"
+      ],
+      "pagesPerConcept": 3
+    }
+  ]
+}

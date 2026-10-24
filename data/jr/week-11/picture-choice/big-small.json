@@ -1,0 +1,109 @@
+{
+  "title": "Big & Small",
+  "instruction": "Look closely, then tap the picture that answers the question.",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "prompt": "Pick the big cupcake.",
+      "choices": [
+        {
+          "id": "big",
+          "image": "assets/images/learning-pictures/w11-big-small-0-big.svg",
+          "alt": "Big cupcake"
+        },
+        {
+          "id": "small",
+          "image": "assets/images/learning-pictures/w11-big-small-0-small.svg",
+          "alt": "Small cupcake"
+        }
+      ],
+      "answer": "big",
+      "success": "Yes! This one is big."
+    },
+    {
+      "prompt": "Pick the small cupcake.",
+      "choices": [
+        {
+          "id": "big",
+          "image": "assets/images/learning-pictures/w11-big-small-0-big.svg",
+          "alt": "Big cupcake"
+        },
+        {
+          "id": "small",
+          "image": "assets/images/learning-pictures/w11-big-small-0-small.svg",
+          "alt": "Small cupcake"
+        }
+      ],
+      "answer": "small",
+      "success": "Yes! This one is small."
+    },
+    {
+      "prompt": "Pick the big book.",
+      "choices": [
+        {
+          "id": "big",
+          "image": "assets/images/learning-pictures/w11-big-small-1-big.svg",
+          "alt": "Big book"
+        },
+        {
+          "id": "small",
+          "image": "assets/images/learning-pictures/w11-big-small-1-small.svg",
+          "alt": "Small book"
+        }
+      ],
+      "answer": "big",
+      "success": "Yes! This one is big."
+    },
+    {
+      "prompt": "Pick the small book.",
+      "choices": [
+        {
+          "id": "big",
+          "image": "assets/images/learning-pictures/w11-big-small-1-big.svg",
+          "alt": "Big book"
+        },
+        {
+          "id": "small",
+          "image": "assets/images/learning-pictures/w11-big-small-1-small.svg",
+          "alt": "Small book"
+        }
+      ],
+      "answer": "small",
+      "success": "Yes! This one is small."
+    },
+    {
+      "prompt": "Pick the big balloon.",
+      "choices": [
+        {
+          "id": "big",
+          "image": "assets/images/learning-pictures/w11-big-small-2-big.svg",
+          "alt": "Big balloon"
+        },
+        {
+          "id": "small",
+          "image": "assets/images/learning-pictures/w11-big-small-2-small.svg",
+          "alt": "Small balloon"
+        }
+      ],
+      "answer": "big",
+      "success": "Yes! This one is big."
+    },
+    {
+      "prompt": "Pick the small balloon.",
+      "choices": [
+        {
+          "id": "big",
+          "image": "assets/images/learning-pictures/w11-big-small-2-big.svg",
+          "alt": "Big balloon"
+        },
+        {
+          "id": "small",
+          "image": "assets/images/learning-pictures/w11-big-small-2-small.svg",
+          "alt": "Small balloon"
+        }
+      ],
+      "answer": "small",
+      "success": "Yes! This one is small."
+    }
+  ]
+}

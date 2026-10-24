@@ -4,16 +4,13 @@
     const data = await fetch(window.activityDataUrl).then(r => r.json());
     const learning = window.activityMode === 'learn';
     const isAlphabet = data.numbers.every(value => typeof value === 'string');
-    const values = isAlphabet ? [...data.numbers, ...data.numbers] : [...data.numbers, ...data.numbers].sort(() => Math.random() - .5);
+    const left = [...data.numbers], right = shuffleChoices(data.numbers);
+    if (right.length > 1 && right.every((value, i) => value === left[i])) right.push(right.shift());
+    const values = [...left, ...right];
     const colors = ['#ff7699', '#61c8f5', '#5ccf8a', '#7657dd', '#ffd65a'];
     const positions = values.map((value, index) => {
-      const pairIndex = data.numbers.indexOf(value);
-      const occurrence = values.slice(0, index).filter(item => item === value).length;
-      const row = (pairIndex + 1) / (data.numbers.length + 1) * 100;
-      const side = occurrence === 0 ? 18 : 82;
-      const x = isAlphabet ? side : side + (Math.random() * 12 - 6);
-      const y = isAlphabet ? row : row + (Math.random() * 10 - 5);
-      return `left:${x}%;top:${y}%;`;
+      const row = index % left.length;
+      return `left:${index < left.length ? 18 : 82}%;top:${(row + 1) / (left.length + 1) * 100}%;`;
     });
     const itemName = isAlphabet ? 'letters' : 'numbers';
     root.innerHTML = `<h1>${data.title || `Connect the Same ${isAlphabet ? 'Letters' : 'Numbers'}`}</h1><span class="mode-label ${learning ? 'learn' : 'challenge'}">${learning ? '🌱 Learning time — feedback appears right away!' : '🏆 Challenge time — check your lines at the end!'}</span><p class="instruction">${data.instruction || `Tap two matching ${itemName} to connect them.`}</p><div class="number-connect-board ${isAlphabet ? 'alphabet-connect-board' : ''}">${values.map((value, index) => `<button id="connect-${index}" class="connect-number" style="${positions[index]}" data-value="${value}">${value}</button>`).join('')}</div><p class="feedback"></p><button class="try-again">Start over</button>`;

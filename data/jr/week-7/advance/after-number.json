@@ -1,0 +1,55 @@
+{
+  "title": "After Number · 31–35",
+  "instruction": "Drag the number that comes after.",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "sequence": [
+        "31",
+        "?"
+      ],
+      "answer": "32",
+      "choices": [
+        "31",
+        "32",
+        "33"
+      ]
+    },
+    {
+      "sequence": [
+        "32",
+        "?"
+      ],
+      "answer": "33",
+      "choices": [
+        "32",
+        "33",
+        "34"
+      ]
+    },
+    {
+      "sequence": [
+        "33",
+        "?"
+      ],
+      "answer": "34",
+      "choices": [
+        "33",
+        "34",
+        "35"
+      ]
+    },
+    {
+      "sequence": [
+        "34",
+        "?"
+      ],
+      "answer": "35",
+      "choices": [
+        "33",
+        "34",
+        "35"
+      ]
+    }
+  ]
+}

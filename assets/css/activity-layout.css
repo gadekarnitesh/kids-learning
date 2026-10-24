@@ -1,3 +1,44 @@
-@media(min-width:701px){.learning-layout{grid-template-columns:286px minmax(0,1fr)}.activity-stage{padding:clamp(18px,3vw,36px)}.tablet{width:min(1240px,100%);height:min(820px,calc(100vh - 105px));min-height:540px}}@media(max-width:700px){.tablet{height:calc(100vh - 235px);min-height:470px}}
+.activities-page{height:100vh;height:100dvh;min-height:0;display:flex;flex-direction:column;overflow:hidden}
+.activities-page .topbar{flex:0 0 74px}
+.learning-layout{position:relative;flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr)}
+.learning-layout.sidebar-visible{grid-template-columns:286px minmax(0,1fr)}
+.sidebar{min-height:0;overflow:auto;overscroll-behavior:contain}
+.sidebar[hidden],.sidebar-backdrop[hidden]{display:none}
+.sidebar-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.sidebar-heading h2{display:block;margin:0}
+.sidebar-heading button{width:44px;min-height:44px;text-align:center;border:2px solid #d9e5ef;border-radius:14px;background:#fff;color:var(--purple);box-shadow:0 3px 0 #cbdde9}
+.activity-stage{min-width:0;min-height:0;padding:16px;display:flex;align-items:stretch;justify-content:center}
+.tablet{display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:8px;width:min(1240px,100%);height:100%;min-height:0;padding:14px;border-width:7px;border-radius:28px;box-shadow:0 8px 20px #40527833}
+.tablet iframe{min-width:0;min-height:0;height:100%;border-radius:14px}
+.tablet-heading{display:flex;align-items:center;gap:12px;min-width:0;padding:8px 10px 11px;background:var(--cream);border-radius:18px;color:var(--purple)}
+#current-activity{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:16px;font-weight:600}
+.tablet-heading button,.tablet-navigation button{flex-shrink:0;min-height:44px;border:0;border-radius:12px;padding:10px 16px;background:var(--purple);color:#fff;font-weight:600;cursor:pointer;touch-action:manipulation;box-shadow:none;transition:background .15s}
+.tablet-heading button{background:var(--purple);color:#fff}
+.tablet-heading button:hover,.tablet-navigation button:hover:not(:disabled){background:#6046ba}
+.tablet-heading button:active,.tablet-navigation button:active:not(:disabled){background:#4e35a6}
+.tablet-navigation{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 10px calc(12px + env(safe-area-inset-bottom,0px));background:var(--cream);border-radius:18px;color:var(--ink)}
+.tablet-navigation button:disabled{background:#e9ddff;color:#6046ba;opacity:.55;box-shadow:none;cursor:default}
+.tablet button:focus-visible,.sidebar button:focus-visible{outline:3px solid #ffd65a;outline-offset:2px}
+#activity-position{font-size:14px;font-weight:600;white-space:nowrap;background:#e9ddff;color:#6046ba;border-radius:999px;padding:6px 10px}
 .logout-link{display:inline-block;margin-left:8px;color:#7657dd;font-weight:700;text-decoration:none}
+.sidebar-backdrop{display:none}
+@media(max-width:700px){
+  .activities-page .topbar{flex-basis:54px;height:54px;padding:0 12px}
+  .topbar .site-name{font-size:20px}.topbar .class-badge{display:none}
+  .learning-layout,.learning-layout.sidebar-visible{grid-template-columns:minmax(0,1fr)}
+  .activity-stage{padding:4px}
+  .tablet{border-width:3px;border-radius:16px;padding:8px 4px 4px;gap:6px;box-shadow:none}
+  .tablet:after,.camera{display:none}
+  .tablet iframe{border-radius:10px}
+  .tablet-heading{gap:8px;padding:6px 8px 9px;border-radius:12px}.tablet-heading button,.tablet-navigation button{padding:8px 12px}
+  .tablet-navigation{padding:6px 8px calc(10px + env(safe-area-inset-bottom,0px));border-radius:12px}
+  #current-activity{font-size:14px}
+  .sidebar{position:absolute;z-index:20;inset:0 auto 0 0;width:min(320px,88%);padding:16px;border-right:3px solid #dceafa;box-shadow:8px 0 24px #24325233}
+  .sidebar nav{display:block}.sidebar section{margin-bottom:18px}.sidebar button{min-height:44px}
+  .sidebar-backdrop:not([hidden]){display:block;position:absolute;inset:0;z-index:19;border:0;background:#1b213166}
+}
 .number-bins{grid-template-columns:1fr!important}.sequence-bag{min-height:220px!important;font-size:55px!important}
+
+.tablet-context{display:flex;flex-direction:column;align-items:flex-start;gap:3px;min-width:0;flex:1}
+.tablet-context #current-activity{display:block;max-width:100%}
+.week-badge{display:inline-block;background:#e9ddff;color:#6046ba;font-size:14px;font-weight:600;padding:3px 10px;border-radius:999px;white-space:nowrap}

@@ -1,0 +1,22 @@
+{
+  "title": "Put Numbers in Order · 26–30",
+  "instruction": "Drag the numbers into the dotted boxes from smallest to biggest.",
+  "tasks": [
+    {
+      "sequence": [
+        "26",
+        "27",
+        "28",
+        "29",
+        "30"
+      ],
+      "choices": [
+        "28",
+        "29",
+        "30",
+        "26",
+        "27"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "title": "Before Alphabet · E–H",
+  "instruction": "Drag the letter that comes before.",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "sequence": [
+        "?",
+        "F"
+      ],
+      "answer": "E",
+      "choices": [
+        "E",
+        "F",
+        "G"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "G"
+      ],
+      "answer": "F",
+      "choices": [
+        "F",
+        "G",
+        "H"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "H"
+      ],
+      "answer": "G",
+      "choices": [
+        "F",
+        "G",
+        "H"
+      ]
+    }
+  ]
+}

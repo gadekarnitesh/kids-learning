@@ -1,0 +1,69 @@
+{
+  "title": "Addition · Two Digits",
+  "instruction": "Drag the answer to complete each calculation.",
+  "presentation": "equation",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "sequence": [
+        "10",
+        "+",
+        "21",
+        "=",
+        "?"
+      ],
+      "answer": "31",
+      "choices": [
+        "31",
+        "32",
+        "30"
+      ]
+    },
+    {
+      "sequence": [
+        "11",
+        "+",
+        "21",
+        "=",
+        "?"
+      ],
+      "answer": "32",
+      "choices": [
+        "33",
+        "31",
+        "32"
+      ]
+    },
+    {
+      "sequence": [
+        "12",
+        "+",
+        "21",
+        "=",
+        "?"
+      ],
+      "answer": "33",
+      "choices": [
+        "32",
+        "33",
+        "34"
+      ]
+    },
+    {
+      "sequence": [
+        "13",
+        "+",
+        "21",
+        "=",
+        "?"
+      ],
+      "answer": "34",
+      "choices": [
+        "34",
+        "35",
+        "33"
+      ]
+    }
+  ],
+  "layout": "vertical"
+}

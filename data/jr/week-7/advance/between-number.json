@@ -1,0 +1,34 @@
+{
+  "title": "In-between Numbers · 31–35",
+  "instruction": "Drag the number that belongs in between.",
+  "presentation": "sequence",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "sequence": [
+        "31",
+        "?",
+        "33"
+      ],
+      "answer": "32",
+      "choices": [
+        "31",
+        "32",
+        "33"
+      ]
+    },
+    {
+      "sequence": [
+        "32",
+        "?",
+        "34"
+      ],
+      "answer": "33",
+      "choices": [
+        "33",
+        "34",
+        "32"
+      ]
+    }
+  ]
+}

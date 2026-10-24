@@ -1,0 +1,34 @@
+{
+  "title": "Match Shapes & Pictures",
+  "instruction": "Tap a shape name, then tap its matching picture.",
+  "group1": [
+    "Circle",
+    "Square",
+    "Triangle",
+    "Oval"
+  ],
+  "group2": [
+    {
+      "image": "assets/images/comparisons/oval.svg",
+      "alt": "Oval"
+    },
+    {
+      "image": "assets/images/comparisons/triangle.svg",
+      "alt": "Triangle"
+    },
+    {
+      "image": "assets/images/comparisons/square.svg",
+      "alt": "Square"
+    },
+    {
+      "image": "assets/images/comparisons/circle.svg",
+      "alt": "Circle"
+    }
+  ],
+  "answers": {
+    "1": "d",
+    "2": "c",
+    "3": "b",
+    "4": "a"
+  }
+}

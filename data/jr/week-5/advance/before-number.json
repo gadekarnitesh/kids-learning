@@ -1,0 +1,55 @@
+{
+  "title": "Before Number · 21–25",
+  "instruction": "Drag the number that comes before.",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "sequence": [
+        "?",
+        "22"
+      ],
+      "answer": "21",
+      "choices": [
+        "21",
+        "22",
+        "23"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "23"
+      ],
+      "answer": "22",
+      "choices": [
+        "22",
+        "23",
+        "24"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "24"
+      ],
+      "answer": "23",
+      "choices": [
+        "23",
+        "24",
+        "25"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "25"
+      ],
+      "answer": "24",
+      "choices": [
+        "23",
+        "24",
+        "25"
+      ]
+    }
+  ]
+}

@@ -1,1 +1,22 @@
-{"title":"Week 1 Challenge · Animals & Letters","group1":["A","B","C","D"],"group2":["Dog 🐶","Alligator 🐊","Bear 🐻","Cat 🐱"],"answers":{"1":"b","2":"c","3":"d","4":"a"}}
+{
+  "title": "Week 1 Challenge · Animals & Letters",
+  "group1": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "group2": [
+    "Dog 🐶",
+    "Alligator 🐊",
+    "Bear 🐻",
+    "Cat 🐱"
+  ],
+  "answers": {
+    "1": "b",
+    "2": "c",
+    "3": "d",
+    "4": "a"
+  },
+  "highlightFirstLetter": true
+}

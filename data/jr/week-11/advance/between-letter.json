@@ -1,0 +1,320 @@
+{
+  "title": "In-between Alphabets · A–Z",
+  "instruction": "Drag the letter that belongs in between.",
+  "presentation": "sequence",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "sequence": [
+        "A",
+        "?",
+        "C"
+      ],
+      "answer": "B",
+      "choices": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    {
+      "sequence": [
+        "B",
+        "?",
+        "D"
+      ],
+      "answer": "C",
+      "choices": [
+        "C",
+        "D",
+        "B"
+      ]
+    },
+    {
+      "sequence": [
+        "C",
+        "?",
+        "E"
+      ],
+      "answer": "D",
+      "choices": [
+        "E",
+        "C",
+        "D"
+      ]
+    },
+    {
+      "sequence": [
+        "D",
+        "?",
+        "F"
+      ],
+      "answer": "E",
+      "choices": [
+        "D",
+        "E",
+        "F"
+      ]
+    },
+    {
+      "sequence": [
+        "E",
+        "?",
+        "G"
+      ],
+      "answer": "F",
+      "choices": [
+        "F",
+        "G",
+        "E"
+      ]
+    },
+    {
+      "sequence": [
+        "F",
+        "?",
+        "H"
+      ],
+      "answer": "G",
+      "choices": [
+        "H",
+        "F",
+        "G"
+      ]
+    },
+    {
+      "sequence": [
+        "G",
+        "?",
+        "I"
+      ],
+      "answer": "H",
+      "choices": [
+        "G",
+        "H",
+        "I"
+      ]
+    },
+    {
+      "sequence": [
+        "H",
+        "?",
+        "J"
+      ],
+      "answer": "I",
+      "choices": [
+        "I",
+        "J",
+        "H"
+      ]
+    },
+    {
+      "sequence": [
+        "I",
+        "?",
+        "K"
+      ],
+      "answer": "J",
+      "choices": [
+        "K",
+        "I",
+        "J"
+      ]
+    },
+    {
+      "sequence": [
+        "J",
+        "?",
+        "L"
+      ],
+      "answer": "K",
+      "choices": [
+        "J",
+        "K",
+        "L"
+      ]
+    },
+    {
+      "sequence": [
+        "K",
+        "?",
+        "M"
+      ],
+      "answer": "L",
+      "choices": [
+        "L",
+        "M",
+        "K"
+      ]
+    },
+    {
+      "sequence": [
+        "L",
+        "?",
+        "N"
+      ],
+      "answer": "M",
+      "choices": [
+        "N",
+        "L",
+        "M"
+      ]
+    },
+    {
+      "sequence": [
+        "M",
+        "?",
+        "O"
+      ],
+      "answer": "N",
+      "choices": [
+        "M",
+        "N",
+        "O"
+      ]
+    },
+    {
+      "sequence": [
+        "N",
+        "?",
+        "P"
+      ],
+      "answer": "O",
+      "choices": [
+        "O",
+        "P",
+        "N"
+      ]
+    },
+    {
+      "sequence": [
+        "O",
+        "?",
+        "Q"
+      ],
+      "answer": "P",
+      "choices": [
+        "Q",
+        "O",
+        "P"
+      ]
+    },
+    {
+      "sequence": [
+        "P",
+        "?",
+        "R"
+      ],
+      "answer": "Q",
+      "choices": [
+        "P",
+        "Q",
+        "R"
+      ]
+    },
+    {
+      "sequence": [
+        "Q",
+        "?",
+        "S"
+      ],
+      "answer": "R",
+      "choices": [
+        "R",
+        "S",
+        "Q"
+      ]
+    },
+    {
+      "sequence": [
+        "R",
+        "?",
+        "T"
+      ],
+      "answer": "S",
+      "choices": [
+        "T",
+        "R",
+        "S"
+      ]
+    },
+    {
+      "sequence": [
+        "S",
+        "?",
+        "U"
+      ],
+      "answer": "T",
+      "choices": [
+        "S",
+        "T",
+        "U"
+      ]
+    },
+    {
+      "sequence": [
+        "T",
+        "?",
+        "V"
+      ],
+      "answer": "U",
+      "choices": [
+        "U",
+        "V",
+        "T"
+      ]
+    },
+    {
+      "sequence": [
+        "U",
+        "?",
+        "W"
+      ],
+      "answer": "V",
+      "choices": [
+        "W",
+        "U",
+        "V"
+      ]
+    },
+    {
+      "sequence": [
+        "V",
+        "?",
+        "X"
+      ],
+      "answer": "W",
+      "choices": [
+        "V",
+        "W",
+        "X"
+      ]
+    },
+    {
+      "sequence": [
+        "W",
+        "?",
+        "Y"
+      ],
+      "answer": "X",
+      "choices": [
+        "X",
+        "Y",
+        "W"
+      ]
+    },
+    {
+      "sequence": [
+        "X",
+        "?",
+        "Z"
+      ],
+      "answer": "Y",
+      "choices": [
+        "Z",
+        "X",
+        "Y"
+      ]
+    }
+  ]
+}

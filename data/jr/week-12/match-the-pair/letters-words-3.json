@@ -1,1 +1,22 @@
-{"title":"Celebration Words 3","group1":["C","H","M","T"],"group2":["Tiger 🐯","Moon 🌙","House 🏠","Cat 🐱"],"answers":{"1":"d","2":"c","3":"b","4":"a"}}
+{
+  "title": "Celebration Words 3",
+  "group1": [
+    "C",
+    "H",
+    "M",
+    "T"
+  ],
+  "group2": [
+    "Tiger 🐯",
+    "Moon 🌙",
+    "House 🏠",
+    "Cat 🐱"
+  ],
+  "answers": {
+    "1": "d",
+    "2": "c",
+    "3": "b",
+    "4": "a"
+  },
+  "highlightFirstLetter": true
+}

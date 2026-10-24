@@ -1,0 +1,46 @@
+{
+  "title": "Match Shapes & Shadows",
+  "instruction": "Tap a picture, then find its matching shadow.",
+  "group1": [
+    {
+      "image": "assets/images/learning-pictures/object-circle.svg",
+      "alt": "Circle"
+    },
+    {
+      "image": "assets/images/learning-pictures/object-square.svg",
+      "alt": "Square"
+    },
+    {
+      "image": "assets/images/learning-pictures/object-triangle.svg",
+      "alt": "Triangle"
+    },
+    {
+      "image": "assets/images/learning-pictures/object-oval.svg",
+      "alt": "Oval"
+    }
+  ],
+  "group2": [
+    {
+      "image": "assets/images/learning-pictures/shadow-circle.svg",
+      "alt": "Circle shadow"
+    },
+    {
+      "image": "assets/images/learning-pictures/shadow-square.svg",
+      "alt": "Square shadow"
+    },
+    {
+      "image": "assets/images/learning-pictures/shadow-triangle.svg",
+      "alt": "Triangle shadow"
+    },
+    {
+      "image": "assets/images/learning-pictures/shadow-oval.svg",
+      "alt": "Oval shadow"
+    }
+  ],
+  "answers": {
+    "1": "a",
+    "2": "b",
+    "3": "c",
+    "4": "d"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "title": "Before Number · 26–30",
+  "instruction": "Drag the number that comes before.",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "sequence": [
+        "?",
+        "27"
+      ],
+      "answer": "26",
+      "choices": [
+        "26",
+        "27",
+        "28"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "28"
+      ],
+      "answer": "27",
+      "choices": [
+        "27",
+        "28",
+        "29"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "29"
+      ],
+      "answer": "28",
+      "choices": [
+        "28",
+        "29",
+        "30"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "30"
+      ],
+      "answer": "29",
+      "choices": [
+        "28",
+        "29",
+        "30"
+      ]
+    }
+  ]
+}

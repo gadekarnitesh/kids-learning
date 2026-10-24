@@ -1,1 +1,19 @@
-{"title":"Week 1 Challenge · Colours","group1":["R","B","Y"],"group2":["Blue 🔵","Red 🔴","Yellow 🟡"],"answers":{"1":"b","2":"a","3":"c"}}
+{
+  "title": "Week 1 Challenge · Colours",
+  "group1": [
+    "R",
+    "B",
+    "Y"
+  ],
+  "group2": [
+    "Blue 🔵",
+    "Red 🔴",
+    "Yellow 🟡"
+  ],
+  "answers": {
+    "1": "b",
+    "2": "a",
+    "3": "c"
+  },
+  "highlightFirstLetter": true
+}

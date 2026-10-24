@@ -1,0 +1,22 @@
+{
+  "title": "Put Numbers in Order · 6–10",
+  "instruction": "Drag the numbers into the dotted boxes from smallest to biggest.",
+  "tasks": [
+    {
+      "sequence": [
+        "6",
+        "7",
+        "8",
+        "9",
+        "10"
+      ],
+      "choices": [
+        "8",
+        "9",
+        "10",
+        "6",
+        "7"
+      ]
+    }
+  ]
+}

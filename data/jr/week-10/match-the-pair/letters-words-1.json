@@ -1,1 +1,22 @@
-{"title":"Alphabet Review Words","group1":["L","M","O","Z"],"group2":["Zebra 🦓","Octopus 🐙","Moon 🌙","Lion 🦁"],"answers":{"1":"d","2":"c","3":"b","4":"a"}}
+{
+  "title": "Alphabet Review Words",
+  "group1": [
+    "L",
+    "M",
+    "O",
+    "Z"
+  ],
+  "group2": [
+    "Zebra 🦓",
+    "Octopus 🐙",
+    "Moon 🌙",
+    "Lion 🦁"
+  ],
+  "answers": {
+    "1": "d",
+    "2": "c",
+    "3": "b",
+    "4": "a"
+  },
+  "highlightFirstLetter": true
+}

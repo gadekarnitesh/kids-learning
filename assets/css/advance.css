@@ -1,0 +1,60 @@
+.advance-questions{display:grid;gap:20px;max-width:900px;margin:24px auto}
+.advance-question{padding:18px 12px;background:linear-gradient(135deg,#edfaff,#fff8dc);border-radius:22px}
+.advance-line,.advance-sequence,.advance-options{display:flex;align-items:center;justify-content:center;gap:10px}
+.advance-line{gap:24px;flex-wrap:wrap}
+.advance-answer-bank{border-left:2px solid #c6dbea;padding-left:24px}
+.advance-options-label{display:block;margin-bottom:10px;color:#526580;font-size:15px;font-weight:600;letter-spacing:.04em}
+.advance-options{padding:10px 12px 14px;background:#ffffffb3;border-radius:16px}
+.advance-sequence{white-space:nowrap}
+.advance-fixed,.advance-comma{font-size:clamp(27px,5vw,40px);font-weight:700;color:#7657dd}
+.advance-drop.count-slot{margin:0;flex-shrink:0;font-size:clamp(27px,5vw,40px);color:#7657dd}
+.advance-drop.correct{color:#248752}
+.advance-drop.wrong{color:#c23c60}
+.advance-option.connect-number{position:static;translate:none;flex-shrink:0;touch-action:none;cursor:grab;border-radius:15px}
+.advance-option.used{visibility:hidden}
+.advance-option.returning{animation:return-home .5s ease}
+.advance-option.dragging{opacity:.25}
+.advance-ghost{position:fixed!important;z-index:1000;pointer-events:none;translate:none!important;margin:0;opacity:.95;border-radius:15px;box-shadow:0 8px 20px #24325244}
+.advance-question .feedback{margin:12px 0 0;min-height:24px}
+.advance-pagination{display:flex;align-items:center;justify-content:center;gap:16px}
+.advance-pagination .try-again{margin:0;min-height:44px}
+.advance-pagination button:disabled{opacity:.45;cursor:default}
+@media(max-width:420px){.advance-line{gap:6px}.advance-options{gap:6px}.advance-sequence{gap:4px}.advance-question{padding:14px 6px}.advance-option.connect-number{width:48px;height:48px;font-size:27px}.advance-drop.count-slot{width:50px;height:50px}.advance-pagination{gap:8px;font-size:14px}.advance-pagination .try-again{padding:10px}}
+
+@media(max-width:520px){.advance-line{flex-direction:column;gap:14px}.advance-answer-bank{border-left:0;border-top:2px solid #c6dbea;padding:12px 0 0;width:100%}.advance-options{width:fit-content;max-width:100%;flex-wrap:wrap;margin:auto}.advance-options-label{margin-bottom:8px}}
+
+/* Paper-style sums: ones and tens share the same right-hand edge. */
+.vertical-questions{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.vertical-questions .advance-question{min-width:0;padding:16px 10px}
+.vertical-questions .advance-line{flex-direction:column;gap:16px}
+.vertical-sum{width:130px;font-variant-numeric:tabular-nums}
+.sum-first,.sum-second,.sum-result{display:flex;align-items:center;justify-content:flex-end;min-height:64px}
+.sum-second{justify-content:space-between;border-bottom:3px solid var(--ink);padding-bottom:8px}
+.sum-first .advance-fixed,.sum-second .advance-fixed,.sum-result .advance-fixed{min-width:66px;text-align:right;padding-right:8px;letter-spacing:.03em}
+.sum-result{padding-top:8px}
+.sum-operator{font-size:32px;color:var(--purple);font-weight:600}
+.vertical-questions .advance-answer-bank{border-left:0;border-top:2px solid #c6dbea;padding:12px 0 0;width:100%}
+.vertical-questions .advance-options{flex-wrap:wrap;padding:8px 4px;gap:6px}
+.vertical-questions .advance-option.connect-number{width:54px;height:54px;font-size:30px}
+.vertical-questions .feedback{font-size:16px}
+.order-board{max-width:760px;margin:24px auto;padding:20px 12px;background:linear-gradient(135deg,#edfaff,#fff8dc);border-radius:22px}
+.order-direction{color:var(--purple);font-weight:600}
+.order-slots{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.order-slots .count-slot{margin:0;color:var(--purple);flex-shrink:0}
+.order-bank{border-top:2px solid #c6dbea;margin-top:24px;padding-top:16px}
+.order-bank .advance-options{flex-wrap:wrap}
+.order-board~.advance-pagination{margin-top:20px}
+@media(max-width:520px){
+ .vertical-questions{gap:8px;margin:18px auto}
+ .vertical-questions .advance-question{padding:12px 4px}
+ .vertical-sum{width:100px}
+ .sum-first,.sum-second,.sum-result{min-height:54px}
+ .sum-first .advance-fixed,.sum-second .advance-fixed,.sum-result .advance-fixed{min-width:50px;padding-right:6px}
+ .vertical-questions .advance-option.connect-number{width:44px;height:44px;font-size:26px}
+ .vertical-questions .advance-options{gap:4px;padding:6px 2px}
+ .order-slots{gap:6px}
+ .order-slots .count-slot{width:44px;height:48px;font-size:27px}
+ .order-board{padding:16px 6px}
+}
+.vertical-sum .count-slot{display:flex;align-items:center;justify-content:flex-end;padding-right:8px}
+@media(max-width:520px){.vertical-sum .count-slot{padding-right:6px}}

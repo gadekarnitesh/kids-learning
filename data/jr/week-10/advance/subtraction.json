@@ -1,0 +1,69 @@
+{
+  "title": "Subtraction · Two Digits",
+  "instruction": "Drag the answer to complete each calculation.",
+  "presentation": "equation",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "sequence": [
+        "46",
+        "−",
+        "10",
+        "=",
+        "?"
+      ],
+      "answer": "36",
+      "choices": [
+        "36",
+        "37",
+        "35"
+      ]
+    },
+    {
+      "sequence": [
+        "47",
+        "−",
+        "11",
+        "=",
+        "?"
+      ],
+      "answer": "36",
+      "choices": [
+        "37",
+        "35",
+        "36"
+      ]
+    },
+    {
+      "sequence": [
+        "48",
+        "−",
+        "12",
+        "=",
+        "?"
+      ],
+      "answer": "36",
+      "choices": [
+        "35",
+        "36",
+        "37"
+      ]
+    },
+    {
+      "sequence": [
+        "49",
+        "−",
+        "13",
+        "=",
+        "?"
+      ],
+      "answer": "36",
+      "choices": [
+        "36",
+        "37",
+        "35"
+      ]
+    }
+  ],
+  "layout": "vertical"
+}

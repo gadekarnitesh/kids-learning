@@ -1,0 +1,55 @@
+{
+  "title": "Before Number · 41–45",
+  "instruction": "Drag the number that comes before.",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "sequence": [
+        "?",
+        "42"
+      ],
+      "answer": "41",
+      "choices": [
+        "41",
+        "42",
+        "43"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "43"
+      ],
+      "answer": "42",
+      "choices": [
+        "42",
+        "43",
+        "44"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "44"
+      ],
+      "answer": "43",
+      "choices": [
+        "43",
+        "44",
+        "45"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "45"
+      ],
+      "answer": "44",
+      "choices": [
+        "43",
+        "44",
+        "45"
+      ]
+    }
+  ]
+}

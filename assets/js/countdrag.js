@@ -3,7 +3,7 @@
   try {
     const data = await fetch(window.activityDataUrl).then(r => r.json());
     const learning = window.activityMode !== 'challenge';
-    const numbers = [...(data.numbers || data.tasks.map(task => task.count))].sort(() => Math.random() - .5);
+    const numbers = shuffleChoices(data.numbers || data.tasks.map(task => task.count));
     root.innerHTML = `<h1>${data.title || 'Count & Drag'}</h1><p class="instruction">${data.instruction || 'Count the pictures, then drag the matching number.'}</p><div class="count-board">${data.tasks.map((task, index) => `<article class="count-card"><div class="count-objects" aria-label="${task.count} ${task.label}">${task.emoji.repeat(task.count)}</div><p class="count-prompt">How many ${task.label}?</p><div class="count-slot" data-answer="${task.count}" data-index="${index}">?</div></article>`).join('')}</div><p class="instruction">Drag a number to every dotted box.</p><div class="number-bank">${numbers.map((number, index) => `<button class="number-tile" draggable="true" data-value="${number}" id="number-${index}" aria-label="Number ${number}">${number}</button>`).join('')}</div><p class="feedback"></p><button class="try-again">Try again</button>`;
     let dragged = null, locked = false;
     const slots = [...root.querySelectorAll('.count-slot')];

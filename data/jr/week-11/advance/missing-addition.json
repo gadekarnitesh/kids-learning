@@ -1,0 +1,69 @@
+{
+  "title": "Addition · Missing Number",
+  "instruction": "Drag the missing number to make the equation correct.",
+  "presentation": "equation",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "sequence": [
+        "10",
+        "+",
+        "?",
+        "=",
+        "32"
+      ],
+      "answer": "22",
+      "choices": [
+        "22",
+        "23",
+        "21"
+      ]
+    },
+    {
+      "sequence": [
+        "11",
+        "+",
+        "?",
+        "=",
+        "37"
+      ],
+      "answer": "26",
+      "choices": [
+        "27",
+        "25",
+        "26"
+      ]
+    },
+    {
+      "sequence": [
+        "12",
+        "+",
+        "?",
+        "=",
+        "44"
+      ],
+      "answer": "32",
+      "choices": [
+        "31",
+        "32",
+        "33"
+      ]
+    },
+    {
+      "sequence": [
+        "13",
+        "+",
+        "?",
+        "=",
+        "49"
+      ],
+      "answer": "36",
+      "choices": [
+        "36",
+        "37",
+        "35"
+      ]
+    }
+  ],
+  "layout": "vertical"
+}

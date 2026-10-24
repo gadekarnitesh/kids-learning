@@ -1,1 +1,22 @@
-{"title":"A–Z Word Challenge","group1":["B","K","N","Y"],"group2":["Yo-yo 🪀","Nest 🪺","Kite 🪁","Ball ⚽"],"answers":{"1":"d","2":"c","3":"b","4":"a"}}
+{
+  "title": "A–Z Word Challenge",
+  "group1": [
+    "B",
+    "K",
+    "N",
+    "Y"
+  ],
+  "group2": [
+    "Yo-yo 🪀",
+    "Nest 🪺",
+    "Kite 🪁",
+    "Ball ⚽"
+  ],
+  "answers": {
+    "1": "d",
+    "2": "c",
+    "3": "b",
+    "4": "a"
+  },
+  "highlightFirstLetter": true
+}

@@ -3,7 +3,7 @@
   try {
     const data = await fetch(window.activityDataUrl).then(r => r.json());
     const learning = window.activityMode !== 'challenge';
-    const choices = [...data.choices].sort(() => Math.random() - .5);
+    const choices = shuffleChoices(data.choices);
     // Keep this first introduction gentle: one concrete problem per activity page.
     const problems = data.problems.slice(0, 1);
     const story = problem => problem.operator === '+'

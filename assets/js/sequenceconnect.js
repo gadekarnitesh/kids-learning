@@ -3,7 +3,7 @@
   try {
     const data = await fetch(window.activityDataUrl).then(r => r.json());
     const learning = window.activityMode === 'learn';
-    const values = [...data.numbers].sort(() => Math.random() - .5);
+    const values = shuffleChoices(data.numbers);
     const colors = ['#ff7699', '#61c8f5', '#5ccf8a', '#7657dd', '#ffd65a'];
     const wanted = new Set(data.numbers.slice(0, -1).map((number, index) => `${number}-${data.numbers[index + 1]}`));
     const positions = values.map((value, index) => {

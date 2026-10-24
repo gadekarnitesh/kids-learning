@@ -1,0 +1,109 @@
+{
+  "title": "Tall & Short",
+  "instruction": "Look closely, then tap the picture that answers the question.",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "prompt": "Pick the tall giraffe.",
+      "choices": [
+        {
+          "id": "tall",
+          "image": "assets/images/learning-pictures/w10-tall-short-0-tall.svg",
+          "alt": "Tall giraffe"
+        },
+        {
+          "id": "short",
+          "image": "assets/images/learning-pictures/w10-tall-short-0-short.svg",
+          "alt": "Short giraffe"
+        }
+      ],
+      "answer": "tall",
+      "success": "Yes! This one is tall."
+    },
+    {
+      "prompt": "Pick the short giraffe.",
+      "choices": [
+        {
+          "id": "tall",
+          "image": "assets/images/learning-pictures/w10-tall-short-0-tall.svg",
+          "alt": "Tall giraffe"
+        },
+        {
+          "id": "short",
+          "image": "assets/images/learning-pictures/w10-tall-short-0-short.svg",
+          "alt": "Short giraffe"
+        }
+      ],
+      "answer": "short",
+      "success": "Yes! This one is short."
+    },
+    {
+      "prompt": "Pick the tall lighthouse.",
+      "choices": [
+        {
+          "id": "tall",
+          "image": "assets/images/learning-pictures/w10-tall-short-1-tall.svg",
+          "alt": "Tall lighthouse"
+        },
+        {
+          "id": "short",
+          "image": "assets/images/learning-pictures/w10-tall-short-1-short.svg",
+          "alt": "Short lighthouse"
+        }
+      ],
+      "answer": "tall",
+      "success": "Yes! This one is tall."
+    },
+    {
+      "prompt": "Pick the short lighthouse.",
+      "choices": [
+        {
+          "id": "tall",
+          "image": "assets/images/learning-pictures/w10-tall-short-1-tall.svg",
+          "alt": "Tall lighthouse"
+        },
+        {
+          "id": "short",
+          "image": "assets/images/learning-pictures/w10-tall-short-1-short.svg",
+          "alt": "Short lighthouse"
+        }
+      ],
+      "answer": "short",
+      "success": "Yes! This one is short."
+    },
+    {
+      "prompt": "Pick the tall building.",
+      "choices": [
+        {
+          "id": "tall",
+          "image": "assets/images/learning-pictures/w10-tall-short-2-tall.svg",
+          "alt": "Tall building"
+        },
+        {
+          "id": "short",
+          "image": "assets/images/learning-pictures/w10-tall-short-2-short.svg",
+          "alt": "Short building"
+        }
+      ],
+      "answer": "tall",
+      "success": "Yes! This one is tall."
+    },
+    {
+      "prompt": "Pick the short building.",
+      "choices": [
+        {
+          "id": "tall",
+          "image": "assets/images/learning-pictures/w10-tall-short-2-tall.svg",
+          "alt": "Tall building"
+        },
+        {
+          "id": "short",
+          "image": "assets/images/learning-pictures/w10-tall-short-2-short.svg",
+          "alt": "Short building"
+        }
+      ],
+      "answer": "short",
+      "success": "Yes! This one is short."
+    }
+  ]
+}

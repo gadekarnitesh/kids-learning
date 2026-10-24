@@ -1,1 +1,22 @@
-{"title":"Week 2 · Animals & Letters","group1":["E","F","G","H"],"group2":["Horse 🐴","Fish 🐟","Elephant 🐘","Goat 🐐"],"answers":{"1":"c","2":"b","3":"d","4":"a"}}
+{
+  "title": "Week 2 · Animals & Letters",
+  "group1": [
+    "E",
+    "F",
+    "G",
+    "H"
+  ],
+  "group2": [
+    "Horse 🐴",
+    "Fish 🐟",
+    "Elephant 🐘",
+    "Goat 🐐"
+  ],
+  "answers": {
+    "1": "c",
+    "2": "b",
+    "3": "d",
+    "4": "a"
+  },
+  "highlightFirstLetter": true
+}

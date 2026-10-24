@@ -1,1 +1,22 @@
-{"title":"Y–Z: Word Adventure","group1":["Y","Z","M","S"],"group2":["Sun ☀️","Moon 🌙","Zip 🤐","Yacht ⛵"],"answers":{"1":"d","2":"c","3":"b","4":"a"}}
+{
+  "title": "Y–Z: Word Adventure",
+  "group1": [
+    "Y",
+    "Z",
+    "M",
+    "S"
+  ],
+  "group2": [
+    "Sun ☀️",
+    "Moon 🌙",
+    "Zip 🤐",
+    "Yacht ⛵"
+  ],
+  "answers": {
+    "1": "d",
+    "2": "c",
+    "3": "b",
+    "4": "a"
+  },
+  "highlightFirstLetter": true
+}

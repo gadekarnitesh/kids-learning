@@ -1,0 +1,109 @@
+{
+  "title": "Big & Small",
+  "instruction": "Look closely, then tap the picture that answers the question.",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "prompt": "Pick the big fish.",
+      "choices": [
+        {
+          "id": "big",
+          "image": "assets/images/learning-pictures/w9-big-small-0-big.svg",
+          "alt": "Big fish"
+        },
+        {
+          "id": "small",
+          "image": "assets/images/learning-pictures/w9-big-small-0-small.svg",
+          "alt": "Small fish"
+        }
+      ],
+      "answer": "big",
+      "success": "Yes! This one is big."
+    },
+    {
+      "prompt": "Pick the small fish.",
+      "choices": [
+        {
+          "id": "big",
+          "image": "assets/images/learning-pictures/w9-big-small-0-big.svg",
+          "alt": "Big fish"
+        },
+        {
+          "id": "small",
+          "image": "assets/images/learning-pictures/w9-big-small-0-small.svg",
+          "alt": "Small fish"
+        }
+      ],
+      "answer": "small",
+      "success": "Yes! This one is small."
+    },
+    {
+      "prompt": "Pick the big butterfly.",
+      "choices": [
+        {
+          "id": "big",
+          "image": "assets/images/learning-pictures/w9-big-small-1-big.svg",
+          "alt": "Big butterfly"
+        },
+        {
+          "id": "small",
+          "image": "assets/images/learning-pictures/w9-big-small-1-small.svg",
+          "alt": "Small butterfly"
+        }
+      ],
+      "answer": "big",
+      "success": "Yes! This one is big."
+    },
+    {
+      "prompt": "Pick the small butterfly.",
+      "choices": [
+        {
+          "id": "big",
+          "image": "assets/images/learning-pictures/w9-big-small-1-big.svg",
+          "alt": "Big butterfly"
+        },
+        {
+          "id": "small",
+          "image": "assets/images/learning-pictures/w9-big-small-1-small.svg",
+          "alt": "Small butterfly"
+        }
+      ],
+      "answer": "small",
+      "success": "Yes! This one is small."
+    },
+    {
+      "prompt": "Pick the big flower.",
+      "choices": [
+        {
+          "id": "big",
+          "image": "assets/images/learning-pictures/w9-big-small-2-big.svg",
+          "alt": "Big flower"
+        },
+        {
+          "id": "small",
+          "image": "assets/images/learning-pictures/w9-big-small-2-small.svg",
+          "alt": "Small flower"
+        }
+      ],
+      "answer": "big",
+      "success": "Yes! This one is big."
+    },
+    {
+      "prompt": "Pick the small flower.",
+      "choices": [
+        {
+          "id": "big",
+          "image": "assets/images/learning-pictures/w9-big-small-2-big.svg",
+          "alt": "Big flower"
+        },
+        {
+          "id": "small",
+          "image": "assets/images/learning-pictures/w9-big-small-2-small.svg",
+          "alt": "Small flower"
+        }
+      ],
+      "answer": "small",
+      "success": "Yes! This one is small."
+    }
+  ]
+}

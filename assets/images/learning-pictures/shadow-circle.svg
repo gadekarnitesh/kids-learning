@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 180"><title>shadow circle</title><defs><filter id="shadow" color-interpolation-filters="sRGB"><feColorMatrix values="0 0 0 0 .14 0 0 0 0 .19 0 0 0 0 .32 0 0 0 1 0"/></filter></defs><g filter="url(#shadow)"><circle cx="100" cy="90" r="60" fill="#61c8f5"/></g></svg>

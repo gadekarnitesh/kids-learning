@@ -1,0 +1,46 @@
+{
+  "title": "Match Pictures & Shadows",
+  "instruction": "Tap a picture, then find its matching shadow.",
+  "group1": [
+    {
+      "image": "assets/images/learning-pictures/object-car.svg",
+      "alt": "Car"
+    },
+    {
+      "image": "assets/images/learning-pictures/object-bike.svg",
+      "alt": "Bike"
+    },
+    {
+      "image": "assets/images/learning-pictures/object-bus.svg",
+      "alt": "Bus"
+    },
+    {
+      "image": "assets/images/learning-pictures/object-scooter.svg",
+      "alt": "Scooter"
+    }
+  ],
+  "group2": [
+    {
+      "image": "assets/images/learning-pictures/shadow-car.svg",
+      "alt": "Car shadow"
+    },
+    {
+      "image": "assets/images/learning-pictures/shadow-bike.svg",
+      "alt": "Bike shadow"
+    },
+    {
+      "image": "assets/images/learning-pictures/shadow-bus.svg",
+      "alt": "Bus shadow"
+    },
+    {
+      "image": "assets/images/learning-pictures/shadow-scooter.svg",
+      "alt": "Scooter shadow"
+    }
+  ],
+  "answers": {
+    "1": "a",
+    "2": "b",
+    "3": "c",
+    "4": "d"
+  }
+}

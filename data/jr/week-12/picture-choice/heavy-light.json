@@ -1,0 +1,109 @@
+{
+  "title": "Heavy & Light",
+  "instruction": "Look closely, then tap the picture that answers the question.",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "prompt": "Which one is heavy?",
+      "choices": [
+        {
+          "id": "heavy",
+          "image": "assets/images/learning-pictures/w12-heavy-light-0-heavy.svg",
+          "alt": "Heavy elephant"
+        },
+        {
+          "id": "light",
+          "image": "assets/images/learning-pictures/w12-heavy-light-0-light.svg",
+          "alt": "Light mouse"
+        }
+      ],
+      "answer": "heavy",
+      "success": "Yes! This one is heavy."
+    },
+    {
+      "prompt": "Which one is light?",
+      "choices": [
+        {
+          "id": "heavy",
+          "image": "assets/images/learning-pictures/w12-heavy-light-0-heavy.svg",
+          "alt": "Heavy elephant"
+        },
+        {
+          "id": "light",
+          "image": "assets/images/learning-pictures/w12-heavy-light-0-light.svg",
+          "alt": "Light mouse"
+        }
+      ],
+      "answer": "light",
+      "success": "Yes! This one is light."
+    },
+    {
+      "prompt": "Which one is heavy?",
+      "choices": [
+        {
+          "id": "heavy",
+          "image": "assets/images/learning-pictures/w12-heavy-light-1-heavy.svg",
+          "alt": "Heavy car"
+        },
+        {
+          "id": "light",
+          "image": "assets/images/learning-pictures/w12-heavy-light-1-light.svg",
+          "alt": "Light bike"
+        }
+      ],
+      "answer": "heavy",
+      "success": "Yes! This one is heavy."
+    },
+    {
+      "prompt": "Which one is light?",
+      "choices": [
+        {
+          "id": "heavy",
+          "image": "assets/images/learning-pictures/w12-heavy-light-1-heavy.svg",
+          "alt": "Heavy car"
+        },
+        {
+          "id": "light",
+          "image": "assets/images/learning-pictures/w12-heavy-light-1-light.svg",
+          "alt": "Light bike"
+        }
+      ],
+      "answer": "light",
+      "success": "Yes! This one is light."
+    },
+    {
+      "prompt": "Which one is heavy?",
+      "choices": [
+        {
+          "id": "heavy",
+          "image": "assets/images/learning-pictures/w12-heavy-light-2-heavy.svg",
+          "alt": "Heavy brick"
+        },
+        {
+          "id": "light",
+          "image": "assets/images/learning-pictures/w12-heavy-light-2-light.svg",
+          "alt": "Light sponge"
+        }
+      ],
+      "answer": "heavy",
+      "success": "Yes! This one is heavy."
+    },
+    {
+      "prompt": "Which one is light?",
+      "choices": [
+        {
+          "id": "heavy",
+          "image": "assets/images/learning-pictures/w12-heavy-light-2-heavy.svg",
+          "alt": "Heavy brick"
+        },
+        {
+          "id": "light",
+          "image": "assets/images/learning-pictures/w12-heavy-light-2-light.svg",
+          "alt": "Light sponge"
+        }
+      ],
+      "answer": "light",
+      "success": "Yes! This one is light."
+    }
+  ]
+}

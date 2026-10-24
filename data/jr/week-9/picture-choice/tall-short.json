@@ -1,0 +1,109 @@
+{
+  "title": "Tall & Short",
+  "instruction": "Look closely, then tap the picture that answers the question.",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "prompt": "Pick the tall tree.",
+      "choices": [
+        {
+          "id": "tall",
+          "image": "assets/images/learning-pictures/w9-tall-short-0-tall.svg",
+          "alt": "Tall tree"
+        },
+        {
+          "id": "short",
+          "image": "assets/images/learning-pictures/w9-tall-short-0-short.svg",
+          "alt": "Short tree"
+        }
+      ],
+      "answer": "tall",
+      "success": "Yes! This one is tall."
+    },
+    {
+      "prompt": "Pick the short tree.",
+      "choices": [
+        {
+          "id": "tall",
+          "image": "assets/images/learning-pictures/w9-tall-short-0-tall.svg",
+          "alt": "Tall tree"
+        },
+        {
+          "id": "short",
+          "image": "assets/images/learning-pictures/w9-tall-short-0-short.svg",
+          "alt": "Short tree"
+        }
+      ],
+      "answer": "short",
+      "success": "Yes! This one is short."
+    },
+    {
+      "prompt": "Pick the tall tower.",
+      "choices": [
+        {
+          "id": "tall",
+          "image": "assets/images/learning-pictures/w9-tall-short-1-tall.svg",
+          "alt": "Tall tower"
+        },
+        {
+          "id": "short",
+          "image": "assets/images/learning-pictures/w9-tall-short-1-short.svg",
+          "alt": "Short tower"
+        }
+      ],
+      "answer": "tall",
+      "success": "Yes! This one is tall."
+    },
+    {
+      "prompt": "Pick the short tower.",
+      "choices": [
+        {
+          "id": "tall",
+          "image": "assets/images/learning-pictures/w9-tall-short-1-tall.svg",
+          "alt": "Tall tower"
+        },
+        {
+          "id": "short",
+          "image": "assets/images/learning-pictures/w9-tall-short-1-short.svg",
+          "alt": "Short tower"
+        }
+      ],
+      "answer": "short",
+      "success": "Yes! This one is short."
+    },
+    {
+      "prompt": "Pick the tall candle.",
+      "choices": [
+        {
+          "id": "tall",
+          "image": "assets/images/learning-pictures/w9-tall-short-2-tall.svg",
+          "alt": "Tall candle"
+        },
+        {
+          "id": "short",
+          "image": "assets/images/learning-pictures/w9-tall-short-2-short.svg",
+          "alt": "Short candle"
+        }
+      ],
+      "answer": "tall",
+      "success": "Yes! This one is tall."
+    },
+    {
+      "prompt": "Pick the short candle.",
+      "choices": [
+        {
+          "id": "tall",
+          "image": "assets/images/learning-pictures/w9-tall-short-2-tall.svg",
+          "alt": "Tall candle"
+        },
+        {
+          "id": "short",
+          "image": "assets/images/learning-pictures/w9-tall-short-2-short.svg",
+          "alt": "Short candle"
+        }
+      ],
+      "answer": "short",
+      "success": "Yes! This one is short."
+    }
+  ]
+}

@@ -3,7 +3,7 @@
   try {
     const data = await fetch(window.activityDataUrl).then(response => response.json());
     const learning = window.activityMode === 'learn';
-    const questions = data.questions.slice(0, 3);
+    const questions = data.questions.slice(0, 3).map(q => ({ ...q, choices: shuffleChoices(q.choices) }));
     let answered = 0;
     const isColour = ['colour', 'color'].includes(data.presentation) || questions.every(question => /^#[0-9a-f]{6}$/i.test(question.answer));
     const item = value => isColour ? '' : value;

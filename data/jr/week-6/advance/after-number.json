@@ -1,0 +1,55 @@
+{
+  "title": "After Number · 26–30",
+  "instruction": "Drag the number that comes after.",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "sequence": [
+        "26",
+        "?"
+      ],
+      "answer": "27",
+      "choices": [
+        "26",
+        "27",
+        "28"
+      ]
+    },
+    {
+      "sequence": [
+        "27",
+        "?"
+      ],
+      "answer": "28",
+      "choices": [
+        "27",
+        "28",
+        "29"
+      ]
+    },
+    {
+      "sequence": [
+        "28",
+        "?"
+      ],
+      "answer": "29",
+      "choices": [
+        "28",
+        "29",
+        "30"
+      ]
+    },
+    {
+      "sequence": [
+        "29",
+        "?"
+      ],
+      "answer": "30",
+      "choices": [
+        "28",
+        "29",
+        "30"
+      ]
+    }
+  ]
+}

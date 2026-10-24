@@ -1,1 +1,22 @@
-{"title":"A–D: Word Adventure","group1":["A","B","C","D"],"group2":["Drum 🥁","Cake 🍰","Butterfly 🦋","Arrow ➡️"],"answers":{"1":"d","2":"c","3":"b","4":"a"}}
+{
+  "title": "A–D: Word Adventure",
+  "group1": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "group2": [
+    "Drum 🥁",
+    "Cake 🍰",
+    "Butterfly 🦋",
+    "Arrow ➡️"
+  ],
+  "answers": {
+    "1": "d",
+    "2": "c",
+    "3": "b",
+    "4": "a"
+  },
+  "highlightFirstLetter": true
+}

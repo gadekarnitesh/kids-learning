@@ -1,0 +1,46 @@
+{
+  "title": "Match Pictures & Shadows",
+  "instruction": "Tap a picture, then find its matching shadow.",
+  "group1": [
+    {
+      "image": "assets/images/learning-pictures/object-fish.svg",
+      "alt": "Fish"
+    },
+    {
+      "image": "assets/images/learning-pictures/object-butterfly.svg",
+      "alt": "Butterfly"
+    },
+    {
+      "image": "assets/images/learning-pictures/object-turtle.svg",
+      "alt": "Turtle"
+    },
+    {
+      "image": "assets/images/learning-pictures/object-flower.svg",
+      "alt": "Flower"
+    }
+  ],
+  "group2": [
+    {
+      "image": "assets/images/learning-pictures/shadow-fish.svg",
+      "alt": "Fish shadow"
+    },
+    {
+      "image": "assets/images/learning-pictures/shadow-butterfly.svg",
+      "alt": "Butterfly shadow"
+    },
+    {
+      "image": "assets/images/learning-pictures/shadow-turtle.svg",
+      "alt": "Turtle shadow"
+    },
+    {
+      "image": "assets/images/learning-pictures/shadow-flower.svg",
+      "alt": "Flower shadow"
+    }
+  ],
+  "answers": {
+    "1": "a",
+    "2": "b",
+    "3": "c",
+    "4": "d"
+  }
+}

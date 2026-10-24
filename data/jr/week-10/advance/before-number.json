@@ -1,0 +1,55 @@
+{
+  "title": "Before Number · 46–50",
+  "instruction": "Drag the number that comes before.",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "sequence": [
+        "?",
+        "47"
+      ],
+      "answer": "46",
+      "choices": [
+        "46",
+        "47",
+        "48"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "48"
+      ],
+      "answer": "47",
+      "choices": [
+        "47",
+        "48",
+        "49"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "49"
+      ],
+      "answer": "48",
+      "choices": [
+        "48",
+        "49",
+        "50"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "50"
+      ],
+      "answer": "49",
+      "choices": [
+        "48",
+        "49",
+        "50"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "title": "In-between Alphabets · U–X",
+  "instruction": "Drag the letter that belongs in between.",
+  "presentation": "sequence",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "sequence": [
+        "U",
+        "?",
+        "W"
+      ],
+      "answer": "V",
+      "choices": [
+        "U",
+        "V",
+        "W"
+      ]
+    },
+    {
+      "sequence": [
+        "V",
+        "?",
+        "X"
+      ],
+      "answer": "W",
+      "choices": [
+        "W",
+        "X",
+        "V"
+      ]
+    }
+  ]
+}

@@ -1,1 +1,193 @@
-{"sections":[{"title":"Click & Reveal","icon":"✨","activities":[{"type":"reveal","file":"alphabet-peekaboo","label":"Celebration Review","icon":"🎉"}]},{"title":"Number Learning","icon":"🔢","activities":[{"type":"count","file":"count-and-drag","mode":"challenge","label":"Final Count Challenge","icon":"🔢"}]},{"title":"Picture Maths","icon":"🧠","activities":[{"type":"math","file":"addition-drag","mode":"challenge","label":"Final Maths Challenge","icon":"🧠"}]}]}
+{
+  "sections": [
+    {
+      "title": "Click & Reveal",
+      "icon": "✨",
+      "activities": [
+        {
+          "type": "reveal",
+          "file": "alphabet-peekaboo",
+          "label": "Celebration Review",
+          "icon": "🎉"
+        }
+      ]
+    },
+    {
+      "title": "Number Learning",
+      "icon": "🔢",
+      "activities": [
+        {
+          "type": "count",
+          "file": "count-and-drag",
+          "mode": "challenge",
+          "label": "Final Count Challenge",
+          "icon": "🔢"
+        },
+        {
+          "type": "numberorder",
+          "file": "drag-number-order",
+          "mode": "learn",
+          "label": "Put Numbers in Order · 1–50",
+          "icon": "🔢"
+        }
+      ]
+    },
+    {
+      "title": "Picture Maths",
+      "icon": "🧠",
+      "activities": [
+        {
+          "type": "math",
+          "file": "addition-drag",
+          "mode": "challenge",
+          "label": "Final Maths Challenge",
+          "icon": "🧠"
+        }
+      ]
+    },
+    {
+      "title": "Match & Connect",
+      "icon": "🧩",
+      "activities": [
+        {
+          "type": "pairs",
+          "file": "shape-pairs",
+          "mode": "learn",
+          "label": "Match Shapes & Pictures",
+          "icon": "🔷"
+        },
+        {
+          "type": "pairs",
+          "file": "shadow-shapes",
+          "mode": "learn",
+          "label": "Match Shapes & Shadows",
+          "icon": "🧩"
+        },
+        {
+          "type": "pairs",
+          "file": "shadow-pictures",
+          "mode": "learn",
+          "label": "Match Pictures & Shadows",
+          "icon": "🧩"
+        }
+      ]
+    },
+    {
+      "title": "Compare Pictures",
+      "icon": "🖼️",
+      "activities": [
+        {
+          "type": "picturechoice",
+          "file": "big-small",
+          "mode": "learn",
+          "label": "Big & Small",
+          "icon": "🖼️"
+        },
+        {
+          "type": "picturechoice",
+          "file": "tall-short",
+          "mode": "learn",
+          "label": "Tall & Short",
+          "icon": "🖼️"
+        },
+        {
+          "type": "picturechoice",
+          "file": "wide-narrow",
+          "mode": "learn",
+          "label": "Wide & Narrow",
+          "icon": "🖼️"
+        },
+        {
+          "type": "picturechoice",
+          "file": "heavy-light",
+          "mode": "learn",
+          "label": "Heavy & Light",
+          "icon": "🖼️"
+        },
+        {
+          "type": "picturechoice",
+          "file": "full-empty",
+          "mode": "learn",
+          "label": "Full & Empty",
+          "icon": "🖼️"
+        }
+      ]
+    },
+    {
+      "title": "Advance",
+      "icon": "🚀",
+      "activities": [
+        {
+          "type": "advance",
+          "file": "before-number",
+          "mode": "learn",
+          "label": "Before Number · 1–50",
+          "icon": "🔢"
+        },
+        {
+          "type": "advance",
+          "file": "after-number",
+          "mode": "learn",
+          "label": "After Number · 1–50",
+          "icon": "🔢"
+        },
+        {
+          "type": "advance",
+          "file": "before-letter",
+          "mode": "learn",
+          "label": "Before Alphabet · A–Z",
+          "icon": "🔤"
+        },
+        {
+          "type": "advance",
+          "file": "after-letter",
+          "mode": "learn",
+          "label": "After Alphabet · A–Z",
+          "icon": "🔤"
+        },
+        {
+          "type": "advance",
+          "file": "addition",
+          "mode": "learn",
+          "label": "Addition · Two Digits",
+          "icon": "➕"
+        },
+        {
+          "type": "advance",
+          "file": "subtraction",
+          "mode": "learn",
+          "label": "Subtraction · Two Digits",
+          "icon": "➖"
+        },
+        {
+          "type": "advance",
+          "file": "missing-addition",
+          "mode": "learn",
+          "label": "Addition · Missing Number",
+          "icon": "🧩"
+        },
+        {
+          "type": "advance",
+          "file": "missing-subtraction",
+          "mode": "learn",
+          "label": "Subtraction · Missing Number",
+          "icon": "🧩"
+        },
+        {
+          "type": "advance",
+          "file": "between-number",
+          "mode": "learn",
+          "label": "In-between Numbers · 1–50",
+          "icon": "🔢"
+        },
+        {
+          "type": "advance",
+          "file": "between-letter",
+          "mode": "learn",
+          "label": "In-between Alphabets · A–Z",
+          "icon": "🔤"
+        }
+      ]
+    }
+  ]
+}

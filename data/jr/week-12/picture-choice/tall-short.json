@@ -1,0 +1,109 @@
+{
+  "title": "Tall & Short",
+  "instruction": "Look closely, then tap the picture that answers the question.",
+  "questionsPerPage": 2,
+  "questions": [
+    {
+      "prompt": "Pick the tall vase.",
+      "choices": [
+        {
+          "id": "tall",
+          "image": "assets/images/learning-pictures/w12-tall-short-0-tall.svg",
+          "alt": "Tall vase"
+        },
+        {
+          "id": "short",
+          "image": "assets/images/learning-pictures/w12-tall-short-0-short.svg",
+          "alt": "Short vase"
+        }
+      ],
+      "answer": "tall",
+      "success": "Yes! This one is tall."
+    },
+    {
+      "prompt": "Pick the short vase.",
+      "choices": [
+        {
+          "id": "tall",
+          "image": "assets/images/learning-pictures/w12-tall-short-0-tall.svg",
+          "alt": "Tall vase"
+        },
+        {
+          "id": "short",
+          "image": "assets/images/learning-pictures/w12-tall-short-0-short.svg",
+          "alt": "Short vase"
+        }
+      ],
+      "answer": "short",
+      "success": "Yes! This one is short."
+    },
+    {
+      "prompt": "Pick the tall pencil.",
+      "choices": [
+        {
+          "id": "tall",
+          "image": "assets/images/learning-pictures/w12-tall-short-1-tall.svg",
+          "alt": "Tall pencil"
+        },
+        {
+          "id": "short",
+          "image": "assets/images/learning-pictures/w12-tall-short-1-short.svg",
+          "alt": "Short pencil"
+        }
+      ],
+      "answer": "tall",
+      "success": "Yes! This one is tall."
+    },
+    {
+      "prompt": "Pick the short pencil.",
+      "choices": [
+        {
+          "id": "tall",
+          "image": "assets/images/learning-pictures/w12-tall-short-1-tall.svg",
+          "alt": "Tall pencil"
+        },
+        {
+          "id": "short",
+          "image": "assets/images/learning-pictures/w12-tall-short-1-short.svg",
+          "alt": "Short pencil"
+        }
+      ],
+      "answer": "short",
+      "success": "Yes! This one is short."
+    },
+    {
+      "prompt": "Pick the tall snowman.",
+      "choices": [
+        {
+          "id": "tall",
+          "image": "assets/images/learning-pictures/w12-tall-short-2-tall.svg",
+          "alt": "Tall snowman"
+        },
+        {
+          "id": "short",
+          "image": "assets/images/learning-pictures/w12-tall-short-2-short.svg",
+          "alt": "Short snowman"
+        }
+      ],
+      "answer": "tall",
+      "success": "Yes! This one is tall."
+    },
+    {
+      "prompt": "Pick the short snowman.",
+      "choices": [
+        {
+          "id": "tall",
+          "image": "assets/images/learning-pictures/w12-tall-short-2-tall.svg",
+          "alt": "Tall snowman"
+        },
+        {
+          "id": "short",
+          "image": "assets/images/learning-pictures/w12-tall-short-2-short.svg",
+          "alt": "Short snowman"
+        }
+      ],
+      "answer": "short",
+      "success": "Yes! This one is short."
+    }
+  ]
+}

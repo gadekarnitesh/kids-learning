@@ -4,19 +4,64 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Activities · Kids Learning</title>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/style.css"><link rel="stylesheet" href="assets/css/activity-layout.css"><link rel="stylesheet" href="assets/css/effects.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/style.css"><link rel="stylesheet" href="assets/css/activity-layout.css?v=20261024-6"><link rel="stylesheet" href="assets/css/effects.css">
 </head>
 <body class="activities-page">
   <header class="topbar"><a href="index.html" class="site-name">☀️ Kids Learning</a><span><span id="class-label" class="class-badge"></span> <a class="logout-link" href="summary.html">Log out</a></span></header>
-  <main class="learning-layout"><aside class="sidebar"><h2>Activities</h2><nav id="activity-menu" aria-label="Activities"></nav></aside><section class="activity-stage"><div class="tablet" aria-label="Activity tablet"><div class="camera"></div><iframe id="activity-frame" title="Kids learning activity"></iframe></div></section></main>
+  <main class="learning-layout">
+    <button class="sidebar-backdrop" id="sidebar-backdrop" aria-label="Close activities" hidden></button>
+    <aside class="sidebar" id="activity-sidebar" hidden>
+      <div class="sidebar-heading"><h2>Activities</h2><button id="sidebar-close" type="button" aria-label="Close activities">✕</button></div>
+      <nav id="activity-menu" aria-label="Activities"></nav>
+    </aside>
+    <section class="activity-stage">
+      <div class="tablet" aria-label="Activity tablet">
+        <div class="camera"></div>
+        <div class="tablet-heading"><button id="sidebar-toggle" type="button" aria-controls="activity-sidebar" aria-expanded="false">☰ Activities</button><div class="tablet-context"><span id="current-week" class="week-badge"></span><span id="current-activity"></span></div></div>
+        <iframe id="activity-frame" title="Kids learning activity"></iframe>
+        <nav class="tablet-navigation" aria-label="Activities in this week">
+          <button id="previous-activity" type="button" aria-label="Previous activity" disabled>← Previous</button>
+          <span id="activity-position" aria-live="polite"></span>
+          <button id="next-activity" type="button" aria-label="Next activity" disabled>Next →</button>
+        </nav>
+      </div>
+    </section>
+  </main>
   <script>
     (async function () {
       const params = new URLSearchParams(location.search), level = params.get('class') === 'sr' ? 'sr' : 'jr', selectedWeek = params.get('week');
       document.getElementById('class-label').textContent = level === 'sr' ? 'SR-KG · 5–7 years' : 'JR-KG · 3–5 years';
       if (!selectedWeek) { location.replace(`class-landing.html?class=${level}`); return; }
       const menu = document.getElementById('activity-menu'), frame = document.getElementById('activity-frame');
+      const sidebar = document.getElementById('activity-sidebar'), sidebarToggle = document.getElementById('sidebar-toggle');
+      const backdrop = document.getElementById('sidebar-backdrop'), layout = document.querySelector('.learning-layout');
+      const mobile = window.matchMedia('(max-width: 700px)');
+      function setSidebar(open, returnFocus = false) {
+        sidebar.hidden = !open;
+        backdrop.hidden = !open || !mobile.matches;
+        layout.classList.toggle('sidebar-visible', open);
+        sidebarToggle.setAttribute('aria-expanded', String(open));
+        if (returnFocus) sidebarToggle.focus();
+      }
+      setSidebar(!mobile.matches);
+      sidebarToggle.addEventListener('click', () => setSidebar(sidebar.hidden));
+      document.getElementById('sidebar-close').addEventListener('click', () => setSidebar(false, true));
+      backdrop.addEventListener('click', () => setSidebar(false, true));
+      document.addEventListener('keydown', event => { if (event.key === 'Escape' && !sidebar.hidden) setSidebar(false, true); });
+      mobile.addEventListener('change', () => setSidebar(!mobile.matches));
+      menu.addEventListener('click', event => { if (event.target.closest('button') && mobile.matches) setSidebar(false, true); });
       try {
-        const catalog = await fetch(`data/${level}/${selectedWeek}/activities.json`).then(response => { if (!response.ok) throw Error(); return response.json(); });
+        const [catalog, weekConfig] = await Promise.all([
+          fetch(`data/${level}/${selectedWeek}/activities.json`, { cache: 'no-store' }).then(response => { if (!response.ok) throw Error(); return response.json(); }),
+          fetch(`data/${level}/sections.json`, { cache: 'no-store' }).then(response => { if (!response.ok) throw Error(); return response.json(); })
+        ]);
+        const weeks = weekConfig.sections.filter(week => week.enabled);
+        const weekIndex = weeks.findIndex(week => week.id === selectedWeek);
+        const previousWeek = weeks[weekIndex - 1], nextWeek = weeks[weekIndex + 1];
+        document.getElementById('current-week').textContent = weeks[weekIndex]?.label || selectedWeek.replace('week-', 'Week ');
+        function changeWeek(week, last = false) {
+          location.assign(`activities.html?class=${level}&week=${encodeURIComponent(week.id)}${last ? '&activity=last' : ''}`);
+        }
         const weekNumber = Number(selectedWeek.replace('week-', ''));
         const sections = catalog.sections.map(section => ({ ...section, activities: section.activities.filter(activity => !(level === 'jr' && weekNumber >= 3 && activity.type === 'count') && !(level === 'jr' && weekNumber >= 4 && activity.type === 'math' && activity.file === 'subtraction-drag') && !(level === 'jr' && weekNumber >= 9 && activity.type === 'math')) }));
         if (level === 'jr' && weekNumber !== 3) sections.splice(1, 0, { title: 'Alphabet Word Match', icon: '🧩', activities: [{ type: 'pairs', file: 'letters-words-1', mode: 'learn', label: 'Letter Words 1', icon: '🔤' }, { type: 'pairs', file: 'letters-words-2', mode: 'learn', label: 'Letter Words 2', icon: '📚' }, { type: 'pairs', file: 'letters-words-3', mode: 'learn', label: 'Letter Words 3', icon: '🌟' }] });
@@ -30,11 +75,20 @@
           { type: 'numberpick', file: 'find-same-letter', mode: 'learn', label: 'Learn: Find Same Letter', icon: '🔤' },
           { type: 'numberpick', file: 'find-same-letter', mode: 'challenge', label: 'Challenge: Find Same Letter', icon: '🏆' }
         );
-        menu.innerHTML = sections.map(section => `<section><h3>${section.icon || '✨'} ${section.title}</h3>${section.activities.map(activity => `<button data-type="${activity.type}" data-file="${activity.file}" data-mode="${activity.mode || 'learn'}">${activity.icon || '⭐'} ${activity.label}</button>`).join('')}</section>`).join('');
+        menu.innerHTML = sections.map(section => `<section><h3>${section.icon || '✨'} ${section.title}</h3>${section.activities.map(activity => `<button data-section="${section.title}" data-type="${activity.type}" data-file="${activity.file}" data-mode="${activity.mode || 'learn'}">${activity.icon || '⭐'} ${activity.label}</button>`).join('')}</section>`).join('');
         const buttons = [...menu.querySelectorAll('button')];
-        function load(button) { buttons.forEach(item => item.classList.toggle('active', item === button)); frame.src = `activity-frame.html?type=${button.dataset.type}&file=${button.dataset.file}&week=${selectedWeek}&mode=${button.dataset.mode}&class=${level}&label=${encodeURIComponent(button.textContent.trim())}`; }
+        let currentIndex = 0;
+        const prevButton = document.getElementById('previous-activity'), nextButton = document.getElementById('next-activity');
+        function load(button) { currentIndex = buttons.indexOf(button); document.getElementById('current-activity').textContent = button.textContent.trim(); frame.title = button.textContent.trim(); buttons.forEach(item => item.classList.toggle('active', item === button)); frame.src = `activity-frame.html?v=20261024-7&type=${button.dataset.type}&file=${button.dataset.file}&week=${selectedWeek}&mode=${button.dataset.mode}&class=${level}&section=${encodeURIComponent(button.dataset.section)}&label=${encodeURIComponent(button.textContent.trim())}`; document.getElementById('activity-position').textContent = `${currentIndex + 1} / ${buttons.length}`; const first = currentIndex === 0, last = currentIndex === buttons.length - 1;
+          prevButton.textContent = first && previousWeek ? '← Previous week' : '← Previous';
+          nextButton.textContent = last && nextWeek ? 'Next week →' : 'Next →';
+          prevButton.setAttribute('aria-label', first && previousWeek ? `Go to ${previousWeek.label}` : 'Previous activity');
+          nextButton.setAttribute('aria-label', last && nextWeek ? `Go to ${nextWeek.label}` : 'Next activity');
+          prevButton.disabled = first && !previousWeek; nextButton.disabled = last && !nextWeek; }
         buttons.forEach(button => button.addEventListener('click', () => load(button)));
-        if (buttons.length) load(buttons[0]); else menu.innerHTML = '<p>No activities are available in this section yet.</p>';
+        prevButton.addEventListener('click', () => { if (currentIndex > 0) load(buttons[currentIndex - 1]); else if (previousWeek) changeWeek(previousWeek, true); });
+        nextButton.addEventListener('click', () => { if (currentIndex < buttons.length - 1) load(buttons[currentIndex + 1]); else if (nextWeek) changeWeek(nextWeek); });
+        if (buttons.length) load(params.get('activity') === 'last' ? buttons[buttons.length - 1] : buttons[0]); else menu.innerHTML = '<p>No activities are available in this section yet.</p>';
       } catch { menu.innerHTML = '<p>Activities could not be loaded.</p>'; }
     }());
   </script>
