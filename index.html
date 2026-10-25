@@ -12,20 +12,18 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Free JR-KG Learning Activities for Kids">
   <meta property="og:description" content="Play and learn with free kindergarten activities for kids: letters, numbers, counting, matching and more.">
-  <meta property="og:image" content="assets/images/welcome-diwali.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261025-1">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261025-home-balanced-2">
 </head>
-<body class="home-page">
+<body class="home-page landing-page">
   <main class="welcome-card">
-    <div class="cloud cloud-one"></div><div class="cloud cloud-two"></div>
     <div class="brand-mark" aria-hidden="true">☀️</div>
     <h1>Kids <span>Learning</span></h1>
-    <p class="intro">Play, explore, and learn! Choose your class for colourful activities made just for growing minds.</p>
-    <div class="class-picker" id="class-picker" aria-label="Choose a class"></div>
+    <p class="intro">Fun, free learning activities for JR-KG kids.</p>
+    <div class="home-showcase"><img src="assets/images/welcome-diwali.jpg" alt="A young child smiling in colorful festive clothes" class="home-hero-image"><span class="image-spark image-spark-one" aria-hidden="true">✦</span><span class="image-spark image-spark-two" aria-hidden="true">✦</span><section class="home-class-card"><h2>Choose your class</h2><div class="class-picker" id="class-picker" aria-label="Choose a class"></div></section></div>
     <footer class="developer-credit"><a id="developer-credit-link" href="mailto:gadekarnitesh@ymail.com" title="Email Nitesh: gadekarnitesh@ymail.com" aria-label="Built by Nitesh. Email gadekarnitesh@ymail.com">Built by Nitesh</a></footer>
   </main>
 <script>(async()=>{const d=await fetch('data/classes.json').then(r=>r.json());document.getElementById('class-picker').innerHTML=d.classes
