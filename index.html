@@ -3,7 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kids Learning</title>
+  <title>Free JR-KG Learning Activities for Kids | Kids Learning</title>
+  <meta name="description" content="Explore free JR-KG learning activities for kids, including fun alphabet, number, counting, matching and early learning games.">
+  <meta name="keywords" content="free JR-KG learning, free learning activities for kids, kids learning, kindergarten learning activities, preschool learning games, free educational games for children, JR KG activities, alphabet games, number games">
+  <meta name="author" content="Nitesh Gadekar">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#bceeff">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Free JR-KG Learning Activities for Kids">
+  <meta property="og:description" content="Play and learn with free kindergarten activities for kids: letters, numbers, counting, matching and more.">
+  <meta property="og:image" content="assets/images/welcome-diwali.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -16,9 +26,10 @@
     <h1>Kids <span>Learning</span></h1>
     <p class="intro">Play, explore, and learn! Choose your class for colourful activities made just for growing minds.</p>
     <div class="class-picker" id="class-picker" aria-label="Choose a class"></div>
+    <footer class="developer-credit"><a id="developer-credit-link" href="mailto:gadekarnitesh@ymail.com" title="Email Nitesh: gadekarnitesh@ymail.com" aria-label="Built by Nitesh. Email gadekarnitesh@ymail.com">Built by Nitesh</a></footer>
   </main>
 <script>(async()=>{const d=await fetch('data/classes.json').then(r=>r.json());document.getElementById('class-picker').innerHTML=d.classes
   // SR-KG is temporarily commented out while its page content is being updated.
   .filter(c=>c.id!=='sr')
-  .map(c=>`<a class="class-button ${c.theme||'junior'}" href="profile.html?class=${encodeURIComponent(c.id)}"><span class="button-icon">${c.icon}</span><strong>${c.label}</strong><small>${c.ageLabel}</small></a>`).join('')})()</script></body>
+  .map(c=>`<a class="class-button ${c.theme||'junior'}" href="profile.html?class=${encodeURIComponent(c.id)}"><span class="button-icon">${c.icon}</span><strong>${c.label}</strong><small>${c.ageLabel}</small></a>`).join('');const credits=['⚡ Built by Nitesh','☕ + Code by Nitesh','Built by Nitesh'];document.getElementById('developer-credit-link').textContent=credits[Math.floor(Math.random()*credits.length)]})()</script></body>
 </html>
