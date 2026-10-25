@@ -1,0 +1,45 @@
+/* Maths uses the JR-KG advance activity components, with a color per level. */
+.maths-activity .advance-fixed,
+.maths-activity .advance-comma,
+.maths-activity .advance-drop.count-slot,
+.maths-activity .advance-option.connect-number { color: var(--purple); }
+.maths-activity .advance-drop.correct { color: #248752; }
+.maths-activity .advance-drop.wrong { color: #c23c60; }
+.maths-activity .vertical-questions.single-question {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 460px;
+}
+.maths-activity .single-question .advance-option.connect-number {
+  width: 76px;
+  height: 64px;
+  font-size: 28px;
+}
+.maths-activity .single-question .vertical-sum { width: 150px; }
+.maths-activity .single-question .count-slot { min-width: 86px; }
+.maths-activity .advance-sequence { flex-wrap: wrap; white-space: normal; }
+.maths-remainders .single-question .advance-option.connect-number {
+  width: 88px;
+  font-size: 21px;
+}
+.maths-remainders .single-question .count-slot {
+  min-width: 108px;
+  font-size: 26px;
+}
+.maths-question-progress{margin:8px 0 0;color:#526580;font-size:14px;font-weight:500}
+.maths-level-finished{max-width:580px;margin:24px auto;padding:28px 16px;background:linear-gradient(135deg,#edfaff,#fff8dc);border-radius:22px}
+.maths-complete-mark{display:inline-grid;place-items:center;width:66px;height:66px;background:#e2faeb;color:#248752;border:3px solid #5ccf8a;border-radius:50%;font-size:40px}
+.maths-level-finished h2{color:var(--purple);font-size:28px;margin:12px 0}
+.maths-level-finished p{font-size:17px}
+.maths-completion-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:12px;margin-top:18px}
+.maths-completion-actions .try-again{margin:0;min-height:44px}
+@media (max-width: 520px) {
+  .maths-activity .single-question .advance-option.connect-number {
+    width: 68px;
+    height: 58px;
+    font-size: 26px;
+  }
+  .maths-remainders .single-question .advance-option.connect-number {
+    width: 82px;
+    font-size: 20px;
+  }
+}

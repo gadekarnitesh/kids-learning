@@ -16,18 +16,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261025-home-balanced-2">
+  <link rel="stylesheet" href="assets/css/style.css?v=20261025-maths-blue">
 </head>
 <body class="home-page landing-page">
   <main class="welcome-card">
     <div class="brand-mark" aria-hidden="true">☀️</div>
     <h1>Kids <span>Learning</span></h1>
     <p class="intro">Fun, free learning activities for JR-KG kids.</p>
-    <div class="home-showcase"><img src="assets/images/welcome-diwali.jpg" alt="A young child smiling in colorful festive clothes" class="home-hero-image"><span class="image-spark image-spark-one" aria-hidden="true">✦</span><span class="image-spark image-spark-two" aria-hidden="true">✦</span><section class="home-class-card"><h2>Choose your class</h2><div class="class-picker" id="class-picker" aria-label="Choose a class"></div></section></div>
+    <div class="home-showcase"><img src="assets/images/welcome-diwali.jpg" alt="A young child smiling in colorful festive clothes" class="home-hero-image"><span class="image-spark image-spark-one" aria-hidden="true">✦</span><span class="image-spark image-spark-two" aria-hidden="true">✦</span><section class="home-class-card"><h2>Choose your adventure</h2><div class="class-picker" id="class-picker" aria-label="Choose a learning section"></div></section></div>
     <footer class="developer-credit"><a id="developer-credit-link" href="mailto:gadekarnitesh@ymail.com" title="Email Nitesh: gadekarnitesh@ymail.com" aria-label="Built by Nitesh. Email gadekarnitesh@ymail.com">Built by Nitesh</a></footer>
   </main>
-<script>(async()=>{const d=await fetch('data/classes.json').then(r=>r.json());document.getElementById('class-picker').innerHTML=d.classes
-  // SR-KG is temporarily commented out while its page content is being updated.
-  .filter(c=>c.id!=='sr')
+<script>(async()=>{const d=await fetch('data/classes.json').then(r=>r.json());document.getElementById('class-picker').innerHTML=[...d.classes,{id:'maths',label:'Maths',ageLabel:'Fun number practice',icon:'➕',theme:'maths'},{id:'olympiad',label:'Olympiad',ageLabel:'Learn, practise & discover',icon:'★',theme:'olympiad'}]
+  // Keep SR-KG and Olympiad hidden until their content is ready to publish.
+  .filter(c=>c.id!=='sr'&&c.id!=='olympiad')
   .map(c=>`<a class="class-button ${c.theme||'junior'}" href="profile.html?class=${encodeURIComponent(c.id)}"><span class="button-icon">${c.icon}</span><strong>${c.label}</strong><small>${c.ageLabel}</small></a>`).join('');const credits=['⚡ Built by Nitesh','☕ + Code by Nitesh','Built by Nitesh'];document.getElementById('developer-credit-link').textContent=credits[Math.floor(Math.random()*credits.length)]})()</script></body>
 </html>

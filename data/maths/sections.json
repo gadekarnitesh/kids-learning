@@ -1,0 +1,9 @@
+{
+  "sections": [
+    {
+      "id": "operations",
+      "label": "Maths",
+      "enabled": true
+    }
+  ]
+}

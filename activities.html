@@ -27,14 +27,39 @@
       </div>
     </section>
   </main>
+  <script src="assets/js/maths-progress.js?v=20261025-name-only"></script>
   <script>
     (async function () {
-      const params = new URLSearchParams(location.search), level = params.get('class') === 'sr' ? 'sr' : 'jr', selectedWeek = params.get('week');
-      document.getElementById('class-label').textContent = level === 'sr' ? 'SR-KG · 5–7 years' : 'JR-KG · 3–5 years';
+      const params = new URLSearchParams(location.search), isMaths = params.get('class') === 'maths';
+      const level = isMaths ? 'maths' : params.get('class') === 'sr' ? 'sr' : 'jr', selectedWeek = params.get('week') || (isMaths ? 'operations' : null);
+      document.getElementById('class-label').textContent = isMaths ? 'Maths' : level === 'sr' ? 'SR-KG · 5–7 years' : 'JR-KG · 3–5 years';
+      if (isMaths) {
+        document.title = 'Maths Activities · Kids Learning';
+        document.querySelector('.tablet-navigation').setAttribute('aria-label', 'Maths topics and levels');
+        const stylesheet = document.createElement('link');
+        stylesheet.rel = 'stylesheet';
+        stylesheet.href = 'assets/css/maths-progress.css?v=20261025-heading-right';
+        document.head.append(stylesheet);
+      }
       if (!selectedWeek) { location.replace(`class-landing.html?class=${level}`); return; }
       const menu = document.getElementById('activity-menu'), frame = document.getElementById('activity-frame');
       const activityTitle = document.getElementById('current-activity');
       const activityCode = document.getElementById('current-activity-code');
+      let levelProgress = null;
+      function showLevelProgress(completed, total) {
+        if (!levelProgress) return;
+        levelProgress.textContent = `(${completed}/${total})`;
+        levelProgress.setAttribute('aria-label', `${completed} of ${total} questions complete`);
+        levelProgress.classList.toggle('is-complete', total > 0 && completed === total);
+      }
+      if (isMaths) {
+        levelProgress = document.createElement('span'); levelProgress.id = 'maths-level-progress';
+        levelProgress.className = 'maths-heading-progress'; levelProgress.setAttribute('role', 'status');
+        document.querySelector('.tablet-heading').append(levelProgress);
+        window.setMathsLevelProgress = (completed, total, source) => {
+          if (source === frame.src) showLevelProgress(completed, total);
+        };
+      }
       window.setActivityTitle = (title, source) => {
         if (source !== frame.src) return;
         activityTitle.textContent = title;
@@ -81,20 +106,97 @@
           { type: 'numberpick', file: 'find-same-letter', mode: 'learn', label: 'Learn: Find Same Letter', icon: '🔤' },
           { type: 'numberpick', file: 'find-same-letter', mode: 'challenge', label: 'Challenge: Find Same Letter', icon: '🏆' }
         );
-        menu.innerHTML = sections.map(section => `<section><h3>${section.icon || '✨'} ${section.title}</h3>${section.activities.map(activity => `<button data-code="${activity.code || ''}" data-label="${activity.label}" data-section="${section.title}" data-type="${activity.type}" data-file="${activity.file}" data-mode="${activity.mode || 'learn'}">${activity.icon || '⭐'} ${activity.label}</button>`).join('')}</section>`).join('');
+        menu.innerHTML = sections.map(section => `<section><h3>${section.icon || '✨'} ${section.title}</h3>${section.activities.map(activity => `<button data-code="${activity.code || ''}" data-label="${activity.label}" data-level="${activity.level || ''}" data-total="${activity.questionCount || 24}" data-section="${section.title}" data-type="${activity.type}" data-file="${activity.file}" data-mode="${activity.mode || 'learn'}">${activity.icon || '⭐'} ${activity.label}</button>`).join('')}</section>`).join('');
         const buttons = [...menu.querySelectorAll('button')];
         let currentIndex = 0;
         const prevButton = document.getElementById('previous-activity'), nextButton = document.getElementById('next-activity');
-        function load(button) { currentIndex = buttons.indexOf(button); activityCode.textContent = ''; activityCode.hidden = true; activityTitle.textContent = button.dataset.label; activityTitle.title = button.dataset.label; frame.title = button.dataset.label; buttons.forEach(item => item.classList.toggle('active', item === button)); frame.src = `activity-frame.html?v=20261025-compact-title&type=${button.dataset.type}&file=${button.dataset.file}&week=${selectedWeek}&mode=${button.dataset.mode}&class=${level}&section=${encodeURIComponent(button.dataset.section)}&code=${encodeURIComponent(button.dataset.code)}&label=${encodeURIComponent(button.dataset.label)}`; document.getElementById('activity-position').textContent = `${currentIndex + 1} / ${buttons.length}`; const first = currentIndex === 0, last = currentIndex === buttons.length - 1;
-          prevButton.textContent = first && previousWeek ? '← Previous week' : '← Previous';
-          nextButton.textContent = last && nextWeek ? 'Next week →' : 'Next →';
-          prevButton.setAttribute('aria-label', first && previousWeek ? `Go to ${previousWeek.label}` : 'Previous activity');
-          nextButton.setAttribute('aria-label', last && nextWeek ? `Go to ${nextWeek.label}` : 'Next activity');
-          prevButton.disabled = first && !previousWeek; nextButton.disabled = last && !nextWeek; }
+        const progress = isMaths ? window.mathsProgress : null;
+        const status = button => progress.getStatus(button.dataset.file, button.dataset.total);
+        const available = button => !button.hidden && (!progress || button.dataset.progress !== 'completed');
+        const previousAvailable = () => buttons.slice(0, currentIndex).reverse().find(available);
+        const nextAvailable = () => buttons.slice(currentIndex + 1).find(available);
+        function updateNavigation() {
+          document.getElementById('activity-position').textContent = `${currentIndex + 1} / ${buttons.length}`;
+          const previous = previousAvailable(), next = nextAvailable();
+          prevButton.textContent = !previous && previousWeek ? '← Previous week' : '← Previous';
+          nextButton.textContent = !next && nextWeek ? 'Next week →' : 'Next →';
+          prevButton.setAttribute('aria-label', !previous && previousWeek ? `Go to ${previousWeek.label}` : 'Previous activity');
+          nextButton.setAttribute('aria-label', !next && nextWeek ? `Go to ${nextWeek.label}` : 'Next activity');
+          prevButton.disabled = !previous && !previousWeek;
+          nextButton.disabled = !next && !nextWeek;
+        }
+        function refreshMathsProgress() {
+          if (!progress) return;
+          buttons.forEach(button => {
+            const saved = status(button);
+            button.classList.toggle('maths-level-complete', saved.complete);
+            button.querySelector('.maths-complete-tick').hidden = !saved.complete;
+            button.dataset.progress = saved.complete ? 'completed' : saved.completed ? 'in-progress' : 'not-started';
+            button.setAttribute('aria-label', `${button.dataset.section} ${button.dataset.label}: ${saved.complete ? 'completed' : saved.completed ? 'in progress' : 'not started'}, ${saved.completed} of ${saved.total} questions complete`);
+          });
+          const operations = [...menu.querySelectorAll('section')];
+          operations.forEach(section => {
+            const levels = [...section.querySelectorAll('button')];
+            const finished = levels.filter(button => button.dataset.progress === 'completed').length;
+            const complete = levels.length > 0 && finished === levels.length;
+            const started = levels.some(button => button.dataset.progress !== 'not-started');
+            section.classList.toggle('maths-operation-complete', complete);
+            section.querySelector('h3 .maths-complete-tick').hidden = !complete;
+            section.dataset.progress = complete ? 'completed' : started ? 'in-progress' : 'not-started';
+            const operationStatus = section.querySelector('.maths-operation-status');
+            operationStatus.textContent = `(${finished}/${levels.length})`;
+            operationStatus.setAttribute('aria-label', `${finished} of ${levels.length} levels complete`);
+            section.hidden = levels.length === 0;
+          });
+          const current = buttons[currentIndex];
+          if (current) { const saved = status(current); showLevelProgress(saved.completed, saved.total); }
+          updateNavigation();
+        }
+        if (progress) {
+          function completionTick() {
+            const tick = document.createElement('span'); tick.className = 'maths-complete-tick';
+            tick.textContent = '✓'; tick.hidden = true; tick.setAttribute('aria-hidden', 'true');
+            return tick;
+          }
+          buttons.forEach(button => {
+            const label = document.createElement('span'); label.className = 'maths-level-label'; label.textContent = button.textContent;
+            button.replaceChildren(completionTick(), label);
+          });
+          menu.querySelectorAll('section').forEach(section => {
+            section.classList.add('maths-operation');
+            section.querySelector('h3').prepend(completionTick());
+            const count = document.createElement('small'); count.className = 'maths-operation-status';
+            count.setAttribute('role', 'status'); section.querySelector('h3').append(count);
+          });
+          window.addEventListener('maths-progress-changed', refreshMathsProgress);
+          window.addEventListener('storage', event => { if (event.key === progress.storageKey || event.key === null) refreshMathsProgress(); });
+          window.openMathsTopics = () => {
+            refreshMathsProgress(); setSidebar(true);
+          };
+          refreshMathsProgress();
+        }
+        function load(button) {
+          currentIndex = buttons.indexOf(button);
+          activityCode.textContent = ''; activityCode.hidden = true;
+          activityTitle.textContent = button.dataset.label; activityTitle.title = button.dataset.label; frame.title = button.dataset.label;
+          buttons.forEach(item => item.classList.toggle('active', item === button));
+          if (isMaths) {
+            document.getElementById('current-week').textContent = `Level ${button.dataset.level}`;
+            progress?.setLastActivity(button.dataset.file);
+            if (progress) { const saved = status(button); showLevelProgress(saved.completed, saved.total); }
+          }
+          frame.src = `activity-frame.html?v=20261025-maths-progress&type=${button.dataset.type}&file=${button.dataset.file}&week=${selectedWeek}&mode=${button.dataset.mode}&class=${level}&section=${encodeURIComponent(button.dataset.section)}&code=${encodeURIComponent(button.dataset.code)}&label=${encodeURIComponent(button.dataset.label)}`;
+          updateNavigation();
+        }
         buttons.forEach(button => button.addEventListener('click', () => load(button)));
-        prevButton.addEventListener('click', () => { if (currentIndex > 0) load(buttons[currentIndex - 1]); else if (previousWeek) changeWeek(previousWeek, true); });
-        nextButton.addEventListener('click', () => { if (currentIndex < buttons.length - 1) load(buttons[currentIndex + 1]); else if (nextWeek) changeWeek(nextWeek); });
-        if (buttons.length) load(params.get('activity') === 'last' ? buttons[buttons.length - 1] : buttons.find(button => button.dataset.code === params.get('activity')) || buttons[0]); else menu.innerHTML = '<p>No activities are available in this section yet.</p>';
+        prevButton.addEventListener('click', () => { const previous = previousAvailable(); if (previous) load(previous); else if (previousWeek) changeWeek(previousWeek, true); });
+        nextButton.addEventListener('click', () => { const next = nextAvailable(); if (next) load(next); else if (nextWeek) changeWeek(nextWeek); });
+        let initial = params.get('activity') === 'last' ? buttons[buttons.length - 1] : buttons.find(button => button.dataset.code === params.get('activity'));
+        if (progress && !initial) {
+          const last = buttons.find(button => button.dataset.file === progress.getLastActivity());
+          initial = last && !status(last).complete ? last : buttons.slice(last ? buttons.indexOf(last) + 1 : 0).find(button => !status(button).complete) || buttons.find(button => !status(button).complete) || last;
+        }
+        if (buttons.length) load(initial || buttons[0]); else menu.innerHTML = '<p>No activities are available in this section yet.</p>';
       } catch { menu.innerHTML = '<p>Activities could not be loaded.</p>'; }
     }());
   </script>

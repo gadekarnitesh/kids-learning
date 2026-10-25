@@ -1,5 +1,54 @@
 # Adding learning content
 
+## Olympiad
+
+The main Olympiad section opens at `olympiad.html`, with a dedicated entry on
+the home page and the existing learner profile flow. Its 14 lessons and 38
+practice patterns are described in `olympiad/catalog.json`. Topic banks contain
+1,368 questions (36 per pattern; 12 each at levels 2, 3 and 4).
+
+The source and semantic validator are in `scripts/olympiad_curriculum.py`:
+
+```sh
+python3 scripts/olympiad_curriculum.py          # regenerate all four JSON files
+python3 scripts/olympiad_curriculum.py --check  # validate without changing files
+```
+
+Change content in the generator, then regenerate. `assets/js/olympiad.js`
+provides choice, matching-pairs and quantity-building activities;
+`assets/js/olympiad-visuals.js` draws the shared SVG pictures. Stable option IDs
+keep answers valid when options are shuffled. Practice prioritizes unexplored
+questions and uses six activities per session. Named learners' progress is
+saved separately from Maths in `kids-olympiad-progress:v1:<normalized name>`;
+guest progress lasts for the browser tab's session. Storage failure does not
+prevent practice. No server, build step or new runtime dependency is required.
+
+The home page, topic cards, concepts, levels, and practice patterns show
+**Not started / In progress / Completed** with completed/total counts.
+Pattern counts follow the selected difficulty. Practice shows a cumulative
+count that updates immediately after each correct answer. Opened questions
+are recorded in `started`, so an unfinished activity remains In progress
+after returning. Existing v1 answers and lessons are preserved. Repeating a
+completed question never counts it twice. The learner name is normalized
+without using age, and each name has a separate saved record.
+
+See `docs/olympiad-patterns.md` for the complete reference-paper analysis,
+question-to-pattern map and syllabus decisions.
+
+Optional browser integration checks use Python Playwright and Chromium:
+
+```sh
+python3 -m http.server 8088
+# In another terminal, with Playwright installed:
+python3 scripts/verify_olympiad.py
+python3 scripts/verify_olympiad_progress.py  # saved status, name isolation and live counts
+```
+
+`CHROMIUM_PATH` can point to an existing Chromium binary. Screenshots go to
+`/tmp/kids-olympiad-verification` by default; `OLYMPIAD_ARTIFACTS` overrides it.
+
+## Weekly activities
+
 Data is stored by class, then week, then activity type:
 `data/jr/week-1/drag-drop/number-sequencing.json`.
 
@@ -17,7 +66,7 @@ Advance is the final section in each Jr week's `activities.json`. Add an entry
 with `"type": "advance"` and `"file": "your-file-name"`, then create
 `data/jr/week-N/advance/your-file-name.json`.
 
-The shared renderer shows two questions per page. Each question has exactly one
+The shared renderer uses `questionsPerPage` (one or two, default two). Each question has exactly one
 `"?"` in its `sequence`, an `answer`, and a list of `choices`. Numbers can be
 stored as strings. All questions and choices are editable in JSON.
 
@@ -127,3 +176,52 @@ section, label, mode, catalog file, content file, visibility, and direct URL:
 - Hidden activities retain their codes; `enabled: false` keeps them out of the UI.
 - Jr menus now load their entries directly from weekly catalogs, including
   Alphabet Word Match and Find Same activities previously inserted by JavaScript.
+
+## Maths course
+
+`activities.html?class=maths` uses the same activity tablet, sidebar, footer,
+and advance renderer as JR-KG. `maths.html` redirects to this shared page.
+The catalog is `maths/operations/activities.json`; level questions live in
+`maths/operations/advance/<topic>-level-<number>.json`.
+
+There are 24 levels with 24 questions each. Level 1 shows two questions per
+page; higher levels show one. `shuffleQuestions` randomizes question order,
+answer choices are shuffled by the shared renderer, and `levelColor` sets
+the level's accent. Division level 3 uses answers such as `9 R 1`, where R
+means remainder. Topics and levels use the tablet footer; questions use
+Previous/Next inside the activity, matching JR-KG navigation.
+
+Edit the JSON directly, or regenerate the default question sets with
+`python3 scripts/maths_curriculum.py` (this overwrites the Maths JSON files).
+
+Maths progress is saved in `localStorage` under `kids-maths-progress:v2:`
+for the normalized learner name only (case and repeated spaces are ignored).
+Changing age does not create another Maths learner. Logging out removes the session
+profile but preserves these saved answers in the same browser. The shared
+advance renderer records only correct answers, identified by their sequence
+and answer rather than their shuffled position. Reopening a level filters
+out those answers and resumes the remembered unanswered question.
+
+On first use, old `v1` name-and-age records for the same name are merged into
+one `v2` record. Completed answers are combined without duplicates and the
+most recent activity is resumed. Original records remain as backups; the
+migration runs only if no valid name-based record exists, so restarting a
+level does not bring old answers back.
+
+The sidebar shows level names with completion ticks, and topics with compact
+completed-level counts. The selected level's question count, such as `(2/24)`,
+appears on the right of the tablet heading and updates
+after each correct answer. Finished levels remain available for review, while automatic resume
+and Previous/Next skip them. `Practice this level again` clears progress
+for that level only. Other learners, other levels,
+and JR/SR activities are unaffected. `questionCount` in the Maths catalog
+must match the number of questions in each level JSON.
+
+Completed level links use stronger green styling and a filled circular tick
+beside the level label, including their selected and hover states.
+Each operation/topic shows its completed level count; its heading turns green
+with a tick only when every enabled level is complete. Progress labels use
+only `(done/total)` for questions, levels and topics. There is no separate
+overall progress panel or completed-level filter.
+These statuses are derived from the saved answers and update immediately,
+including when practicing a completed level again.

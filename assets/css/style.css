@@ -2,6 +2,11 @@
 
 
 /* A spacious learning panel with a supporting portrait and curved color fields. */
+.home-class-card .class-button.maths{background:#2878c5;box-shadow:0 5px 0 #1c568f}
+.home-class-card .class-button.maths:hover{background:#2269af}
+.home-class-card .class-button.maths:active{box-shadow:0 3px 0 #1c568f}
+.home-class-card .class-button.olympiad{background:#349a81;box-shadow:0 5px 0 #24745f}
+.home-class-card .class-picker{flex-wrap:wrap;gap:13px}
 .landing-page .welcome-card{padding:30px 34px 54px}
 .home-showcase{position:relative;width:100%;margin:0 auto 8px;isolation:isolate}
 .home-hero-image{position:absolute;z-index:2;top:50%;left:16px;width:36%;height:232px;min-height:0;transform:translateY(-50%);object-fit:cover;object-position:center 24%;border:6px solid #fff;border-radius:44% 56% 40% 60% / 40% 38% 62% 60%;box-shadow:0 10px 20px #40527826}

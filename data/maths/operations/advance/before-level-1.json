@@ -1,0 +1,298 @@
+{
+  "title": "Before Number · 1–50",
+  "instruction": "Drag the number that comes before.",
+  "questionsPerPage": 2,
+  "shuffleQuestions": true,
+  "level": 1,
+  "levelColor": "#7657dd",
+  "questions": [
+    {
+      "sequence": [
+        "?",
+        "4"
+      ],
+      "answer": "3",
+      "choices": [
+        "3",
+        "0",
+        "13"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "26"
+      ],
+      "answer": "25",
+      "choices": [
+        "27",
+        "25",
+        "23"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "8"
+      ],
+      "answer": "7",
+      "choices": [
+        "7",
+        "17",
+        "10"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "44"
+      ],
+      "answer": "43",
+      "choices": [
+        "46",
+        "43",
+        "45"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "9"
+      ],
+      "answer": "8",
+      "choices": [
+        "7",
+        "8",
+        "11"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "24"
+      ],
+      "answer": "23",
+      "choices": [
+        "22",
+        "25",
+        "23"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "19"
+      ],
+      "answer": "18",
+      "choices": [
+        "15",
+        "28",
+        "18"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "30"
+      ],
+      "answer": "29",
+      "choices": [
+        "39",
+        "29",
+        "26"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "41"
+      ],
+      "answer": "40",
+      "choices": [
+        "40",
+        "42",
+        "30"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "33"
+      ],
+      "answer": "32",
+      "choices": [
+        "30",
+        "31",
+        "32"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "18"
+      ],
+      "answer": "17",
+      "choices": [
+        "19",
+        "27",
+        "17"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "14"
+      ],
+      "answer": "13",
+      "choices": [
+        "16",
+        "10",
+        "13"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "45"
+      ],
+      "answer": "44",
+      "choices": [
+        "44",
+        "45",
+        "43"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "10"
+      ],
+      "answer": "9",
+      "choices": [
+        "6",
+        "9",
+        "19"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "37"
+      ],
+      "answer": "36",
+      "choices": [
+        "39",
+        "34",
+        "36"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "12"
+      ],
+      "answer": "11",
+      "choices": [
+        "10",
+        "8",
+        "11"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "2"
+      ],
+      "answer": "1",
+      "choices": [
+        "1",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "16"
+      ],
+      "answer": "15",
+      "choices": [
+        "18",
+        "13",
+        "15"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "13"
+      ],
+      "answer": "12",
+      "choices": [
+        "11",
+        "22",
+        "12"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "35"
+      ],
+      "answer": "34",
+      "choices": [
+        "31",
+        "44",
+        "34"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "21"
+      ],
+      "answer": "20",
+      "choices": [
+        "10",
+        "30",
+        "20"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "34"
+      ],
+      "answer": "33",
+      "choices": [
+        "33",
+        "43",
+        "23"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "3"
+      ],
+      "answer": "2",
+      "choices": [
+        "4",
+        "2",
+        "12"
+      ]
+    },
+    {
+      "sequence": [
+        "?",
+        "5"
+      ],
+      "answer": "4",
+      "choices": [
+        "4",
+        "1",
+        "14"
+      ]
+    }
+  ]
+}

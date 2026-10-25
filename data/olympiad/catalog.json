@@ -1,0 +1,1098 @@
+{
+  "version": 1,
+  "sessionLength": 6,
+  "topics": [
+    {
+      "id": "comparison",
+      "label": "Compare & Discover",
+      "icon": "🦋",
+      "description": "Big, small, full, empty and more."
+    },
+    {
+      "id": "numbers",
+      "label": "Number Adventures",
+      "icon": "🚂",
+      "description": "Count, match and follow the numbers."
+    },
+    {
+      "id": "shapes",
+      "label": "Shape Explorers",
+      "icon": "🔺",
+      "description": "Find familiar shapes everywhere."
+    }
+  ],
+  "concepts": [
+    {
+      "id": "size",
+      "topic": "comparison",
+      "label": "Big and Small",
+      "icon": "🐘",
+      "lessons": [
+        {
+          "title": "Look at the space it takes up",
+          "text": "Big takes up more space. Small takes up less space.",
+          "visuals": [
+            {
+              "kind": "object",
+              "object": "ball",
+              "color": "#ed6688",
+              "size": 112
+            },
+            {
+              "kind": "object",
+              "object": "ball",
+              "color": "#587cdb",
+              "size": 48
+            }
+          ],
+          "labels": [
+            "BIG",
+            "SMALL"
+          ],
+          "tip": "Look at the whole object."
+        },
+        {
+          "title": "The words can look different",
+          "text": "BIG, Big and big mean the same thing.",
+          "visuals": [
+            {
+              "kind": "object",
+              "object": "gift",
+              "color": "#e6a62e",
+              "size": 110
+            },
+            {
+              "kind": "object",
+              "object": "gift",
+              "color": "#39a98a",
+              "size": 45
+            }
+          ],
+          "labels": [
+            "Big = BIG = big",
+            "Small = SMALL = small"
+          ],
+          "tip": "A small toy can fit through a small opening."
+        }
+      ]
+    },
+    {
+      "id": "height",
+      "topic": "comparison",
+      "label": "Tall and Short",
+      "icon": "🌳",
+      "lessons": [
+        {
+          "title": "Start at the same ground line",
+          "text": "Tall reaches up higher. Short does not reach as high.",
+          "visuals": [
+            {
+              "kind": "object",
+              "object": "tree",
+              "color": "#39a98a",
+              "height": 118
+            },
+            {
+              "kind": "object",
+              "object": "tree",
+              "color": "#39a98a",
+              "height": 55
+            }
+          ],
+          "labels": [
+            "TALL",
+            "SHORT"
+          ],
+          "tip": "Look from the ground to the top."
+        },
+        {
+          "title": "Try a different picture",
+          "text": "Trees, buildings and upright pencils can be tall or short.",
+          "visuals": [
+            {
+              "kind": "object",
+              "object": "pencil",
+              "color": "#e6a62e",
+              "height": 60
+            },
+            {
+              "kind": "object",
+              "object": "pencil",
+              "color": "#9764ce",
+              "height": 120
+            }
+          ],
+          "labels": [
+            "short",
+            "tall"
+          ],
+          "tip": "Colour does not tell you the height."
+        }
+      ]
+    },
+    {
+      "id": "weight",
+      "topic": "comparison",
+      "label": "Heavy and Light",
+      "icon": "⚖️",
+      "lessons": [
+        {
+          "title": "Watch the balance",
+          "text": "The heavy side goes down. The light side goes up.",
+          "visuals": [
+            {
+              "kind": "balance",
+              "left": {
+                "kind": "object",
+                "object": "rock",
+                "color": "#ed6688",
+                "mass": 9
+              },
+              "right": {
+                "kind": "object",
+                "object": "feather",
+                "color": "#ed6688",
+                "mass": 1
+              }
+            }
+          ],
+          "labels": [
+            "HEAVY ↓                 LIGHT ↑"
+          ],
+          "tip": "A picture can look big and still be light."
+        },
+        {
+          "title": "Use the balance to help",
+          "text": "Follow the lower pan to find the heavier object.",
+          "visuals": [
+            {
+              "kind": "balance",
+              "left": {
+                "kind": "object",
+                "object": "balloon",
+                "color": "#ed6688",
+                "mass": 1
+              },
+              "right": {
+                "kind": "object",
+                "object": "brick",
+                "color": "#ed6688",
+                "mass": 9
+              }
+            }
+          ],
+          "labels": [
+            "LIGHT ↑                 HEAVY ↓"
+          ],
+          "tip": "Heavy = HEAVY. Light = LIGHT."
+        }
+      ]
+    },
+    {
+      "id": "fill",
+      "topic": "comparison",
+      "label": "Full and Empty",
+      "icon": "🥛",
+      "lessons": [
+        {
+          "title": "Look inside",
+          "text": "Full has contents up to the top. Empty has nothing inside.",
+          "visuals": [
+            {
+              "kind": "object",
+              "object": "jar",
+              "color": "#ed6688",
+              "fill": 1
+            },
+            {
+              "kind": "object",
+              "object": "jar",
+              "color": "#ed6688",
+              "fill": 0
+            }
+          ],
+          "labels": [
+            "FULL",
+            "EMPTY"
+          ],
+          "tip": "A little bit inside is not empty."
+        },
+        {
+          "title": "Some is different from full",
+          "text": "This cup has some juice. The other cup is full.",
+          "visuals": [
+            {
+              "kind": "object",
+              "object": "glass",
+              "color": "#e6a62e",
+              "fill": 0.4
+            },
+            {
+              "kind": "object",
+              "object": "glass",
+              "color": "#e6a62e",
+              "fill": 1
+            }
+          ],
+          "labels": [
+            "SOME",
+            "FULL"
+          ],
+          "tip": "Look for the fill line near the top."
+        }
+      ]
+    },
+    {
+      "id": "state",
+      "topic": "comparison",
+      "label": "Open and Closed",
+      "icon": "🚪",
+      "lessons": [
+        {
+          "title": "Can you see an opening?",
+          "text": "Open leaves a space. Closed shuts the opening.",
+          "visuals": [
+            {
+              "kind": "object",
+              "object": "door",
+              "color": "#e6a62e",
+              "state": "open"
+            },
+            {
+              "kind": "object",
+              "object": "door",
+              "color": "#e6a62e",
+              "state": "closed"
+            }
+          ],
+          "labels": [
+            "OPEN",
+            "CLOSED"
+          ],
+          "tip": "Look at the gap."
+        },
+        {
+          "title": "Try a book",
+          "text": "An open book shows its pages. A closed book has its cover shut.",
+          "visuals": [
+            {
+              "kind": "object",
+              "object": "book",
+              "color": "#587cdb",
+              "state": "open"
+            },
+            {
+              "kind": "object",
+              "object": "book",
+              "color": "#9764ce",
+              "state": "closed"
+            }
+          ],
+          "labels": [
+            "open",
+            "closed"
+          ],
+          "tip": "Close is the action. Closed tells us how it looks now."
+        }
+      ]
+    },
+    {
+      "id": "posture",
+      "topic": "comparison",
+      "label": "Sit and Stand",
+      "icon": "🧒",
+      "lessons": [
+        {
+          "title": "Look at the legs",
+          "text": "Sitting bends the legs on a seat. Standing has straight legs on the ground.",
+          "visuals": [
+            {
+              "kind": "object",
+              "object": "child",
+              "color": "#ed6688",
+              "posture": "sit"
+            },
+            {
+              "kind": "object",
+              "object": "child",
+              "color": "#587cdb",
+              "posture": "stand"
+            }
+          ],
+          "labels": [
+            "SIT / SITTING",
+            "STAND / STANDING"
+          ],
+          "tip": "Find the seat and the bent knees."
+        }
+      ]
+    },
+    {
+      "id": "same",
+      "topic": "comparison",
+      "label": "Same and Different",
+      "icon": "🦋",
+      "lessons": [
+        {
+          "title": "Look at every detail",
+          "text": "Same pictures match in shape, colour and pattern.",
+          "visuals": [
+            {
+              "kind": "object",
+              "object": "ball",
+              "color": "#587cdb",
+              "decoration": "dots"
+            },
+            {
+              "kind": "object",
+              "object": "ball",
+              "color": "#587cdb",
+              "decoration": "dots"
+            },
+            {
+              "kind": "object",
+              "object": "ball",
+              "color": "#ed6688",
+              "decoration": "stripe"
+            }
+          ],
+          "labels": [
+            "SAME",
+            "SAME",
+            "DIFFERENT"
+          ],
+          "tip": "Check the colour and the decoration."
+        },
+        {
+          "title": "Find the one that does not match",
+          "text": "Three pictures match. One picture is different.",
+          "visuals": [
+            {
+              "kind": "collection",
+              "items": [
+                {
+                  "kind": "object",
+                  "object": "fish",
+                  "color": "#ed6688"
+                },
+                {
+                  "kind": "object",
+                  "object": "fish",
+                  "color": "#ed6688"
+                },
+                {
+                  "kind": "object",
+                  "object": "flower",
+                  "color": "#ed6688"
+                },
+                {
+                  "kind": "object",
+                  "object": "fish",
+                  "color": "#ed6688"
+                }
+              ]
+            }
+          ],
+          "labels": [
+            "The flower is different."
+          ],
+          "tip": "Look for the picture that appears only once."
+        }
+      ]
+    },
+    {
+      "id": "numerals",
+      "topic": "numbers",
+      "label": "Numbers 1–50",
+      "icon": "🔢",
+      "lessons": [
+        {
+          "title": "Look at each digit",
+          "text": "Match the number, even on a different card.",
+          "visuals": [
+            {
+              "kind": "number",
+              "value": 24,
+              "style": "screen"
+            },
+            {
+              "kind": "number",
+              "value": 24,
+              "style": "star"
+            }
+          ],
+          "labels": [
+            "24",
+            "24"
+          ],
+          "tip": "Read a two-digit number from left to right."
+        },
+        {
+          "title": "Numbers keep their meaning",
+          "text": "Colour and decoration do not change the number.",
+          "visuals": [
+            {
+              "kind": "number",
+              "value": 7,
+              "style": "star"
+            },
+            {
+              "kind": "number",
+              "value": 19,
+              "style": "screen"
+            },
+            {
+              "kind": "number",
+              "value": 50,
+              "style": "card"
+            }
+          ],
+          "labels": [
+            "7",
+            "19",
+            "50"
+          ],
+          "tip": "Take your time to look at both digits."
+        }
+      ]
+    },
+    {
+      "id": "counting",
+      "topic": "numbers",
+      "label": "Count and Build",
+      "icon": "🍎",
+      "lessons": [
+        {
+          "title": "Touch each picture once",
+          "text": "Count: one, two, three, four. There are 4 apples.",
+          "visuals": [
+            {
+              "kind": "quantity",
+              "count": 4,
+              "item": "apple",
+              "color": "#ed6688",
+              "layout": "rows"
+            },
+            {
+              "kind": "number",
+              "value": 4,
+              "style": "card"
+            }
+          ],
+          "labels": [
+            "1 · 2 · 3 · 4",
+            "4"
+          ],
+          "tip": "Tap pictures during practice to help you keep track."
+        },
+        {
+          "title": "Make your own group",
+          "text": "Add one picture at a time. Stop when the group has 5.",
+          "visuals": [
+            {
+              "kind": "quantity",
+              "count": 5,
+              "item": "fish",
+              "color": "#587cdb",
+              "layout": "rows"
+            },
+            {
+              "kind": "number",
+              "value": 5,
+              "style": "card"
+            }
+          ],
+          "labels": [
+            "5 fish",
+            "5"
+          ],
+          "tip": "You can take one away if you add too many."
+        }
+      ]
+    },
+    {
+      "id": "quantity",
+      "topic": "numbers",
+      "label": "Groups and Quantities",
+      "icon": "🧺",
+      "lessons": [
+        {
+          "title": "More, fewer, or the same?",
+          "text": "Count each group. More has a bigger count.",
+          "visuals": [
+            {
+              "kind": "quantity",
+              "count": 3,
+              "item": "flower",
+              "color": "#ed6688",
+              "layout": "rows"
+            },
+            {
+              "kind": "quantity",
+              "count": 6,
+              "item": "flower",
+              "color": "#ed6688",
+              "layout": "rows"
+            }
+          ],
+          "labels": [
+            "3 · FEWER",
+            "6 · MORE"
+          ],
+          "tip": "The size of each picture does not change how many there are."
+        },
+        {
+          "title": "Different arrangements, same count",
+          "text": "Both groups have 4. Their quantities are equal.",
+          "visuals": [
+            {
+              "kind": "quantity",
+              "count": 4,
+              "item": "ball",
+              "color": "#587cdb",
+              "layout": "ring"
+            },
+            {
+              "kind": "quantity",
+              "count": 4,
+              "item": "ball",
+              "color": "#e6a62e",
+              "layout": "rows"
+            }
+          ],
+          "labels": [
+            "4",
+            "4"
+          ],
+          "tip": "Equal means the same number of things."
+        }
+      ]
+    },
+    {
+      "id": "compare",
+      "topic": "numbers",
+      "label": "Greater, Less and Equal",
+      "icon": "⚖️",
+      "lessons": [
+        {
+          "title": "Compare the counts",
+          "text": "6 is greater than 3. 3 is less than 6.",
+          "visuals": [
+            {
+              "kind": "quantity",
+              "count": 6,
+              "item": "apple",
+              "color": "#ed6688",
+              "layout": "rows"
+            },
+            {
+              "kind": "quantity",
+              "count": 3,
+              "item": "apple",
+              "color": "#ed6688",
+              "layout": "rows"
+            }
+          ],
+          "labels": [
+            "6 > 3",
+            "3 < 6"
+          ],
+          "tip": "The open mouth of > or < points at the greater number."
+        },
+        {
+          "title": "Equal means the same",
+          "text": "Both sides have the same value.",
+          "visuals": [
+            {
+              "kind": "number",
+              "value": 12,
+              "style": "card"
+            },
+            {
+              "kind": "number",
+              "value": 12,
+              "style": "screen"
+            }
+          ],
+          "labels": [
+            "12",
+            "= 12"
+          ],
+          "tip": "Matching numbers are equal, even on different cards."
+        }
+      ]
+    },
+    {
+      "id": "neighbours",
+      "topic": "numbers",
+      "label": "Before and After",
+      "icon": "🚂",
+      "lessons": [
+        {
+          "title": "Follow the counting path",
+          "text": "Before 5 is 4. After 5 is 6.",
+          "visuals": [
+            {
+              "kind": "sequence",
+              "values": [
+                4,
+                5,
+                6,
+                7
+              ],
+              "layout": "path"
+            }
+          ],
+          "labels": [
+            "4 → 5 → 6 → 7"
+          ],
+          "tip": "Before is one step back. After is one step forward."
+        },
+        {
+          "title": "Find the missing block",
+          "text": "Count from the bottom up: 16, 17, 18, 19.",
+          "visuals": [
+            {
+              "kind": "sequence",
+              "values": [
+                16,
+                17,
+                "?",
+                19
+              ],
+              "layout": "tower"
+            }
+          ],
+          "labels": [
+            "The missing block is 18."
+          ],
+          "tip": "The arrow shows which way to count."
+        }
+      ]
+    },
+    {
+      "id": "names",
+      "topic": "numbers",
+      "label": "Number Names 1–20",
+      "icon": "💬",
+      "lessons": [
+        {
+          "title": "A number has a word name",
+          "text": "The numeral 12 and the word twelve mean the same amount.",
+          "visuals": [
+            {
+              "kind": "number",
+              "value": 12,
+              "style": "card"
+            },
+            {
+              "kind": "word",
+              "value": "twelve"
+            },
+            {
+              "kind": "quantity",
+              "count": 12,
+              "item": "ball",
+              "color": "#587cdb",
+              "layout": "rows"
+            }
+          ],
+          "labels": [
+            "12",
+            "twelve",
+            "12 balls"
+          ],
+          "tip": "Say the word and count the pictures."
+        },
+        {
+          "title": "Capital letters keep the same name",
+          "text": "FIVE, Five and five all mean 5.",
+          "visuals": [
+            {
+              "kind": "word",
+              "value": "FIVE"
+            },
+            {
+              "kind": "word",
+              "value": "Five"
+            },
+            {
+              "kind": "word",
+              "value": "five"
+            }
+          ],
+          "labels": [
+            "5",
+            "5",
+            "5"
+          ],
+          "tip": "Practice uses names from one through twenty."
+        }
+      ]
+    },
+    {
+      "id": "shapes",
+      "topic": "shapes",
+      "label": "Shape Explorers",
+      "icon": "🔺",
+      "lessons": [
+        {
+          "title": "Meet the shapes",
+          "text": "Look at the outline of each shape.",
+          "visuals": [
+            {
+              "kind": "shape",
+              "shape": "circle",
+              "color": "#ed6688",
+              "context": "plain"
+            },
+            {
+              "kind": "shape",
+              "shape": "square",
+              "color": "#587cdb",
+              "context": "plain"
+            },
+            {
+              "kind": "shape",
+              "shape": "triangle",
+              "color": "#e6a62e",
+              "context": "plain"
+            },
+            {
+              "kind": "shape",
+              "shape": "rectangle",
+              "color": "#39a98a",
+              "context": "plain"
+            },
+            {
+              "kind": "shape",
+              "shape": "heart",
+              "color": "#9764ce",
+              "context": "plain"
+            },
+            {
+              "kind": "shape",
+              "shape": "star",
+              "color": "#e98241",
+              "context": "plain"
+            },
+            {
+              "kind": "shape",
+              "shape": "oval",
+              "color": "#ed6688",
+              "context": "plain"
+            }
+          ],
+          "labels": [
+            "Circle",
+            "Square",
+            "Triangle",
+            "Rectangle",
+            "Heart",
+            "Star",
+            "Oval"
+          ],
+          "tip": "A circle is round. An oval is stretched."
+        },
+        {
+          "title": "Shapes hide in everyday things",
+          "text": "A cookie, a frame, or a balloon can have a shape you know.",
+          "visuals": [
+            {
+              "kind": "shape",
+              "shape": "star",
+              "color": "#e6a62e",
+              "context": "cookie"
+            },
+            {
+              "kind": "shape",
+              "shape": "square",
+              "color": "#587cdb",
+              "context": "frame"
+            },
+            {
+              "kind": "shape",
+              "shape": "heart",
+              "color": "#ed6688",
+              "context": "balloon"
+            }
+          ],
+          "labels": [
+            "STAR",
+            "SQUARE",
+            "HEART"
+          ],
+          "tip": "Look at the outside edge, then match the shape."
+        }
+      ]
+    }
+  ],
+  "patterns": [
+    {
+      "id": "size-big",
+      "concept": "size",
+      "label": "Find the bigger picture",
+      "source": "Nursery 1; Junior KG 21",
+      "count": 36
+    },
+    {
+      "id": "size-small",
+      "concept": "size",
+      "label": "Find the smaller picture",
+      "source": "Nursery 7; Junior KG 3",
+      "count": 36
+    },
+    {
+      "id": "size-fit",
+      "concept": "size",
+      "label": "What fits through the opening?",
+      "source": "Nursery 21",
+      "count": 36
+    },
+    {
+      "id": "height-tall",
+      "concept": "height",
+      "label": "Find the taller object",
+      "source": "Nursery 4; Junior KG 22",
+      "count": 36
+    },
+    {
+      "id": "height-short",
+      "concept": "height",
+      "label": "Find the shorter object",
+      "source": "Nursery 2, 22; Junior KG 5",
+      "count": 36
+    },
+    {
+      "id": "weight-heavy",
+      "concept": "weight",
+      "label": "Find the heavier object",
+      "source": "Junior KG 1",
+      "count": 36
+    },
+    {
+      "id": "weight-light",
+      "concept": "weight",
+      "label": "Find the lighter object",
+      "source": "Junior KG 6",
+      "count": 36
+    },
+    {
+      "id": "fill-full",
+      "concept": "fill",
+      "label": "Find the full container",
+      "source": "Junior KG 7",
+      "count": 36
+    },
+    {
+      "id": "fill-empty",
+      "concept": "fill",
+      "label": "Find the empty container",
+      "source": "Junior KG 2",
+      "count": 36
+    },
+    {
+      "id": "state-open",
+      "concept": "state",
+      "label": "Find what is open",
+      "source": "Nursery 5, reverse property",
+      "count": 36
+    },
+    {
+      "id": "state-closed",
+      "concept": "state",
+      "label": "Find what is closed",
+      "source": "Nursery 5",
+      "count": 36
+    },
+    {
+      "id": "posture-sit",
+      "concept": "posture",
+      "label": "Find who is sitting",
+      "source": "Nursery 3",
+      "count": 36
+    },
+    {
+      "id": "posture-stand",
+      "concept": "posture",
+      "label": "Find who is standing",
+      "source": "Nursery 3, reverse property",
+      "count": 36
+    },
+    {
+      "id": "same-match",
+      "concept": "same",
+      "label": "Match every detail",
+      "source": "Nursery 8; Junior KG 8",
+      "count": 36
+    },
+    {
+      "id": "different-object",
+      "concept": "same",
+      "label": "Find the different picture",
+      "source": "Nursery 6; Junior KG 4",
+      "count": 36
+    },
+    {
+      "id": "number-identify",
+      "concept": "numerals",
+      "label": "Match the number card",
+      "source": "Nursery 10, numeral recognition extension",
+      "count": 36
+    },
+    {
+      "id": "number-count",
+      "concept": "counting",
+      "label": "Count the pictures",
+      "source": "Nursery 9, 13",
+      "count": 36
+    },
+    {
+      "id": "number-build",
+      "concept": "counting",
+      "label": "Build a group",
+      "source": "Nursery 24, hands-on extension",
+      "count": 36
+    },
+    {
+      "id": "quantity-match",
+      "concept": "quantity",
+      "label": "Match a number to a group",
+      "source": "Nursery 24",
+      "count": 36
+    },
+    {
+      "id": "quantity-more",
+      "concept": "quantity",
+      "label": "Find the group with more",
+      "source": "Junior KG 11",
+      "count": 36
+    },
+    {
+      "id": "quantity-less",
+      "concept": "quantity",
+      "label": "Find the group with fewer",
+      "source": "Junior KG 11, reverse property",
+      "count": 36
+    },
+    {
+      "id": "quantity-equal",
+      "concept": "quantity",
+      "label": "Find the equal group",
+      "source": "Junior KG 13",
+      "count": 36
+    },
+    {
+      "id": "number-pairs",
+      "concept": "quantity",
+      "label": "Pair numbers and quantities",
+      "source": "Junior KG 13, matching extension",
+      "count": 36
+    },
+    {
+      "id": "number-greater",
+      "concept": "compare",
+      "label": "Choose greater than",
+      "source": "Junior KG 12; syllabus extension",
+      "count": 36
+    },
+    {
+      "id": "number-less",
+      "concept": "compare",
+      "label": "Choose less than",
+      "source": "Junior KG 12",
+      "count": 36
+    },
+    {
+      "id": "number-equal",
+      "concept": "compare",
+      "label": "Choose equal to",
+      "source": "Junior KG 13; syllabus extension",
+      "count": 36
+    },
+    {
+      "id": "number-before",
+      "concept": "neighbours",
+      "label": "What comes before?",
+      "source": "Nursery 12; Junior KG 10",
+      "count": 36
+    },
+    {
+      "id": "number-after",
+      "concept": "neighbours",
+      "label": "What comes after?",
+      "source": "Nursery 11, 14; Junior KG 9",
+      "count": 36
+    },
+    {
+      "id": "number-missing",
+      "concept": "neighbours",
+      "label": "Fill the missing block",
+      "source": "Nursery 23",
+      "count": 36
+    },
+    {
+      "id": "name-to-number",
+      "concept": "names",
+      "label": "Match a word to a number",
+      "source": "Nursery 10; Junior KG 24",
+      "count": 36
+    },
+    {
+      "id": "number-to-name",
+      "concept": "names",
+      "label": "Match a number to a word",
+      "source": "Junior KG 14",
+      "count": 36
+    },
+    {
+      "id": "shape-identify",
+      "concept": "shapes",
+      "label": "Find the named shape",
+      "source": "Nursery 19",
+      "count": 36
+    },
+    {
+      "id": "shape-object",
+      "concept": "shapes",
+      "label": "Find a shape in an object",
+      "source": "Nursery 15–18, 25; Junior KG 15–20, 25",
+      "count": 36
+    },
+    {
+      "id": "object-shape",
+      "concept": "shapes",
+      "label": "Name an object’s shape",
+      "source": "Nursery 20",
+      "count": 36
+    },
+    {
+      "id": "shape-match",
+      "concept": "shapes",
+      "label": "Match shape outlines",
+      "source": "Nursery 8, matching mechanism extension",
+      "count": 36
+    },
+    {
+      "id": "shape-different",
+      "concept": "shapes",
+      "label": "Find the different shape",
+      "source": "Nursery 6, odd-one-out mechanism extension",
+      "count": 36
+    },
+    {
+      "id": "shape-count",
+      "concept": "shapes",
+      "label": "Count one kind of shape",
+      "source": "Nursery 9, counting mechanism extension",
+      "count": 36
+    },
+    {
+      "id": "shape-pairs",
+      "concept": "shapes",
+      "label": "Pair shapes and objects",
+      "source": "Nursery 15–20; matching extension",
+      "count": 36
+    }
+  ]
+}

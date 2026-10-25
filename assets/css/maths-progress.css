@@ -1,0 +1,10 @@
+.maths-heading-progress{margin-left:auto;flex-shrink:0;font-size:13px;font-weight:600;line-height:1.2;white-space:nowrap;color:var(--purple)}
+.maths-heading-progress.is-complete{color:#146c3d}
+.sidebar button.maths-level-complete{color:#146c3d;background:#dcf4e4;border-left:4px solid #19834b;padding-left:7px;font-weight:600}
+.sidebar button.maths-level-complete:hover,.sidebar button.maths-level-complete.active{color:#0e572f;background:#c4ebd2;font-weight:600}
+.sidebar .maths-complete-tick{display:inline-grid;place-items:center;width:24px;height:24px;margin-right:8px;border-radius:50%;background:#146c3d;color:#fff;font-size:18px;font-weight:700;vertical-align:middle;line-height:1;flex-shrink:0}
+.sidebar .maths-complete-tick[hidden]{display:none}
+.sidebar .maths-operation-status{display:block;margin-top:5px;font-size:12px;line-height:1.45;font-weight:400;color:#526580}
+.sidebar .maths-operation-complete h3{color:#146c3d;background:#dcf4e4;border-radius:12px;padding:10px;margin-left:0;margin-right:0}
+.sidebar .maths-operation-complete .maths-operation-status{color:#146c3d;font-weight:600;margin-left:32px}
+.sidebar button[hidden],.sidebar section[hidden]{display:none}

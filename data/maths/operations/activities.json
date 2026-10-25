@@ -1,0 +1,300 @@
+{
+  "sections": [
+    {
+      "id": "addition",
+      "title": "Addition",
+      "icon": "➕",
+      "activities": [
+        {
+          "type": "advance",
+          "file": "addition-level-1",
+          "mode": "learn",
+          "level": 1,
+          "code": "MATH-ADDITION-L1",
+          "label": "Level 1 · Single digit",
+          "icon": "➕",
+          "questionCount": 24
+        },
+        {
+          "type": "advance",
+          "file": "addition-level-2",
+          "mode": "learn",
+          "level": 2,
+          "code": "MATH-ADDITION-L2",
+          "label": "Level 2 · Two digits",
+          "icon": "➕",
+          "questionCount": 24
+        },
+        {
+          "type": "advance",
+          "file": "addition-level-3",
+          "mode": "learn",
+          "level": 3,
+          "code": "MATH-ADDITION-L3",
+          "label": "Level 3 · Three digits",
+          "icon": "➕",
+          "questionCount": 24
+        },
+        {
+          "type": "advance",
+          "file": "addition-level-4",
+          "mode": "learn",
+          "level": 4,
+          "code": "MATH-ADDITION-L4",
+          "label": "Level 4 · Carry challenge",
+          "icon": "➕",
+          "questionCount": 24
+        },
+        {
+          "type": "advance",
+          "file": "addition-level-5",
+          "mode": "learn",
+          "level": 5,
+          "code": "MATH-ADDITION-L5",
+          "label": "Level 5 · Missing Number",
+          "icon": "➕",
+          "questionCount": 24
+        }
+      ]
+    },
+    {
+      "id": "subtraction",
+      "title": "Subtraction",
+      "icon": "➖",
+      "activities": [
+        {
+          "type": "advance",
+          "file": "subtraction-level-1",
+          "mode": "learn",
+          "level": 1,
+          "code": "MATH-SUBTRACTION-L1",
+          "label": "Level 1 · Single digit",
+          "icon": "➖",
+          "questionCount": 24
+        },
+        {
+          "type": "advance",
+          "file": "subtraction-level-2",
+          "mode": "learn",
+          "level": 2,
+          "code": "MATH-SUBTRACTION-L2",
+          "label": "Level 2 · Two digits",
+          "icon": "➖",
+          "questionCount": 24
+        },
+        {
+          "type": "advance",
+          "file": "subtraction-level-3",
+          "mode": "learn",
+          "level": 3,
+          "code": "MATH-SUBTRACTION-L3",
+          "label": "Level 3 · Three digits",
+          "icon": "➖",
+          "questionCount": 24
+        },
+        {
+          "type": "advance",
+          "file": "subtraction-level-4",
+          "mode": "learn",
+          "level": 4,
+          "code": "MATH-SUBTRACTION-L4",
+          "label": "Level 4 · Borrow challenge",
+          "icon": "➖",
+          "questionCount": 24
+        },
+        {
+          "type": "advance",
+          "file": "subtraction-level-5",
+          "mode": "learn",
+          "level": 5,
+          "code": "MATH-SUBTRACTION-L5",
+          "label": "Level 5 · Missing Number",
+          "icon": "➖",
+          "questionCount": 24
+        }
+      ]
+    },
+    {
+      "id": "multiplication",
+      "title": "Multiplication",
+      "icon": "✖️",
+      "activities": [
+        {
+          "type": "advance",
+          "file": "multiplication-level-1",
+          "mode": "learn",
+          "level": 1,
+          "code": "MATH-MULTIPLICATION-L1",
+          "label": "Level 1 · Single digit",
+          "icon": "✖️",
+          "questionCount": 24
+        },
+        {
+          "type": "advance",
+          "file": "multiplication-level-2",
+          "mode": "learn",
+          "level": 2,
+          "code": "MATH-MULTIPLICATION-L2",
+          "label": "Level 2 · Two digits",
+          "icon": "✖️",
+          "questionCount": 24
+        },
+        {
+          "type": "advance",
+          "file": "multiplication-level-3",
+          "mode": "learn",
+          "level": 3,
+          "code": "MATH-MULTIPLICATION-L3",
+          "label": "Level 3 · Challenge",
+          "icon": "✖️",
+          "questionCount": 24
+        }
+      ]
+    },
+    {
+      "id": "division",
+      "title": "Division",
+      "icon": "➗",
+      "activities": [
+        {
+          "type": "advance",
+          "file": "division-level-1",
+          "mode": "learn",
+          "level": 1,
+          "code": "MATH-DIVISION-L1",
+          "label": "Level 1 · Single digit",
+          "icon": "➗",
+          "questionCount": 24
+        },
+        {
+          "type": "advance",
+          "file": "division-level-2",
+          "mode": "learn",
+          "level": 2,
+          "code": "MATH-DIVISION-L2",
+          "label": "Level 2 · Two digits",
+          "icon": "➗",
+          "questionCount": 24
+        },
+        {
+          "type": "advance",
+          "file": "division-level-3",
+          "mode": "learn",
+          "level": 3,
+          "code": "MATH-DIVISION-L3",
+          "label": "Level 3 · Remainders",
+          "icon": "➗",
+          "questionCount": 24
+        }
+      ]
+    },
+    {
+      "id": "before",
+      "title": "Before Number",
+      "icon": "⬅️",
+      "activities": [
+        {
+          "type": "advance",
+          "file": "before-level-1",
+          "mode": "learn",
+          "level": 1,
+          "code": "MATH-BEFORE-L1",
+          "label": "Level 1 · 1–50",
+          "icon": "⬅️",
+          "questionCount": 24
+        },
+        {
+          "type": "advance",
+          "file": "before-level-2",
+          "mode": "learn",
+          "level": 2,
+          "code": "MATH-BEFORE-L2",
+          "label": "Level 2 · Two digits",
+          "icon": "⬅️",
+          "questionCount": 24
+        }
+      ]
+    },
+    {
+      "id": "after",
+      "title": "After Number",
+      "icon": "➡️",
+      "activities": [
+        {
+          "type": "advance",
+          "file": "after-level-1",
+          "mode": "learn",
+          "level": 1,
+          "code": "MATH-AFTER-L1",
+          "label": "Level 1 · 1–50",
+          "icon": "➡️",
+          "questionCount": 24
+        },
+        {
+          "type": "advance",
+          "file": "after-level-2",
+          "mode": "learn",
+          "level": 2,
+          "code": "MATH-AFTER-L2",
+          "label": "Level 2 · Two digits",
+          "icon": "➡️",
+          "questionCount": 24
+        }
+      ]
+    },
+    {
+      "id": "inbetween",
+      "title": "In Between",
+      "icon": "↔️",
+      "activities": [
+        {
+          "type": "advance",
+          "file": "inbetween-level-1",
+          "mode": "learn",
+          "level": 1,
+          "code": "MATH-INBETWEEN-L1",
+          "label": "Level 1 · 1–50",
+          "icon": "↔️",
+          "questionCount": 24
+        },
+        {
+          "type": "advance",
+          "file": "inbetween-level-2",
+          "mode": "learn",
+          "level": 2,
+          "code": "MATH-INBETWEEN-L2",
+          "label": "Level 2 · Two digits",
+          "icon": "↔️",
+          "questionCount": 24
+        }
+      ]
+    },
+    {
+      "id": "series",
+      "title": "Number Series",
+      "icon": "🔢",
+      "activities": [
+        {
+          "type": "advance",
+          "file": "series-level-1",
+          "mode": "learn",
+          "level": 1,
+          "code": "MATH-SERIES-L1",
+          "label": "Level 1 · Skip one number",
+          "icon": "🔢",
+          "questionCount": 24
+        },
+        {
+          "type": "advance",
+          "file": "series-level-2",
+          "mode": "learn",
+          "level": 2,
+          "code": "MATH-SERIES-L2",
+          "label": "Level 2 · Skip two numbers",
+          "icon": "🔢",
+          "questionCount": 24
+        }
+      ]
+    }
+  ]
+}
